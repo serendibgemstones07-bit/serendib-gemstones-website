@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --teal: #c9a84c;
+    --teal-light: #e0bc6e;
+    --purple: #6b2d8b;
+    --purple-mid: #9b5dc8;
+    --dark-bg: #0f1c2e;
+    --dark-purple: #1a2d4a;
+    --offwhite: #f8f6f2;
+    --warm: #ede8e0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark text-offwhite;
+    font-family: var(--font-jost), sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-cormorant), serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gem {
+    background: linear-gradient(135deg, #c9a84c 0%, #9b5dc8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-gem-gradient {
+    border-image: linear-gradient(135deg, #c9a84c, #6b2d8b) 1;
+  }
+
+  .glass {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(10, 18, 30, 0.82);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+  }
+}
+
+/* Marquee */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Article / pillar page prose */
+.prose-gem h2 {
+  @apply font-cormorant text-3xl sm:text-4xl font-semibold mb-6 mt-16 first:mt-0;
+  color: var(--offwhite);
+}
+.prose-gem h3 {
+  @apply font-cormorant text-2xl font-semibold mb-4 mt-10;
+  color: var(--offwhite);
+}
+.prose-gem p {
+  @apply font-jost text-sm leading-relaxed mb-5;
+  color: rgba(248, 246, 242, 0.6);
+}
+.prose-gem ul, .prose-gem ol {
+  @apply font-jost text-sm leading-relaxed mb-5 pl-5 space-y-2;
+  color: rgba(248, 246, 242, 0.55);
+}
+.prose-gem ul { list-style-type: disc; }
+.prose-gem ol { list-style-type: decimal; }
+.prose-gem li::marker { color: rgba(201, 168, 76, 0.5); }
+.prose-gem strong {
+  color: rgba(248, 246, 242, 0.85);
+  font-weight: 500;
+}
+.prose-gem blockquote {
+  @apply border-l-2 pl-6 my-8 italic;
+  border-color: rgba(201, 168, 76, 0.4);
+  color: rgba(248, 246, 242, 0.5);
+}
+.prose-gem hr {
+  @apply my-12 border-0 h-px;
+  background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.25), transparent);
+}
+
+/* FAQ accordion */
+.faq-item summary {
+  @apply font-cormorant text-lg font-semibold cursor-pointer py-4 pr-8 relative;
+  color: var(--offwhite);
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  @apply absolute right-0 top-4 font-jost text-lg font-light;
+  color: rgba(201, 168, 76, 0.5);
+  transition: transform 0.2s;
+}
+.faq-item[open] summary::after {
+  content: '−';
+}
+.faq-item .faq-answer {
+  @apply font-jost text-sm leading-relaxed pb-5;
+  color: rgba(248, 246, 242, 0.55);
+}
+
+/* Smooth page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(8px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms ease, transform 400ms ease;
+}

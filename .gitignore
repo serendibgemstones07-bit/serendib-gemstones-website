@@ -1,0 +1,23 @@
+# env files
+.env.local
+.env*.local
+
+# dependencies
+node_modules/
+studio/node_modules/
+
+# next.js
+.next/
+out/
+
+# studio build output
+studio/dist/
+studio/.sanity/
+
+# claude code
+.claude/
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*
