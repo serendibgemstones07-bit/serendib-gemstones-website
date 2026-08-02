@@ -10,6 +10,7 @@ import LogoImage from '@/components/LogoImage'
 import { stoneSpecies } from '@/lib/gems'
 
 const HeroGems = dynamic(() => import('@/components/HeroGems'), { ssr: false })
+const HeroVideo = dynamic(() => import('@/components/HeroVideo'), { ssr: false })
 
 const gemCards = [
   {
@@ -71,8 +72,9 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-screen bg-dark flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen bg-dark flex items-center justify-center overflow-hidden pb-28">
         <HeroGems />
+        <HeroVideo />
         <div
           className="absolute inset-0 pointer-events-none"
           style={{ background: 'radial-gradient(ellipse 60% 50% at 50% 60%, rgba(201,168,76,0.12) 0%, transparent 70%)' }}
