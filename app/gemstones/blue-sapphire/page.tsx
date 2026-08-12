@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
 import GemSVG from '@/components/GemSVG'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'Blue Sapphire — The Complete Guide to Ceylon Blue Sapphires',
@@ -17,7 +19,7 @@ const faqItems = [
   },
   {
     q: 'How much is a blue sapphire worth?',
-    a: 'Blue sapphire prices vary enormously based on colour, clarity, carat weight, origin, and treatment status. Commercial heated sapphires may start at US$100–500 per carat. Fine unheated Ceylon sapphires typically range from US$1,000–10,000 per carat. Exceptional unheated stones with vivid colour and clean clarity from Sri Lanka or Kashmir can exceed US$50,000 per carat at auction.',
+    a: 'Blue sapphire value is driven by colour, clarity, carat weight, origin, and treatment status. Fine unheated Ceylon and Kashmir sapphires sit at the top of the market and command significant premiums; commercially heated stones sit at the accessible end. Because every stone is unique and the market moves, we quote on the actual gemstone rather than publishing figures — please make an enquiry for current pricing on a specific sapphire.',
   },
   {
     q: 'How can I tell if a blue sapphire is real?',
@@ -25,7 +27,7 @@ const faqItems = [
   },
   {
     q: 'Are all blue sapphires heat-treated?',
-    a: 'No, but the vast majority are. Industry estimates suggest over 95% of blue sapphires on the commercial market have been heat-treated to improve colour and clarity. Unheated sapphires that display fine natural colour are genuinely rare, which is why they command a premium of 2–5 times the price of comparable heated stones.',
+    a: 'No, but the vast majority are. Industry estimates suggest over 95% of blue sapphires on the commercial market have been heat-treated to improve colour and clarity. Unheated sapphires that display fine natural colour are genuinely rare, which is why they command a premium of a significant premium over comparable heated stones.',
   },
   {
     q: 'What is the best colour for a blue sapphire?',
@@ -37,7 +39,7 @@ const faqItems = [
   },
   {
     q: 'What is the difference between heated and unheated blue sapphires?',
-    a: 'Heated sapphires have been subjected to high temperatures (typically 800–1800°C) to improve colour and clarity. Unheated sapphires display their colour entirely as nature formed them. Visually, a well-heated stone may look similar to an unheated one, but the market values unheated stones at 2–5 times higher because their natural beauty is rarer and cannot be manufactured.',
+    a: 'Heated sapphires have been subjected to high temperatures (typically 800–1800°C) to improve colour and clarity. Unheated sapphires display their colour entirely as nature formed them. Visually, a well-heated stone may look similar to an unheated one, but the market values unheated stones at a significant premium because their natural beauty is rarer and cannot be manufactured.',
   },
   {
     q: 'Where do the best blue sapphires come from?',
@@ -76,9 +78,11 @@ const schema = {
       '@type': 'Article',
       headline: 'Blue Sapphire — The Complete Guide to Ceylon Blue Sapphires',
       description: metadata.description,
-      author: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-07-31',
+      dateModified: '2026-08-12',
       mainEntityOfPage: 'https://serendibgemstones.com/gemstones/blue-sapphire',
     },
     {
@@ -159,7 +163,7 @@ export default function BlueSapphirePage() {
                 { label: 'Mineral', value: 'Corundum' },
                 { label: 'Hardness', value: '9 / 10' },
                 { label: 'Top Origin', value: 'Sri Lanka' },
-                { label: 'Unheated Premium', value: '2–5×' },
+                { label: 'Unheated', value: 'Significant Premium' },
               ].map((s) => (
                 <div key={s.label} className="bg-dark-card border border-white/6 p-4 text-center">
                   <p className="font-cormorant text-xl text-offwhite font-semibold">{s.value}</p>
@@ -176,6 +180,8 @@ export default function BlueSapphirePage() {
         <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_220px] gap-12">
           {/* Main content */}
           <div className="prose-gem">
+            <ArticleByline updated="2026-08-12" reviewer="Thusira Ranasinghe" />
+
             {/* Table of Contents (mobile) */}
             <div className="lg:hidden border border-white/6 bg-dark-card p-6 mb-12">
               <p className="font-jost text-xs tracking-[0.3em] uppercase text-teal/50 mb-4">Contents</p>
@@ -242,7 +248,7 @@ export default function BlueSapphirePage() {
             <ul>
               <li><strong>Cornflower blue:</strong> A bright, medium-toned blue with a slight violet overtone — widely considered the most desirable colour. Historically associated with Kashmir but also produced in fine examples from Sri Lanka.</li>
               <li><strong>Royal blue:</strong> A deep, richly saturated blue with strong colour intensity. This term is increasingly used in laboratory reports (notably by GRS) as a trade-grade designation for the finest blue sapphires.</li>
-              <li><strong>Pastel blue:</strong> A lighter, gentler blue often found in Sri Lankan material. While less valued per carat than deeply saturated stones, fine pastel sapphires have their own elegance and a growing market among collectors.</li>
+              <li><strong>Pastel blue:</strong> A lighter, gentler blue often found in Sri Lankan material. While less valued than deeply saturated stones, fine pastel sapphires have their own elegance and a growing market among collectors.</li>
               <li><strong>Ink blue / dark blue:</strong> Very deep, heavily saturated stones that can appear almost black in low light. Common in Australian and Thai material. Generally less desirable unless the colour opens up under strong lighting.</li>
               <li><strong>Teal / greenish blue:</strong> Sapphires with a noticeable green secondary hue. Montana and some Australian sapphires show this character. An increasingly fashionable colour in contemporary jewellery.</li>
             </ul>
@@ -271,7 +277,7 @@ export default function BlueSapphirePage() {
 
             <h3>Carat Weight</h3>
             <p>
-              Blue sapphires are denser than diamonds (specific gravity 3.95–4.03 vs. 3.52), so a 1-carat sapphire appears slightly smaller than a 1-carat diamond. Price per carat increases exponentially with size for fine stones. Exceptional unheated Ceylon sapphires above 5 carats are rare and command significant premiums.
+              Blue sapphires are denser than diamonds (specific gravity 3.95–4.03 vs. 3.52), so a 1-carat sapphire appears slightly smaller than a 1-carat diamond. Value rises steeply with size for fine stones. Exceptional unheated Ceylon sapphires above 5 carats are rare and command significant premiums.
             </p>
 
             <hr />
@@ -287,7 +293,7 @@ export default function BlueSapphirePage() {
               <strong>Industry scale:</strong> An estimated 95% or more of blue sapphires on the commercial market have been heat-treated. This is an accepted industry practice when properly disclosed, and heated sapphires remain beautiful, durable gemstones.
             </p>
             <p>
-              <strong>The unheated premium:</strong> Unheated sapphires — those whose beauty is entirely as nature created it — are rare by definition. Fine unheated blue sapphires typically command a premium of <strong>2 to 5 times</strong> the price of a comparable heated stone. At major auction houses, exceptional unheated Ceylon sapphires regularly achieve premiums well beyond this range.
+              <strong>The unheated premium:</strong> Unheated sapphires — those whose beauty is entirely as nature created it — are rare by definition. Fine unheated blue sapphires command a significant premium over comparable heated stones. At major auction houses, exceptional unheated Ceylon sapphires regularly achieve premiums well beyond typical trade levels.
             </p>
             <p>
               <strong>Detection:</strong> Heat treatment cannot be reliably detected by visual inspection alone. Gemological laboratories examine microscopic features — altered inclusions, dissolved silk, stress halos, flux residues — to determine whether a stone has been heated. A certificate stating &ldquo;no indications of heating&rdquo; from GIA or GRS is essential for any unheated sapphire purchase.
@@ -305,7 +311,7 @@ export default function BlueSapphirePage() {
             <ul>
               <li><strong>Supply constraints:</strong> The finest sapphire deposits (Kashmir, Mogok, Sri Lanka&apos;s traditional fields) are finite and increasingly difficult to mine. No new major source of equivalent quality has been discovered in decades.</li>
               <li><strong>Growing demand:</strong> Wealth creation across Asia, the Middle East, and emerging markets has expanded the buyer pool for fine gemstones.</li>
-              <li><strong>Portability and privacy:</strong> A US$100,000 sapphire fits in a pocket. Gemstones are not subject to reporting requirements in most jurisdictions and are not correlated with stock or bond markets.</li>
+              <li><strong>Portability and privacy:</strong> A high-value sapphire fits in a pocket. Gemstones are not subject to reporting requirements in most jurisdictions and are not correlated with stock or bond markets.</li>
               <li><strong>Auction performance:</strong> Major auction houses (Christie&apos;s, Sotheby&apos;s, Bonhams) regularly achieve record prices for fine blue sapphires, with unheated Ceylon and Kashmir stones consistently outperforming estimates.</li>
             </ul>
             <p>
@@ -318,7 +324,7 @@ export default function BlueSapphirePage() {
             <ul>
               <li><strong>The Star of India (563 ct)</strong> — one of the largest gem-quality star sapphires in existence, almost certainly of Sri Lankan origin. Housed in the American Museum of Natural History, New York.</li>
               <li><strong>The Logan Sapphire (423 ct)</strong> — a cushion-cut deep blue sapphire from Sri Lanka, displayed at the Smithsonian National Museum of Natural History.</li>
-              <li><strong>The Blue Belle of Asia (392 ct)</strong> — a cushion-cut Ceylon sapphire that sold at Christie&apos;s Geneva in 2014 for US$17.3 million, a record for a sapphire at that time.</li>
+              <li><strong>The Blue Belle of Asia (392 ct)</strong> — a cushion-cut Ceylon sapphire that sold at Christie&apos;s Geneva in 2014, setting a world-record price for a sapphire at that time.</li>
               <li><strong>Princess Diana&apos;s engagement ring (12 ct)</strong> — now worn by Catherine, Princess of Wales. A Ceylon blue sapphire surrounded by diamonds, arguably the most famous sapphire in the world.</li>
               <li><strong>The Bismarck Sapphire (98 ct)</strong> — a deep blue cushion-cut sapphire from Myanmar, displayed at the Smithsonian.</li>
             </ul>
@@ -367,6 +373,16 @@ export default function BlueSapphirePage() {
                 </details>
               ))}
             </div>
+
+            <SourcesReferences sources={[
+              { label: 'GIA — Gemological Institute of America', detail: 'Coloured stone identification, treatment disclosure, and origin reports', href: 'https://www.gia.edu' },
+              { label: 'GRS — GemResearch Swisslab', detail: 'Colour grading and origin determination for blue sapphires', href: 'https://www.gemresearch.ch' },
+              { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy and origin determination for corundum', href: 'https://www.ssef.ch' },
+              { label: 'Gübelin Gem Lab', detail: 'Origin determination and provenance research for sapphires', href: 'https://www.gubelin.com/en/gemlab' },
+              { label: 'National Gem & Jewellery Authority of Sri Lanka (NGJA)', detail: 'Sri Lankan gem industry regulation and export certification', href: 'https://www.ngja.gov.lk' },
+              { label: 'CIBJO — The World Jewellery Confederation', detail: 'International gemstone nomenclature and disclosure standards (Blue Books)', href: 'https://www.cibjo.org' },
+              { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed gemological research articles on sapphire origin and treatments', href: 'https://www.gia.edu/gems-gemology' },
+            ]} />
           </div>
 
           {/* Sidebar (desktop) */}

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'Gemstone Certification — Understanding GIA, GRS & Laboratory Reports',
@@ -24,7 +26,10 @@ const schema = {
       name: 'Gemstone Certification — Understanding GIA, GRS & Laboratory Reports',
       description: 'Expert guide to gemstone certification: how GIA, GRS, Gubelin, and SSEF reports work, what they tell you, and why certification is essential for any serious purchase.',
       url: 'https://serendibgemstones.com/learn/certification',
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      dateModified: '2026-08-12',
     },
   ],
 }
@@ -153,6 +158,13 @@ export default function CertificationHubPage() {
         </div>
       </section>
 
+      {/* Byline */}
+      <section className="bg-dark px-6 lg:px-10 pb-4">
+        <div className="max-w-5xl mx-auto">
+          <ArticleByline updated="2026-08-12" reviewer="Thusira Ranasinghe" />
+        </div>
+      </section>
+
       {/* Why Certification Matters */}
       <section className="bg-dark-card border-y border-teal/10 px-6 lg:px-10 py-16">
         <div className="max-w-5xl mx-auto">
@@ -161,7 +173,7 @@ export default function CertificationHubPage() {
             <h2 className="font-cormorant text-3xl text-offwhite mb-5">Why certification matters</h2>
             <div className="font-jost text-sm text-offwhite/50 leading-relaxed space-y-4 max-w-3xl">
               <p>
-                Unlike diamonds, which are graded on a standardised scale of cut, colour, clarity, and carat weight, coloured gemstones resist easy standardisation. Two sapphires that appear identical under normal lighting can differ radically in treatment status, origin, and therefore value. A heated Sri Lankan blue sapphire of two carats might sell for $2,000 per carat; the same stone, confirmed unheated with fine natural colour, could command $8,000 to $12,000 per carat. Only a laboratory can make that determination reliably.
+                Unlike diamonds, which are graded on a standardised scale of cut, colour, clarity, and carat weight, coloured gemstones resist easy standardisation. Two sapphires that appear identical under normal lighting can differ radically in treatment status, origin, and therefore value. The same Sri Lankan blue sapphire, confirmed unheated with fine natural colour, can command a very significant premium over its heated counterpart — but only a laboratory can make that determination reliably.
               </p>
               <p>
                 Certification also provides the documentary foundation for resale, insurance, and estate planning. A stone purchased today with a current GIA or GRS report carries that provenance forward indefinitely. A stone without documentation is, at the point of resale, simply an unverified coloured gem — and the market discounts accordingly.
@@ -269,6 +281,21 @@ export default function CertificationHubPage() {
               </FadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Sources */}
+      <section className="bg-dark px-6 lg:px-10 pb-16 pt-16 border-t border-teal/10">
+        <div className="max-w-5xl mx-auto">
+          <SourcesReferences sources={[
+            { label: 'GIA — Gemological Institute of America', detail: 'Coloured stone identification, treatment disclosure, and origin reports', href: 'https://www.gia.edu' },
+            { label: 'GRS — GemResearch Swisslab', detail: 'Colour grading (Royal Blue, Cornflower, Pigeon Blood) and origin determination', href: 'https://www.gemresearch.ch' },
+            { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy and origin determination', href: 'https://www.ssef.ch' },
+            { label: 'Gübelin Gem Lab', detail: 'Origin determination, inclusion research, and Provenance Proof initiative', href: 'https://www.gubelin.com/en/gemlab' },
+            { label: 'AGL — American Gemological Laboratories', detail: 'Coloured stone reports and treatment disclosure', href: 'https://www.aglgemlab.com' },
+            { label: 'CIBJO — The World Jewellery Confederation', detail: 'International gemstone nomenclature and disclosure standards (Blue Books)', href: 'https://www.cibjo.org' },
+            { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed research on gemstone identification and treatment detection', href: 'https://www.gia.edu/gems-gemology' },
+          ]} />
         </div>
       </section>
 

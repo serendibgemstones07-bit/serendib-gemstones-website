@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'GIA vs GRS Certificate: Which is Better? — Serendib Gemstones',
@@ -45,9 +47,10 @@ const schema = {
       '@type': 'Article',
       headline: 'GIA vs GRS Certificate: Which is Better for Sapphires?',
       description: 'GIA and GRS are the two most respected gemological laboratories for coloured gemstones. This guide explains their key differences and how to choose the right certificate for your stone.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
+      dateModified: '2026-08-12',
       url: 'https://serendibgemstones.com/learn/gia-vs-grs-certificate',
     },
     {
@@ -91,6 +94,7 @@ export default function GiaVsGrsPage() {
               GIA vs GRS: which certificate is better?
             </h1>
             <p className="font-jost text-sm text-offwhite/40">4 min read · Serendib Gemstones</p>
+            <ArticleByline updated="2026-08-12" />
           </FadeUp>
         </div>
       </section>
@@ -147,7 +151,6 @@ export default function GiaVsGrsPage() {
                       ['Heat treatment', 'Heated / No indications of heating', 'No Heat / H(a) through H(c) scale'],
                       ['Origin determination', 'Yes', 'Yes — highly detailed, trade preferred'],
                       ['Preferred by', 'Jewellery trade, retail buyers', 'Collectors, auction houses, dealers'],
-                      ['Price (approx.)', 'USD 75–200+ per stone', 'USD 80–250+ per stone'],
                     ].map(([label, gia, grs]) => (
                       <tr key={label}>
                         <td className="py-3 pr-6 text-dark/60 font-medium">{label}</td>
@@ -209,6 +212,19 @@ export default function GiaVsGrsPage() {
               </FadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Sources */}
+      <section className="bg-dark px-6 lg:px-10 pb-16">
+        <div className="max-w-3xl mx-auto">
+          <SourcesReferences sources={[
+            { label: 'GIA — Gemological Institute of America', detail: 'Colored Stone Identification and Origin Reports and treatment disclosure', href: 'https://www.gia.edu' },
+            { label: 'GRS — GemResearch Swisslab', detail: 'Origin determination, colour grading, and H(a)-H(c) heat-treatment scale', href: 'https://www.gemresearch.ch' },
+            { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy and origin determination', href: 'https://www.ssef.ch' },
+            { label: 'Gübelin Gem Lab', detail: 'Origin determination and inclusion research for coloured stones', href: 'https://www.gubelin.com/en/gemlab' },
+            { label: 'CIBJO — The World Jewellery Confederation', detail: 'International gemstone nomenclature and disclosure standards', href: 'https://www.cibjo.org' },
+          ]} />
         </div>
       </section>
 

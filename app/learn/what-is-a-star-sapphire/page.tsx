@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'What is a Star Sapphire? — Serendib Gemstones',
@@ -10,7 +12,7 @@ export const metadata: Metadata = {
 const faqItems = [
   {
     q: 'Are star sapphires valuable?',
-    a: 'Fine star sapphires are among the most collectible of all coloured gemstones. Value is driven by the sharpness and centring of the star, the body colour of the stone, transparency, size, and origin. A large blue star sapphire from Sri Lanka with a sharp, centred six-ray star and good translucency can command prices of USD 1,000 to 10,000 per carat or more. The Black Star of Queensland — 733 carats — is considered priceless.',
+    a: 'Fine star sapphires are among the most collectible of all coloured gemstones. Value is driven by the sharpness and centring of the star, the body colour of the stone, transparency, size, and origin. A large blue star sapphire from Sri Lanka with a sharp, centred six-ray star and good translucency commands a significant premium at collector level. The Black Star of Queensland — 733 carats — is considered priceless.',
   },
   {
     q: 'Why do some star sapphires have 6 rays and some 12?',
@@ -45,9 +47,10 @@ const schema = {
       '@type': 'Article',
       headline: 'What is a Star Sapphire?',
       description: 'A star sapphire displays asterism — a six-rayed star caused by rutile needle inclusions inside the crystal. Sri Lanka is the world\'s most important source.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
+      dateModified: '2026-08-12',
       url: 'https://serendibgemstones.com/learn/what-is-a-star-sapphire',
     },
     {
@@ -82,6 +85,7 @@ export default function StarSapphirePage() {
               What is a star sapphire?
             </h1>
             <p className="font-jost text-sm text-offwhite/40">4 min read · Serendib Gemstones</p>
+            <ArticleByline updated="2026-08-12" />
           </FadeUp>
         </div>
       </section>
@@ -143,6 +147,18 @@ export default function StarSapphirePage() {
               </FadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-dark px-6 lg:px-10 pb-16">
+        <div className="max-w-3xl mx-auto">
+          <SourcesReferences sources={[
+            { label: 'GIA — Gemological Institute of America', detail: 'Asterism in corundum and star sapphire identification', href: 'https://www.gia.edu' },
+            { label: 'GRS — GemResearch Swisslab', detail: 'Star sapphire evaluation and treatment disclosure', href: 'https://www.gemresearch.ch' },
+            { label: 'Gübelin Gem Lab', detail: 'Inclusion research on rutile silk and asterism', href: 'https://www.gubelin.com/en/gemlab' },
+            { label: 'National Gem & Jewellery Authority of Sri Lanka (NGJA)', detail: 'Sri Lankan gem industry regulation and export certification', href: 'https://www.ngja.gov.lk' },
+            { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed research on star sapphire optical phenomena', href: 'https://www.gia.edu/gems-gemology' },
+          ]} />
         </div>
       </section>
 

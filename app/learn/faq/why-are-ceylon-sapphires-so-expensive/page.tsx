@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'Why Are Ceylon Sapphires So Expensive?',
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 const faqItems = [
   {
     q: 'Are Ceylon sapphires more expensive than sapphires from other origins?',
-    a: 'Yes. A sapphire confirmed as Sri Lankan (Ceylon) origin by GIA or GRS typically commands a 20–50% premium over an equivalent stone from Madagascar, Australia, or Thailand. Only Kashmir sapphires — which are now virtually unobtainable from the original mines — consistently command higher prices. The premium reflects both the quality characteristics of Ceylon sapphires and the centuries-old reputation of the Sri Lankan gemstone trade.',
+    a: 'Yes. A sapphire confirmed as Sri Lankan (Ceylon) origin by GIA or GRS commands a significant premium over an equivalent stone from Madagascar, Australia, or Thailand. Only Kashmir sapphires — which are now virtually unobtainable from the original mines — consistently command higher prices. The premium reflects both the quality characteristics of Ceylon sapphires and the centuries-old reputation of the Sri Lankan gemstone trade.',
   },
   {
     q: 'Will Ceylon sapphire prices continue to rise?',
@@ -88,6 +89,7 @@ export default function FAQPage() {
 
       <section className="bg-dark px-6 lg:px-10 pb-16">
         <div className="max-w-3xl mx-auto prose-gem">
+          <ArticleByline updated="2026-08-12" />
           <FadeUp>
             <h2>The Full Answer</h2>
             <p>
@@ -103,7 +105,7 @@ export default function FAQPage() {
             </p>
             <h3>Provenance and reputation</h3>
             <p>
-              The &ldquo;Ceylon&rdquo; designation carries centuries of accumulated prestige. Major auction houses &mdash; Christie&apos;s, Sotheby&apos;s, Bonhams &mdash; consistently achieve higher prices for stones identified as Sri Lankan origin. The Blue Belle of Asia, a 392.52-carat Ceylon sapphire, sold for USD 17.3 million at Christie&apos;s in 2014. This provenance premium is well-documented across decades of market data.
+              The &ldquo;Ceylon&rdquo; designation carries centuries of accumulated prestige. Major auction houses &mdash; Christie&apos;s, Sotheby&apos;s, Bonhams &mdash; consistently achieve higher prices for stones identified as Sri Lankan origin. The Blue Belle of Asia, a 392.52-carat Ceylon sapphire, set a world-record price for a sapphire at Christie&apos;s Geneva in 2014. This provenance premium is well-documented across decades of market data.
             </p>
             <h3>Diminishing supply</h3>
             <p>

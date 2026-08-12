@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
 import GemSVG from '@/components/GemSVG'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'Padparadscha Sapphire — The Complete Guide to the Rarest Sapphire',
@@ -17,7 +19,7 @@ const faqItems = [
   },
   {
     q: 'Why are padparadscha sapphires so expensive?',
-    a: 'Padparadscha sapphires are expensive because of extreme rarity. The precise combination of pink and orange required to qualify as a padparadscha occurs in only a tiny fraction of corundum production worldwide. Fine unheated padparadschas from Sri Lanka above 2 carats are so scarce that many experienced gem dealers go years without encountering one. Prices for top-quality unheated Ceylon padparadschas regularly exceed US$30,000 per carat and can surpass US$100,000 per carat for exceptional stones at auction.',
+    a: 'Padparadscha sapphires are expensive because of extreme rarity. The precise combination of pink and orange required to qualify as a padparadscha occurs in only a tiny fraction of corundum production worldwide. Fine unheated padparadschas from Sri Lanka above 2 carats are so scarce that many experienced gem dealers go years without encountering one. Top-quality unheated Ceylon padparadschas sit at the very top of the coloured-gemstone market and regularly set record prices at major auctions.',
   },
   {
     q: 'What colour should a padparadscha sapphire be?',
@@ -41,7 +43,7 @@ const faqItems = [
   },
   {
     q: 'How much more valuable is an unheated padparadscha?',
-    a: 'Unheated padparadscha sapphires typically command a premium of 3 to 10 times the price of a comparable heated stone — even higher than the unheated premium for blue sapphires. This is because the natural occurrence of the precise pink-orange colour without heat enhancement is extraordinarily rare. At auction, unheated Ceylon padparadschas have achieved some of the highest per-carat prices of any coloured gemstone.',
+    a: 'Unheated padparadscha sapphires command a very significant premium over comparable heated stones — typically even higher than the unheated premium for blue sapphires. This is because the natural occurrence of the precise pink-orange colour without heat enhancement is extraordinarily rare. At auction, unheated Ceylon padparadschas have achieved some of the highest prices of any coloured gemstone.',
   },
   {
     q: 'What is Princess Eugenie\'s padparadscha ring?',
@@ -76,9 +78,11 @@ const schema = {
       '@type': 'Article',
       headline: 'Padparadscha Sapphire — The Complete Guide to the Rarest Sapphire',
       description: metadata.description,
-      author: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-07-31',
+      dateModified: '2026-08-12',
       mainEntityOfPage: 'https://serendibgemstones.com/gemstones/padparadscha-sapphire',
     },
     {
@@ -147,7 +151,7 @@ export default function PadparadschaSapphirePage() {
             <div className="border border-teal/20 bg-dark-card p-6 sm:p-8">
               <p className="font-jost text-xs tracking-[0.3em] uppercase text-teal/50 mb-3">Quick Answer</p>
               <p className="font-jost text-base text-offwhite/80 leading-relaxed">
-                A padparadscha sapphire is an exceptionally rare variety of corundum (aluminium oxide) displaying a delicate blend of pink and orange — named after the Sinhalese word for the lotus blossom. Sri Lanka is the original and most celebrated source. Padparadschas are widely regarded as the rarest and most collectible sapphire variety, with fine unheated Ceylon stones among the most valuable coloured gemstones per carat.
+                A padparadscha sapphire is an exceptionally rare variety of corundum (aluminium oxide) displaying a delicate blend of pink and orange — named after the Sinhalese word for the lotus blossom. Sri Lanka is the original and most celebrated source. Padparadschas are widely regarded as the rarest and most collectible sapphire variety, with fine unheated Ceylon stones among the most valuable coloured gemstones on the market.
               </p>
             </div>
           </FadeUp>
@@ -176,6 +180,8 @@ export default function PadparadschaSapphirePage() {
         <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_220px] gap-12">
           {/* Main content */}
           <div className="prose-gem">
+            <ArticleByline updated="2026-08-12" reviewer="Thusira Ranasinghe" />
+
             {/* Table of Contents (mobile) */}
             <div className="lg:hidden border border-white/6 bg-dark-card p-6 mb-12">
               <p className="font-jost text-xs tracking-[0.3em] uppercase text-teal/50 mb-4">Contents</p>
@@ -256,7 +262,7 @@ export default function PadparadschaSapphirePage() {
               <strong>What distinguishes Ceylon padparadschas:</strong> Sri Lankan stones are particularly valued for their soft, pastel-like colour — a gentle, almost whispered blend of pink and orange that feels lighter and more ethereal than padparadschas from other origins. The finest Ceylon padparadschas have a luminous, almost glowing quality, as though lit from within. They also benefit from Sri Lanka&apos;s famously high proportion of unheated material, meaning many reach the market in their completely natural state.
             </p>
             <p>
-              <strong>Market premium:</strong> Ceylon origin commands a measurable premium in the padparadscha market. A fine unheated Sri Lankan padparadscha will typically sell for 20&ndash;50% more than a comparable stone from Madagascar, reflecting both the historical prestige of the origin and the distinctive colour character of Sri Lankan material.
+              <strong>Market premium:</strong> Ceylon origin commands a measurable premium in the padparadscha market. A fine unheated Sri Lankan padparadscha will typically sell for a significant premium over a comparable stone from Madagascar, reflecting both the historical prestige of the origin and the distinctive colour character of Sri Lankan material.
             </p>
 
             <hr />
@@ -286,7 +292,7 @@ export default function PadparadschaSapphirePage() {
 
             <h3>Carat Weight</h3>
             <p>
-              Fine padparadschas are significantly rarer than blue sapphires at any size, but rarity increases dramatically above 2 carats. Stones above 5 carats with top colour are museum-quality rarities. Price per carat escalates steeply with size: a fine 3-carat padparadscha may cost four to five times as much per carat as a fine 1-carat stone of equivalent quality.
+              Fine padparadschas are significantly rarer than blue sapphires at any size, but rarity increases dramatically above 2 carats. Stones above 5 carats with top colour are museum-quality rarities. Value escalates steeply with size — a fine 3-carat padparadscha commands a very significant premium over a 1-carat stone of equivalent quality.
             </p>
 
             <hr />
@@ -299,7 +305,7 @@ export default function PadparadschaSapphirePage() {
               <strong>Heat treatment in padparadschas:</strong> Low-temperature heat treatment (typically below 1000&deg;C) can enhance the pink-orange colour of certain corundum rough, sometimes transforming a stone that would otherwise be classified as a pink sapphire into one that displays the padparadscha colour range. Higher-temperature treatment can dissolve rutile silk and improve clarity. Both practices are widespread.
             </p>
             <p>
-              <strong>The unheated premium:</strong> Because the natural occurrence of the precise padparadscha colour is so extraordinarily rare, unheated stones command an enormous premium — typically <strong>3 to 10 times</strong> the price of a comparable heated stone. For fine stones above 3 carats, the premium can be even greater. This is one of the highest unheated premiums in the entire coloured gemstone market, reflecting the near-impossibility of finding the perfect pink-orange colour without human intervention.
+              <strong>The unheated premium:</strong> Because the natural occurrence of the precise padparadscha colour is so extraordinarily rare, unheated stones command an enormous premium over comparable heated stones. For fine stones above 3 carats, the premium can be even greater. This is one of the highest unheated premiums in the entire coloured gemstone market, reflecting the near-impossibility of finding the perfect pink-orange colour without human intervention.
             </p>
             <p>
               <strong>Beryllium diffusion:</strong> In the early 2000s, the gemstone market was rocked by the discovery that some padparadscha-coloured sapphires had been subjected to beryllium diffusion — a process where beryllium is introduced into the crystal lattice at very high temperatures, fundamentally altering the stone&apos;s colour. This treatment can create padparadscha colours in corundum that was originally colourless, pink, or light yellow. Beryllium-diffused stones are worth a fraction of naturally coloured or simply heated padparadschas. Reputable laboratories can detect beryllium diffusion through LA-ICP-MS trace-element analysis.
@@ -318,7 +324,7 @@ export default function PadparadschaSapphirePage() {
               <li><strong>Extreme rarity:</strong> Padparadschas are rarer than blue sapphires, rubies, or emeralds of equivalent quality. Fine unheated Ceylon padparadschas above 3 carats appear at major auction houses only a handful of times per year.</li>
               <li><strong>Growing recognition:</strong> Following Princess Eugenie&apos;s 2018 engagement ring, global awareness of padparadscha sapphires increased dramatically. This growing recognition, combined with fixed and declining supply, creates favourable conditions for price appreciation.</li>
               <li><strong>Diminishing supply:</strong> Sri Lanka&apos;s alluvial gem deposits, which have been mined for over two millennia, are producing fewer exceptional stones. No new major source of top-quality padparadschas has been discovered.</li>
-              <li><strong>Auction performance:</strong> Padparadscha sapphires have achieved record per-carat prices at major auction houses. In 2017, a 20.84-carat unheated Sri Lankan padparadscha sold at Sotheby&apos;s Geneva for over US$194,000 per carat. Exceptional stones consistently outperform pre-sale estimates.</li>
+              <li><strong>Auction performance:</strong> Padparadscha sapphires have achieved record prices at major auction houses. In November 2017, a 20.84-carat unheated Sri Lankan padparadscha set a benchmark at Sotheby&apos;s Geneva. Exceptional stones consistently outperform pre-sale estimates.</li>
               <li><strong>Tangible and portable:</strong> Like all fine gemstones, padparadschas are physical assets that are not correlated with financial markets, can be stored privately, and retain value across borders and generations.</li>
             </ul>
             <p>
@@ -330,7 +336,7 @@ export default function PadparadschaSapphirePage() {
             <h2 id="famous">Famous Padparadscha Sapphires</h2>
             <ul>
               <li><strong>Princess Eugenie&apos;s engagement ring (approx. 3&ndash;4 ct)</strong> — in October 2018, Jack Brooksbank proposed with a padparadscha sapphire ring surrounded by diamonds. The ring generated worldwide media coverage and introduced the padparadscha to millions of people who had never heard of this variety. Demand and prices for padparadschas rose noticeably in the months following the announcement.</li>
-              <li><strong>The 20.84-carat Sotheby&apos;s padparadscha</strong> — an exceptional unheated Sri Lankan padparadscha that sold at Sotheby&apos;s Geneva in November 2017, achieving a total price of approximately US$4 million. It set a benchmark for padparadscha prices at auction and demonstrated the extraordinary value the market places on large, fine, unheated specimens.</li>
+              <li><strong>The 20.84-carat Sotheby&apos;s padparadscha</strong> — an exceptional unheated Sri Lankan padparadscha that sold at Sotheby&apos;s Geneva in November 2017, setting a benchmark for padparadscha prices at auction and demonstrating the extraordinary value the market places on large, fine, unheated specimens.</li>
               <li><strong>The 100.18-carat Sri Lankan padparadscha</strong> — one of the largest known padparadscha sapphires, this exceptional stone was displayed at the American Museum of Natural History. Its sheer size in a variety where stones above 5 carats are considered museum pieces makes it a legendary specimen in gemological circles.</li>
               <li><strong>The GRS &ldquo;Lotus Supreme&rdquo; stones</strong> — GRS has awarded its highest padparadscha colour grade, &ldquo;Lotus Supreme,&rdquo; to a very small number of exceptional stones displaying what the laboratory considers the ideal balance of pink and orange with vivid saturation. These stones are among the most sought-after coloured gemstones in the world.</li>
             </ul>
@@ -380,6 +386,16 @@ export default function PadparadschaSapphirePage() {
                 </details>
               ))}
             </div>
+
+            <SourcesReferences sources={[
+              { label: 'GIA — Gemological Institute of America', detail: 'Padparadscha colour definition and treatment disclosure standards', href: 'https://www.gia.edu' },
+              { label: 'GRS — GemResearch Swisslab', detail: 'Padparadscha colour grading including "Lotus" and "Lotus Supreme" designations', href: 'https://www.gemresearch.ch' },
+              { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy and origin determination for fancy sapphires', href: 'https://www.ssef.ch' },
+              { label: 'Gübelin Gem Lab', detail: 'Origin determination and detection of beryllium diffusion in padparadscha sapphires', href: 'https://www.gubelin.com/en/gemlab' },
+              { label: 'National Gem & Jewellery Authority of Sri Lanka (NGJA)', detail: 'Sri Lankan gem industry regulation and export certification', href: 'https://www.ngja.gov.lk' },
+              { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed research on padparadscha colour, origin, and treatments', href: 'https://www.gia.edu/gems-gemology' },
+              { label: 'Journal of Gemmology (Gem-A)', detail: 'Research on corundum trace-element chemistry and lattice diffusion detection', href: 'https://gem-a.com/publications' },
+            ]} />
           </div>
 
           {/* Sidebar (desktop) */}

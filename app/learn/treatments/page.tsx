@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'Gemstone Treatments — Heat Treatment, Enhancement & What \'No Heat\' Means',
@@ -24,7 +26,10 @@ const schema = {
       name: 'Gemstone Treatments — Heat Treatment, Enhancement & What \'No Heat\' Means',
       description: 'Expert guide to gemstone treatments: heat treatment, beryllium diffusion, lead-glass filling, flux healing, and oiling. Understand what each treatment does, how it is detected, and how it affects value.',
       url: 'https://serendibgemstones.com/learn/treatments',
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      dateModified: '2026-08-12',
     },
   ],
 }
@@ -34,7 +39,7 @@ const treatments = [
     name: 'Heat Treatment',
     prevalence: 'Extremely common — over 95% of sapphires',
     description: 'The most widespread enhancement in the coloured stone trade. Rough sapphire is heated to between 1,200 and 1,800 degrees Celsius, causing trace elements to migrate within the crystal lattice and rutile silk to dissolve. The result is improved colour saturation and clarity. Heat treatment is permanent, stable, and considered an accepted trade practice — but it must be disclosed, and unheated stones command a significant premium.',
-    impact: 'Reduces value by 2 to 5 times compared to an equivalent unheated stone.',
+    impact: 'Reduces value substantially compared to an equivalent unheated stone.',
   },
   {
     name: 'Beryllium Diffusion',
@@ -82,7 +87,7 @@ const guides = [
   {
     slug: 'are-unheated-sapphires-worth-more',
     title: 'Are unheated sapphires worth more?',
-    description: 'Yes — by 2 to 5 times a comparable heated stone, and more at auction. Here is the market data and the structural reasons the premium holds.',
+    description: 'Yes — by a significant multiple over a comparable heated stone, and more at auction. Here is why the premium exists and why it is likely to hold.',
     readTime: '4 min',
     category: 'Buying',
     categoryStyle: 'text-offwhite/50 border-white/15',
@@ -129,6 +134,13 @@ export default function TreatmentsHubPage() {
               Over 95% of the sapphires sold commercially have been heat-treated to improve their colour and clarity. Understanding what treatments exist, how they are detected, and how they affect value is not optional knowledge for any serious buyer — it is the foundation of an informed purchase. This hub covers every major treatment applied to coloured gemstones, from the universally accepted to the deeply problematic.
             </p>
           </FadeUp>
+        </div>
+      </section>
+
+      {/* Byline */}
+      <section className="bg-dark px-6 lg:px-10 pb-4">
+        <div className="max-w-5xl mx-auto">
+          <ArticleByline updated="2026-08-12" reviewer="Thusira Ranasinghe" />
         </div>
       </section>
 
@@ -241,6 +253,22 @@ export default function TreatmentsHubPage() {
               </FadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Sources */}
+      <section className="bg-dark px-6 lg:px-10 pb-16">
+        <div className="max-w-5xl mx-auto">
+          <SourcesReferences sources={[
+            { label: 'GIA — Gemological Institute of America', detail: 'Treatment identification and disclosure standards for coloured stones', href: 'https://www.gia.edu' },
+            { label: 'GRS — GemResearch Swisslab', detail: 'Detection of heat, beryllium diffusion, and lattice diffusion in corundum', href: 'https://www.gemresearch.ch' },
+            { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy for treatment detection', href: 'https://www.ssef.ch' },
+            { label: 'Gübelin Gem Lab', detail: 'Inclusion research and detection of lead-glass filling and flux healing', href: 'https://www.gubelin.com/en/gemlab' },
+            { label: 'AGL — American Gemological Laboratories', detail: 'Composite ruby (lead-glass) detection and treatment disclosure', href: 'https://www.aglgemlab.com' },
+            { label: 'CIBJO — The World Jewellery Confederation', detail: 'Blue Books — international disclosure standards for treated gemstones', href: 'https://www.cibjo.org' },
+            { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed research on treatment detection and market impact', href: 'https://www.gia.edu/gems-gemology' },
+            { label: 'Journal of Gemmology (Gem-A)', detail: 'Research on beryllium diffusion and other lattice-modification treatments', href: 'https://gem-a.com/publications' },
+          ]} />
         </div>
       </section>
 

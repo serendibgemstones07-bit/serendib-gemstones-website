@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'Natural Sapphires — Everything You Need to Know About Ceylon Sapphires',
@@ -24,7 +26,9 @@ const schema = {
       name: 'Natural Sapphires — Everything You Need to Know About Ceylon Sapphires',
       description: 'The definitive guide to natural sapphires from Sri Lanka. Learn about colour varieties, origins, heat treatment, certification, and what makes Ceylon sapphires the world\'s most sought-after.',
       url: 'https://serendibgemstones.com/learn/sapphires',
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      dateModified: '2026-08-12',
     },
   ],
 }
@@ -123,6 +127,13 @@ export default function SapphiresHubPage() {
               Sri Lanka has produced the world&apos;s finest sapphires for over two thousand years. The island&apos;s unique Precambrian geology yields sapphires in every colour of the spectrum — from the legendary cornflower blue to the exceedingly rare Padparadscha — with a higher proportion of naturally fine-coloured, unheated stones than virtually any other source on earth. This hub brings together everything we know about these extraordinary gems.
             </p>
           </FadeUp>
+        </div>
+      </section>
+
+      {/* Byline */}
+      <section className="bg-dark px-6 lg:px-10 pb-4">
+        <div className="max-w-5xl mx-auto">
+          <ArticleByline updated="2026-08-12" />
         </div>
       </section>
 
@@ -241,6 +252,20 @@ export default function SapphiresHubPage() {
               </FadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Sources */}
+      <section className="bg-dark px-6 lg:px-10 pb-16">
+        <div className="max-w-5xl mx-auto">
+          <SourcesReferences sources={[
+            { label: 'GIA — Gemological Institute of America', detail: 'Sapphire identification, treatment disclosure, and origin reports', href: 'https://www.gia.edu' },
+            { label: 'GRS — GemResearch Swisslab', detail: 'Colour grading and origin determination for sapphires', href: 'https://www.gemresearch.ch' },
+            { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy and origin determination', href: 'https://www.ssef.ch' },
+            { label: 'Gübelin Gem Lab', detail: 'Origin determination and provenance research for sapphires', href: 'https://www.gubelin.com/en/gemlab' },
+            { label: 'National Gem & Jewellery Authority of Sri Lanka (NGJA)', detail: 'Sri Lankan gem industry regulation and export certification', href: 'https://www.ngja.gov.lk' },
+            { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed research on sapphire origin, chemistry, and treatments', href: 'https://www.gia.edu/gems-gemology' },
+          ]} />
         </div>
       </section>
 

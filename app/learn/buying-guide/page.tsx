@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'Buying Guide — How to Buy Ceylon Gemstones with Confidence',
@@ -58,7 +60,10 @@ const schema = {
       name: 'Buying Guide — How to Buy Ceylon Gemstones with Confidence',
       description: 'Expert guidance on buying unheated Ceylon sapphires direct from Sri Lanka. Certification, treatments, origin, pricing, and investment considerations.',
       url: 'https://serendibgemstones.com/learn/buying-guide',
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      dateModified: '2026-08-12',
     },
   ],
 }
@@ -90,6 +95,13 @@ export default function BuyingGuidePage() {
         </div>
       </section>
 
+      {/* Byline */}
+      <section className="bg-dark px-6 lg:px-10 pb-4">
+        <div className="max-w-3xl mx-auto">
+          <ArticleByline updated="2026-08-12" reviewer="Thusira Ranasinghe" />
+        </div>
+      </section>
+
       {/* Before You Buy */}
       <section className="bg-dark-card border-b border-teal/10 px-6 lg:px-10 py-16">
         <div className="max-w-3xl mx-auto">
@@ -112,7 +124,7 @@ export default function BuyingGuidePage() {
               <div className="border-l-2 border-teal/30 pl-6">
                 <h3 className="font-cormorant text-xl text-offwhite font-semibold mb-2">2. Understand treatments</h3>
                 <p className="font-jost text-sm text-offwhite/50 leading-relaxed">
-                  Over 95% of sapphires on the commercial market have been heat-treated to improve colour and clarity. Heat treatment is permanent, widely accepted, and not inherently dishonest — but it dramatically affects value. An unheated sapphire of fine colour commands 2 to 5 times the price of a comparable heated stone. The key is not to avoid heated gems, but to know exactly what you are buying and to pay accordingly. Read our explanation of <Link href="/learn/what-does-no-heat-mean-on-certificate" className="text-teal/70 hover:text-teal transition-colors underline underline-offset-2">what &quot;no heat&quot; means on a certificate</Link>.
+                  Over 95% of sapphires on the commercial market have been heat-treated to improve colour and clarity. Heat treatment is permanent, widely accepted, and not inherently dishonest — but it dramatically affects value. An unheated sapphire of fine colour commands a significant premium over a comparable heated stone. The key is not to avoid heated gems, but to know exactly what you are buying and to pay accordingly. Read our explanation of <Link href="/learn/what-does-no-heat-mean-on-certificate" className="text-teal/70 hover:text-teal transition-colors underline underline-offset-2">what &quot;no heat&quot; means on a certificate</Link>.
                 </p>
               </div>
             </FadeUp>
@@ -139,7 +151,7 @@ export default function BuyingGuidePage() {
               <div className="border-l-2 border-teal/30 pl-6">
                 <h3 className="font-cormorant text-xl text-offwhite font-semibold mb-2">5. Size vs quality — choose quality</h3>
                 <p className="font-jost text-sm text-offwhite/50 leading-relaxed">
-                  A common mistake among first-time buyers is prioritising carat weight over colour and clarity. A three-carat sapphire of mediocre colour is worth less — per carat and in total — than a two-carat stone with vivid, even saturation and good transparency. In the unheated market, this gap is magnified. Buy the best colour and clarity you can afford, even if it means accepting a smaller stone. Fine quality holds its value; large mediocre stones do not.
+                  A common mistake among first-time buyers is prioritising carat weight over colour and clarity. A three-carat sapphire of mediocre colour is worth less than a two-carat stone with vivid, even saturation and good transparency. In the unheated market, this gap is magnified. Buy the best colour and clarity you can afford, even if it means accepting a smaller stone. Fine quality holds its value; large mediocre stones do not.
                 </p>
               </div>
             </FadeUp>
@@ -148,7 +160,7 @@ export default function BuyingGuidePage() {
               <div className="border-l-2 border-teal/30 pl-6">
                 <h3 className="font-cormorant text-xl text-offwhite font-semibold mb-2">6. Set your budget before you look</h3>
                 <p className="font-jost text-sm text-offwhite/50 leading-relaxed">
-                  Gemstone pricing is non-linear. Prices per carat increase exponentially with size — a 5-carat sapphire does not cost 5 times a 1-carat stone; it may cost 15 to 20 times as much. Establish your budget before you begin looking and let your dealer guide you toward the best stone within that range. A competent source will tell you honestly what your budget can achieve and what falls outside it.
+                  Gemstone pricing is non-linear — value rises steeply with size, and a larger stone can cost many times what a smaller one of the same quality does. Establish your budget before you begin looking and let your dealer guide you toward the best stone within that range. A competent source will tell you honestly what your budget can achieve and what falls outside it.
                 </p>
               </div>
             </FadeUp>
@@ -223,6 +235,21 @@ export default function BuyingGuidePage() {
               </FadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Sources */}
+      <section className="bg-dark px-6 lg:px-10 pb-16">
+        <div className="max-w-3xl mx-auto">
+          <SourcesReferences sources={[
+            { label: 'GIA — Gemological Institute of America', detail: 'Coloured stone identification, treatment disclosure, and origin reports', href: 'https://www.gia.edu' },
+            { label: 'GRS — GemResearch Swisslab', detail: 'Colour grading and origin determination for coloured stones', href: 'https://www.gemresearch.ch' },
+            { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy and origin determination', href: 'https://www.ssef.ch' },
+            { label: 'Gübelin Gem Lab', detail: 'Origin determination and provenance research', href: 'https://www.gubelin.com/en/gemlab' },
+            { label: 'CIBJO — The World Jewellery Confederation', detail: 'International gemstone nomenclature and disclosure standards (Blue Books)', href: 'https://www.cibjo.org' },
+            { label: 'ICA — International Colored Gemstone Association', detail: 'Industry standards and trade nomenclature', href: 'https://gemstone.org' },
+            { label: 'National Gem & Jewellery Authority of Sri Lanka (NGJA)', detail: 'Sri Lankan gem industry regulation and export certification', href: 'https://www.ngja.gov.lk' },
+          ]} />
         </div>
       </section>
 

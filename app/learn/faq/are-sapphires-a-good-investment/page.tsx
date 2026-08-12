@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'Are Sapphires a Good Investment?',
@@ -28,7 +29,7 @@ const faqItems = [
   },
   {
     q: 'How do I sell an investment sapphire?',
-    a: 'The most common channels are international auction houses (Sotheby\'s, Christie\'s, Bonhams) for exceptional stones above USD 50,000; specialist coloured gemstone dealers who buy for resale; and private treaty sales facilitated by industry contacts. For any sale, a current GIA or GRS certificate is essential — buyers will not pay investment-grade prices without laboratory confirmation of the stone\'s identity, treatment status, and origin. Stones above 5 carats with exceptional colour and no-heat status tend to be the most liquid, as they attract the broadest range of potential buyers.',
+    a: 'The most common channels are international auction houses (Sotheby\'s, Christie\'s, Bonhams) for exceptional stones; specialist coloured gemstone dealers who buy for resale; and private treaty sales facilitated by industry contacts. For any sale, a current GIA or GRS certificate is essential — buyers will not pay investment-grade prices without laboratory confirmation of the stone\'s identity, treatment status, and origin. Stones above 5 carats with exceptional colour and no-heat status tend to be the most liquid, as they attract the broadest range of potential buyers.',
   },
 ]
 
@@ -97,13 +98,14 @@ export default function SapphiresGoodInvestmentPage() {
       {/* Full Answer */}
       <section className="bg-dark px-6 lg:px-10 pb-20">
         <div className="max-w-3xl mx-auto prose-gem">
+          <ArticleByline updated="2026-08-12" />
           <FadeUp>
             <h2>The investment case for sapphires</h2>
             <p>
               Fine coloured gemstones occupy a distinct niche in the alternative investment landscape. Unlike stocks and bonds, they are tangible, portable, and not correlated with financial markets. Unlike real estate, they require no maintenance, generate no property taxes, and can be moved across borders discreetly. And unlike gold, they combine investment potential with aesthetic pleasure and wearability.
             </p>
             <p>
-              Within the coloured gemstone category, blue sapphires — particularly unheated Ceylon stones — have the strongest investment track record. The per-carat auction records at Sotheby&apos;s and Christie&apos;s show consistent long-term appreciation for fine material. A vivid, unheated Ceylon blue sapphire of 5 carats that sold for USD 20,000 per carat in 2005 would likely achieve USD 40,000 to 60,000 per carat in 2025, representing compound annual growth of 5 to 8 percent — comparable to or better than many traditional asset classes over the same period.
+              Within the coloured gemstone category, blue sapphires — particularly unheated Ceylon stones — have the strongest investment track record. Auction records at Sotheby&apos;s and Christie&apos;s show consistent long-term appreciation for fine material, with vivid unheated Ceylon blue sapphires above 5 carats delivering compound growth over the past two decades that is comparable to or better than many traditional asset classes over the same period.
             </p>
           </FadeUp>
 
@@ -128,7 +130,7 @@ export default function SapphiresGoodInvestmentPage() {
 
             <h3>2. Unheated status</h3>
             <p>
-              A GIA or GRS certificate stating &ldquo;no indications of heating&rdquo; is essential for investment sapphires. The no-heat premium — typically 2 to 5 times over comparable heated stones — has grown consistently over the past thirty years and shows no sign of reversing. This premium is structural: supply of unheated material can only decrease, while demand continues to grow.
+              A GIA or GRS certificate stating &ldquo;no indications of heating&rdquo; is essential for investment sapphires. The no-heat premium — a significant uplift over comparable heated stones — has grown consistently over the past thirty years and shows no sign of reversing. This premium is structural: supply of unheated material can only decrease, while demand continues to grow.
             </p>
 
             <h3>3. Confirmed prestigious origin</h3>

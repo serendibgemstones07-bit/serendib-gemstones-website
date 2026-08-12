@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'What Is the Rarest Gemstone in Sri Lanka?',
@@ -28,7 +29,7 @@ const faqItems = [
   },
   {
     q: 'What about alexandrite from Sri Lanka?',
-    a: 'Sri Lanka produces some of the finest alexandrite in the world, and it is exceptionally rare. Alexandrite is the colour-change variety of chrysoberyl, displaying green in daylight and red-purple under incandescent light. Sri Lankan alexandrite is particularly valued for its strong, clean colour change — better than most Brazilian and Indian material. Fine Sri Lankan alexandrite above 1 carat is arguably rarer than Padparadscha sapphire and commands extremely high prices per carat, often exceeding fine sapphire values.',
+    a: 'Sri Lanka produces some of the finest alexandrite in the world, and it is exceptionally rare. Alexandrite is the colour-change variety of chrysoberyl, displaying green in daylight and red-purple under incandescent light. Sri Lankan alexandrite is particularly valued for its strong, clean colour change — better than most Brazilian and Indian material. Fine Sri Lankan alexandrite above 1 carat is arguably rarer than Padparadscha sapphire and commands extremely high prices, often exceeding fine sapphire values.',
   },
 ]
 
@@ -97,6 +98,7 @@ export default function RarestGemstoneSriLankaPage() {
       {/* Full Answer */}
       <section className="bg-dark px-6 lg:px-10 pb-20">
         <div className="max-w-3xl mx-auto prose-gem">
+          <ArticleByline updated="2026-08-12" />
           <FadeUp>
             <h2>Padparadscha sapphire: the lotus of Sri Lanka</h2>
             <p>
@@ -106,7 +108,7 @@ export default function RarestGemstoneSriLankaPage() {
               What makes the Padparadscha genuinely rare, beyond geological scarcity, is the narrowness of the colour range that qualifies. Gemological laboratories apply strict colour boundaries: a stone that is too pink is classified as a pink sapphire; too orange, as an orange sapphire. Only the specific pink-orange blend — with neither colour dominating excessively — earns the Padparadscha designation. This means that even among the small production of pink-orange corundum from Sri Lanka, only a fraction qualifies as true Padparadscha.
             </p>
             <p>
-              Furthermore, GIA requires that a sapphire must be unheated to receive the Padparadscha designation on their report. A heated stone that displays Padparadscha colour will be described as &ldquo;heated pink-orange sapphire&rdquo; rather than &ldquo;Padparadscha.&rdquo; This restriction further constrains supply and adds to the rarity. Fine Padparadscha sapphires above 5 carats are among the rarest and most valuable gemstones on Earth, with auction prices regularly exceeding USD 30,000 per carat.
+              Furthermore, GIA requires that a sapphire must be unheated to receive the Padparadscha designation on their report. A heated stone that displays Padparadscha colour will be described as &ldquo;heated pink-orange sapphire&rdquo; rather than &ldquo;Padparadscha.&rdquo; This restriction further constrains supply and adds to the rarity. Fine Padparadscha sapphires above 5 carats are among the rarest and most valuable gemstones on Earth, regularly setting benchmark auction results at Sotheby&apos;s and Christie&apos;s.
             </p>
           </FadeUp>
 
@@ -116,7 +118,7 @@ export default function RarestGemstoneSriLankaPage() {
               Sri Lanka produces some of the world&apos;s finest alexandrite — the colour-change variety of the mineral chrysoberyl. Alexandrite appears green in daylight and shifts to red or purplish-red under incandescent light, a phenomenon caused by the way chromium-doped chrysoberyl absorbs light at different wavelengths. Fine Sri Lankan alexandrite is prized for the strength and clarity of its colour change — often superior to the more commonly available Brazilian material.
             </p>
             <p>
-              Alexandrite from any source is rare, but Sri Lankan material is particularly scarce. Fine stones above 1 carat with a strong, clean colour change are encountered less frequently than Padparadscha sapphires of equivalent size. Prices for exceptional Sri Lankan alexandrite regularly exceed USD 20,000 per carat, and museum-quality specimens can far surpass this figure.
+              Alexandrite from any source is rare, but Sri Lankan material is particularly scarce. Fine stones above 1 carat with a strong, clean colour change are encountered less frequently than Padparadscha sapphires of equivalent size. Exceptional Sri Lankan alexandrite regularly commands prices that rival or exceed fine sapphire, and museum-quality specimens sit at the very top of the coloured-gemstone market.
             </p>
           </FadeUp>
 

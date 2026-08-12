@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'What Is the Difference Between a Natural and Heated Sapphire?',
-  description: 'Both are natural sapphires — "heated" refers to enhancement, not origin. Heat treatment improves colour and clarity but reduces value by 2–5× compared to unheated stones.',
+  description: 'Both are natural sapphires — "heated" refers to enhancement, not origin. Heat treatment improves colour and clarity, but unheated stones command a significant market premium.',
   alternates: { canonical: 'https://serendibgemstones.com/learn/faq/what-is-the-difference-between-natural-and-heated-sapphire' },
 }
 
@@ -79,7 +80,7 @@ export default function FAQPage() {
             <div className="bg-dark-card border border-teal/20 p-6 sm:p-8">
               <p className="font-jost text-xs tracking-[0.3em] uppercase text-teal/60 mb-3">Quick Answer</p>
               <p className="font-jost text-sm text-offwhite/70 leading-relaxed">
-                Both heated and unheated sapphires are <strong className="text-offwhite">natural gemstones</strong> mined from the earth. The term &ldquo;heated&rdquo; refers to a post-mining treatment that improves colour and clarity, not to the stone&apos;s origin. An unheated sapphire achieves its beauty entirely through nature, which is why it typically costs <strong className="text-offwhite">2&ndash;5 times more</strong> than a heated stone of equivalent appearance.
+                Both heated and unheated sapphires are <strong className="text-offwhite">natural gemstones</strong> mined from the earth. The term &ldquo;heated&rdquo; refers to a post-mining treatment that improves colour and clarity, not to the stone&apos;s origin. An unheated sapphire achieves its beauty entirely through nature, which is why it commands a <strong className="text-offwhite">significant market premium</strong> over a heated stone of equivalent appearance.
               </p>
             </div>
           </FadeUp>
@@ -88,6 +89,7 @@ export default function FAQPage() {
 
       <section className="bg-dark px-6 lg:px-10 pb-16">
         <div className="max-w-3xl mx-auto prose-gem">
+          <ArticleByline updated="2026-08-12" />
           <FadeUp>
             <h2>The Full Answer</h2>
             <p>

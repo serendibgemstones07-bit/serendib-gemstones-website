@@ -73,7 +73,7 @@ const featuredArticles = [
     slug: 'are-unheated-sapphires-worth-more',
     cluster: 'Buying',
     title: 'Are unheated sapphires worth more?',
-    description: 'Yes — by 2 to 5 times. Here is the market data and why the premium is structural.',
+    description: 'Yes — significantly. Here is why the unheated premium exists and why it is structural.',
     readTime: '4 min',
   },
 ]

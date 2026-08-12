@@ -1,16 +1,18 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'What is an Unheated Sapphire? — Serendib Gemstones',
-  description: 'An unheated sapphire is a natural sapphire whose colour has never been altered by heat treatment. Fewer than 5% of sapphires qualify. Learn what no-heat means, how it is certified, and why it commands a 2–5× price premium.',
+  description: 'An unheated sapphire is a natural sapphire whose colour has never been altered by heat treatment. Fewer than 5% of sapphires qualify. Learn what no-heat means, how it is certified, and why it commands a significant market premium.',
 }
 
 const faqItems = [
   {
     q: 'Are unheated sapphires worth more than heated ones?',
-    a: 'Yes — significantly. A fine unheated sapphire typically commands a premium of 2 to 5 times the price of a comparable heated stone of the same colour and clarity. At major auction houses, stones with laboratory-confirmed "no heat" status and exceptional colour regularly achieve multiples beyond that range.',
+    a: 'Yes — significantly. A fine unheated sapphire commands a substantial premium over a comparable heated stone of the same colour and clarity. At major auction houses, stones with laboratory-confirmed "no heat" status and exceptional colour regularly achieve dramatic uplifts beyond typical trade levels.',
   },
   {
     q: 'How do I know if a sapphire has been heat-treated?',
@@ -45,9 +47,10 @@ const schema = {
       '@type': 'Article',
       headline: 'What is an Unheated Sapphire?',
       description: 'An unheated sapphire is a natural sapphire whose colour has never been altered by heat treatment. Fewer than 5% of sapphires on the market qualify, making them exceptionally rare and valuable.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
+      dateModified: '2026-08-12',
       url: 'https://serendibgemstones.com/learn/what-is-an-unheated-sapphire',
     },
     {
@@ -91,6 +94,7 @@ export default function UnheatedSapphirePage() {
               What is an unheated sapphire?
             </h1>
             <p className="font-jost text-sm text-offwhite/40">5 min read · Serendib Gemstones</p>
+            <ArticleByline updated="2026-08-12" />
           </FadeUp>
         </div>
       </section>
@@ -103,7 +107,7 @@ export default function UnheatedSapphirePage() {
           <div className="border-l-2 border-teal pl-6 mb-12">
             <p className="font-jost text-xs tracking-[0.2em] uppercase text-teal mb-2">Summary</p>
             <p className="font-cormorant text-xl text-dark leading-relaxed">
-              An unheated sapphire is a natural sapphire whose colour and clarity have never been altered through heat treatment. Because heating is applied to over 95% of commercial sapphires to improve their appearance, a stone that achieves fine colour without any enhancement is genuinely rare — and commands a premium of 2 to 5 times the value of a heated equivalent.
+              An unheated sapphire is a natural sapphire whose colour and clarity have never been altered through heat treatment. Because heating is applied to over 95% of commercial sapphires to improve their appearance, a stone that achieves fine colour without any enhancement is genuinely rare — and commands a substantial premium over a heated equivalent.
             </p>
           </div>
 
@@ -142,7 +146,7 @@ export default function UnheatedSapphirePage() {
             <div>
               <h2 className="font-cormorant text-2xl text-dark font-semibold mb-4">The price premium</h2>
               <p>
-                The premium for no-heat status is not merely a niche preference — it is a well-documented market phenomenon. At international auction, a fine unheated Ceylon blue sapphire of 3 carats or more will typically achieve 3 to 5 times the hammer price of a comparable heated stone of the same colour grade. For exceptional stones — vivid cornflower blue above 5 carats with prestigious provenance — the differential has reached 10× and beyond.
+                The premium for no-heat status is not merely a niche preference — it is a well-documented market phenomenon. At international auction, a fine unheated Ceylon blue sapphire of 3 carats or more typically achieves a substantial multiple of the hammer price a comparable heated stone would realise. For exceptional stones — vivid cornflower blue above 5 carats with prestigious provenance — the differential can be dramatic.
               </p>
               <p className="mt-4">
                 The reason is structural scarcity. Unlike diamonds, where lab-grown alternatives have complicated the investment case, unheated sapphires cannot be replicated by treatment or synthesis and still carry a legitimate no-heat certificate. Their supply is fixed by geology. As collector and investor appetite for natural, unenhanced stones grows — particularly in Asia — the long-run price trajectory for fine no-heat material has been consistently upward.
@@ -183,6 +187,20 @@ export default function UnheatedSapphirePage() {
               </FadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Sources */}
+      <section className="bg-dark px-6 lg:px-10 pb-16">
+        <div className="max-w-3xl mx-auto">
+          <SourcesReferences sources={[
+            { label: 'GIA — Gemological Institute of America', detail: 'Detection and disclosure of heat treatment in sapphires', href: 'https://www.gia.edu' },
+            { label: 'GRS — GemResearch Swisslab', detail: '"No heat" designation and H(a)-H(c) heat-treatment grading scale', href: 'https://www.gemresearch.ch' },
+            { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy and heat-treatment detection', href: 'https://www.ssef.ch' },
+            { label: 'Gübelin Gem Lab', detail: 'Inclusion analysis and detection of heating in corundum', href: 'https://www.gubelin.com/en/gemlab' },
+            { label: 'CIBJO — The World Jewellery Confederation', detail: 'International standards for treatment disclosure', href: 'https://www.cibjo.org' },
+            { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed research on heat-treatment detection and market impact', href: 'https://www.gia.edu/gems-gemology' },
+          ]} />
         </div>
       </section>
 

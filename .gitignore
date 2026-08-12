@@ -21,3 +21,4 @@ studio/.sanity/
 .DS_Store
 *.pem
 npm-debug.log*
+tsconfig.tsbuildinfo

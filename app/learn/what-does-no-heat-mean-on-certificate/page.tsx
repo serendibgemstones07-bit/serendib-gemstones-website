@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'What Does "No Heat" Mean on a Gem Certificate? — Serendib Gemstones',
@@ -45,9 +47,10 @@ const schema = {
       '@type': 'Article',
       headline: 'What Does "No Heat" Mean on a Gem Certificate?',
       description: '"No heat" on a gemological certificate is the single most commercially significant statement on a coloured stone report — confirming no evidence of thermal enhancement was found.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
+      dateModified: '2026-08-12',
       url: 'https://serendibgemstones.com/learn/what-does-no-heat-mean-on-certificate',
     },
     {
@@ -82,6 +85,7 @@ export default function NoHeatCertificatePage() {
               What does &ldquo;no heat&rdquo; mean on a gem certificate?
             </h1>
             <p className="font-jost text-sm text-offwhite/40">4 min read · Serendib Gemstones</p>
+            <ArticleByline updated="2026-08-12" />
           </FadeUp>
         </div>
       </section>
@@ -116,7 +120,7 @@ export default function NoHeatCertificatePage() {
 
             <div>
               <h2 className="font-cormorant text-2xl text-dark font-semibold mb-4">Why it matters commercially</h2>
-              <p>The no-heat designation is not merely a technical footnote — it is a value driver. In the international coloured stone market, the difference between a certified no-heat stone and an equivalent heated stone is typically a factor of 2 to 5 in price. For exceptional stones at major auction, the differential has exceeded 10 times.</p>
+              <p>The no-heat designation is not merely a technical footnote — it is a value driver. In the international coloured stone market, certified no-heat stones command a significant premium over equivalent heated stones. For exceptional stones at major auction, the differential can be dramatic.</p>
               <p className="mt-4">The reason is straightforward: supply is structurally limited. Heating cannot be reversed to increase the pool of no-heat certified stones. Every year, some portion of the remaining no-heat material in the world is heated by someone seeking a short-term colour improvement — permanently removing that stone from the no-heat category. The pool can only shrink.</p>
             </div>
 
@@ -143,6 +147,19 @@ export default function NoHeatCertificatePage() {
               </FadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-dark px-6 lg:px-10 pb-16">
+        <div className="max-w-3xl mx-auto">
+          <SourcesReferences sources={[
+            { label: 'GIA — Gemological Institute of America', detail: '"No indications of heating" designation and detection methodology', href: 'https://www.gia.edu' },
+            { label: 'GRS — GemResearch Swisslab', detail: '"No heat" designation and H(a)-H(c) heat-treatment grading', href: 'https://www.gemresearch.ch' },
+            { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy for heat-treatment detection', href: 'https://www.ssef.ch' },
+            { label: 'Gübelin Gem Lab', detail: 'Inclusion analysis for treatment determination', href: 'https://www.gubelin.com/en/gemlab' },
+            { label: 'CIBJO — The World Jewellery Confederation', detail: 'International disclosure standards for treated gemstones', href: 'https://www.cibjo.org' },
+            { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed research on heat-treatment detection features', href: 'https://www.gia.edu/gems-gemology' },
+          ]} />
         </div>
       </section>
 

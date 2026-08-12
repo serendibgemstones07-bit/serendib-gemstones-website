@@ -46,14 +46,26 @@ const featuredGuides = [
     stats: [
       { label: 'Mineral', value: 'Corundum' },
       { label: 'Hardness', value: '9 / 10' },
-      { label: 'Record', value: '$1.2M / ct' },
+      { label: 'Record', value: 'Sunrise Ruby' },
+    ],
+  },
+  {
+    href: '/gemstones/yellow-sapphire',
+    title: 'Yellow Sapphire',
+    subtitle: 'The Complete Guide to Ceylon Yellow Sapphires',
+    badge: 'Pukhraj',
+    colour: '#d4af37',
+    description: 'The sacred Pukhraj of Vedic astrology and the world\'s benchmark yellow sapphire. Sri Lanka dominates the top of the market — learn about colour, treatments, beryllium diffusion, and Pukhraj criteria.',
+    stats: [
+      { label: 'Mineral', value: 'Corundum' },
+      { label: 'Hardness', value: '9 / 10' },
+      { label: 'Vedic Name', value: 'Pukhraj' },
     ],
   },
 ]
 
 const upcomingGuides = [
   { name: 'Pink Sapphire', family: 'Corundum', colour: '#d46b9a' },
-  { name: 'Yellow Sapphire', family: 'Corundum', colour: '#d4af37' },
   { name: 'Star Sapphire', family: 'Corundum', colour: '#3a6fa8' },
   { name: 'Alexandrite', family: 'Chrysoberyl', colour: '#2e8b57' },
   { name: "Cat's Eye", family: 'Chrysoberyl', colour: '#b8860b' },

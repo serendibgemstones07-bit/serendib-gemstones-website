@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
 import GemSVG from '@/components/GemSVG'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'Ruby — The Complete Guide to Natural & Ceylon Rubies',
@@ -21,11 +23,11 @@ const faqItems = [
   },
   {
     q: 'How much is a ruby worth?',
-    a: 'Ruby prices vary enormously based on colour, clarity, carat weight, origin, and treatment status. Commercial heated rubies may start at US$100–500 per carat. Fine unheated rubies typically range from US$1,000–20,000 per carat. Exceptional unheated Burmese rubies with pigeon blood colour have sold for over US$1 million per carat at auction. Sri Lankan rubies offer excellent value, with fine unheated stones available at a fraction of Burmese prices while still displaying beautiful colour and clarity.',
+    a: 'Ruby value is driven by colour (with vivid pigeon blood commanding the strongest premium), clarity, carat weight, origin, and treatment status. Unheated Burmese rubies of top colour are among the most valuable gemstones on earth; Mozambican and Sri Lankan material offers strong quality at more accessible levels. Because every stone is unique and the market moves, we quote on the actual gemstone rather than publishing figures — please make an enquiry for current pricing on a specific ruby.',
   },
   {
     q: 'Are rubies more expensive than diamonds?',
-    a: 'At the highest quality levels, yes. Fine unheated rubies of exceptional colour above 5 carats are rarer than equivalent-quality diamonds and regularly achieve higher per-carat prices at auction. The Sunrise Ruby (25.59 carats) sold for over US$30 million in 2015, equating to more than US$1.2 million per carat. However, at commercial quality levels, diamonds are typically priced higher than rubies of similar size.',
+    a: 'At the highest quality levels, yes. Fine unheated rubies of exceptional colour above 5 carats are rarer than equivalent-quality diamonds and regularly achieve higher per-carat prices at auction. The Sunrise Ruby (25.59 carats) set the world-record price for a ruby at Sotheby\'s Geneva in 2015. However, at commercial quality levels, diamonds are typically priced higher than rubies of similar size.',
   },
   {
     q: 'Are Sri Lankan rubies good quality?',
@@ -45,7 +47,7 @@ const faqItems = [
   },
   {
     q: 'Are heated rubies still valuable?',
-    a: 'Yes. Heat treatment is an accepted industry practice that has been used for centuries. A well-heated ruby with fine colour is still a beautiful and durable gemstone. However, unheated rubies of equivalent quality command a premium of 3 to 8 times the price, because their natural beauty is rarer. The key distinction is between simple heat treatment (widely accepted) and more invasive treatments like lead-glass filling or beryllium diffusion (which significantly reduce value).',
+    a: 'Yes. Heat treatment is an accepted industry practice that has been used for centuries. A well-heated ruby with fine colour is still a beautiful and durable gemstone. However, unheated rubies of equivalent quality command a significant premium, because their natural beauty is rarer. The key distinction is between simple heat treatment (widely accepted) and more invasive treatments like lead-glass filling or beryllium diffusion (which significantly reduce value).',
   },
   {
     q: 'Can rubies be used in engagement rings?',
@@ -76,9 +78,11 @@ const schema = {
       '@type': 'Article',
       headline: 'Ruby — The Complete Guide to Natural & Ceylon Rubies',
       description: metadata.description,
-      author: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-07-31',
+      dateModified: '2026-08-12',
       mainEntityOfPage: 'https://serendibgemstones.com/gemstones/ruby',
     },
     {
@@ -160,7 +164,7 @@ export default function RubyPage() {
                 { label: 'Mineral', value: 'Corundum' },
                 { label: 'Hardness', value: '9 / 10' },
                 { label: 'Top Origin', value: 'Myanmar' },
-                { label: 'Unheated Premium', value: '3–8×' },
+                { label: 'Unheated', value: 'Significant Premium' },
               ].map((s) => (
                 <div key={s.label} className="bg-dark-card border border-white/6 p-4 text-center">
                   <p className="font-cormorant text-xl text-offwhite font-semibold">{s.value}</p>
@@ -177,6 +181,8 @@ export default function RubyPage() {
         <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_220px] gap-12">
           {/* Main content */}
           <div className="prose-gem">
+            <ArticleByline updated="2026-08-12" reviewer="Thusira Ranasinghe" />
+
             {/* Table of Contents (mobile) */}
             <div className="lg:hidden border border-white/6 bg-dark-card p-6 mb-12">
               <p className="font-jost text-xs tracking-[0.3em] uppercase text-teal/50 mb-4">Contents</p>
@@ -286,12 +292,12 @@ export default function RubyPage() {
 
             <h3>Carat Weight</h3>
             <p>
-              Fine rubies above 1 carat are rare; above 5 carats, they are exceptionally so. Ruby rough tends to form in smaller crystals than sapphire, making large, clean, well-coloured rubies one of the rarest gemstones in nature. Price per carat increases steeply with size. A 3-carat ruby of fine quality can be worth many times more per carat than a 1-carat stone of identical quality, because large rubies are disproportionately scarce.
+              Fine rubies above 1 carat are rare; above 5 carats, they are exceptionally so. Ruby rough tends to form in smaller crystals than sapphire, making large, clean, well-coloured rubies one of the rarest gemstones in nature. Value escalates steeply with size — a fine 3-carat ruby can command a significant premium over a 1-carat stone of identical quality because large rubies are disproportionately scarce.
             </p>
 
             <h3>Origin</h3>
             <p>
-              Unlike most gemstones, origin has a significant impact on ruby prices. Burmese (Mogok) rubies command the highest premiums, often 2&ndash;4 times the price of similar-looking stones from other origins. Mozambican rubies have gained market acceptance and strong prices. Sri Lankan rubies offer outstanding value for their quality, particularly for buyers seeking unheated material with fine clarity.
+              Unlike most gemstones, origin has a significant impact on ruby value. Burmese (Mogok) rubies command the highest premiums over similar-looking stones from other origins. Mozambican rubies have gained market acceptance and strong prices. Sri Lankan rubies offer outstanding value for their quality, particularly for buyers seeking unheated material with fine clarity.
             </p>
 
             <hr />
@@ -304,7 +310,7 @@ export default function RubyPage() {
               <strong>Heat treatment:</strong> The most common and widely accepted enhancement. Rough rubies are heated in controlled furnaces at temperatures between 800&#176;C and 1800&#176;C to improve colour (dissolving blue colour zones, enhancing red) and clarity (dissolving rutile silk). An estimated 95% or more of rubies on the commercial market have been heat-treated. When properly disclosed, heated rubies remain beautiful, durable, and desirable gemstones.
             </p>
             <p>
-              <strong>The unheated premium:</strong> Unheated rubies that display fine natural colour are genuinely rare. They typically command a premium of <strong>3 to 8 times</strong> the price of comparable heated stones. At major auction houses, exceptional unheated Burmese rubies have achieved premiums far beyond this range, reflecting their extreme rarity.
+              <strong>The unheated premium:</strong> Unheated rubies that display fine natural colour are genuinely rare and command a significant premium over comparable heated stones. At major auction houses, exceptional unheated Burmese rubies have achieved premiums far beyond typical trade levels, reflecting their extreme rarity.
             </p>
             <p>
               <strong>Lead-glass filling (composite ruby):</strong> This is the most problematic treatment in the ruby market. Low-grade, heavily fractured corundum is impregnated with lead glass, which fills fractures and dramatically improves apparent transparency. The result can look superficially like a clean ruby, but the glass component may constitute 10&ndash;40% of the stone&apos;s weight. Lead-glass-filled rubies are fragile: the glass can deteriorate with exposure to heat, acids (including lemon juice and household cleaners), and even prolonged sunlight. These stones should be sold at a fraction of the price of untreated or simply heated rubies.
@@ -324,7 +330,7 @@ export default function RubyPage() {
             </p>
             <ul>
               <li><strong>Extreme rarity:</strong> Fine unheated rubies above 5 carats are among the rarest gemstones in existence. The supply of Burmese material from Mogok is finite and heavily restricted. Even Mozambique, the newest major source, produces only a small fraction of stones at the highest quality levels.</li>
-              <li><strong>Record prices:</strong> The per-carat record for a ruby at auction exceeded US$1.2 million (the Sunrise Ruby, 2015). Rubies have consistently outpaced market estimates at major sales, indicating strong and growing demand at the top end.</li>
+              <li><strong>Record prices:</strong> The Sunrise Ruby set the world-record price for a ruby at Sotheby&apos;s Geneva in 2015. Rubies have consistently outpaced market estimates at major sales, indicating strong and growing demand at the top end.</li>
               <li><strong>Asian demand:</strong> Rubies hold deep cultural significance across East and Southeast Asia, where they are associated with power, prosperity, and protection. Growing wealth in China, Thailand, and India has expanded the buyer pool for investment-grade rubies.</li>
               <li><strong>Portability and durability:</strong> Like all corundum, rubies are extremely durable (hardness 9, no cleavage, excellent toughness). They are portable stores of value that are not subject to financial reporting in most jurisdictions.</li>
             </ul>
@@ -336,9 +342,9 @@ export default function RubyPage() {
 
             <h2 id="famous">Famous Rubies</h2>
             <ul>
-              <li><strong>The Sunrise Ruby (25.59 ct)</strong> &mdash; a Burmese pigeon blood ruby that sold at Sotheby&apos;s Geneva in May 2015 for US$30.42 million (approximately US$1.19 million per carat), setting the world record price for a ruby at auction. Its combination of size, colour, and Burmese origin made it one of the most important gemstones ever sold.</li>
-              <li><strong>The Graff Ruby (8.62 ct)</strong> &mdash; a cushion-cut Burmese ruby that sold at Sotheby&apos;s Geneva in November 2014 for US$8.6 million (approximately US$1 million per carat). It was the first ruby to exceed US$1 million per carat at auction.</li>
-              <li><strong>The Crimson Flame (15.04 ct)</strong> &mdash; an unheated Burmese ruby that sold at Christie&apos;s Hong Kong in 2015 for US$18.3 million. Remarkable for its combination of size, pigeon blood colour, and unheated status.</li>
+              <li><strong>The Sunrise Ruby (25.59 ct)</strong> &mdash; a Burmese pigeon blood ruby that sold at Sotheby&apos;s Geneva in May 2015, setting the world-record price for a ruby at auction. Its combination of size, colour, and Burmese origin made it one of the most important gemstones ever sold.</li>
+              <li><strong>The Graff Ruby (8.62 ct)</strong> &mdash; a cushion-cut Burmese ruby that sold at Sotheby&apos;s Geneva in November 2014, one of the highest-value rubies to appear at auction at that time.</li>
+              <li><strong>The Crimson Flame (15.04 ct)</strong> &mdash; an unheated Burmese ruby that sold at Christie&apos;s Hong Kong in 2015. Remarkable for its combination of size, pigeon blood colour, and unheated status.</li>
               <li><strong>The Carmen L&uuml;cia Ruby (23.1 ct)</strong> &mdash; a large Burmese ruby set in a platinum-and-diamond ring, donated to the Smithsonian National Museum of Natural History. Considered one of the finest large rubies in any public collection.</li>
               <li><strong>The Rosser Reeves Star Ruby (138.7 ct)</strong> &mdash; one of the world&apos;s largest and finest star rubies, housed at the Smithsonian. A Sri Lankan stone displaying a sharp, well-defined six-rayed star. Its donor, advertising executive Rosser Reeves, called it his &ldquo;lucky stone.&rdquo;</li>
               <li><strong>The De Long Star Ruby (100.32 ct)</strong> &mdash; a large star ruby of Sri Lankan origin, displayed at the American Museum of Natural History in New York. Famous for being stolen in the 1964 jewel heist and later recovered.</li>
@@ -387,6 +393,17 @@ export default function RubyPage() {
                 </details>
               ))}
             </div>
+
+            <SourcesReferences sources={[
+              { label: 'GIA — Gemological Institute of America', detail: 'Ruby identification, treatment disclosure, and origin determination', href: 'https://www.gia.edu' },
+              { label: 'GRS — GemResearch Swisslab', detail: 'Colour grading including "pigeon blood" and "vivid red" designations', href: 'https://www.gemresearch.ch' },
+              { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy and origin determination for rubies', href: 'https://www.ssef.ch' },
+              { label: 'Gübelin Gem Lab', detail: 'Origin research and detection of lattice-diffusion and lead-glass treatments', href: 'https://www.gubelin.com/en/gemlab' },
+              { label: 'AGL — American Gemological Laboratories', detail: 'Coloured stone reports and disclosure of composite (lead-glass-filled) rubies', href: 'https://www.aglgemlab.com' },
+              { label: 'CIBJO — The World Jewellery Confederation', detail: 'International nomenclature and disclosure standards for treated rubies', href: 'https://www.cibjo.org' },
+              { label: 'National Gem & Jewellery Authority of Sri Lanka (NGJA)', detail: 'Sri Lankan gem industry regulation and export certification', href: 'https://www.ngja.gov.lk' },
+              { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed research on ruby origin, chemistry, and treatments', href: 'https://www.gia.edu/gems-gemology' },
+            ]} />
           </div>
 
           {/* Sidebar (desktop) */}
