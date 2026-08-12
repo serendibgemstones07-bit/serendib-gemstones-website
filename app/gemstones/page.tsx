@@ -62,11 +62,35 @@ const featuredGuides = [
       { label: 'Vedic Name', value: 'Pukhraj' },
     ],
   },
+  {
+    href: '/gemstones/pink-sapphire',
+    title: 'Pink Sapphire',
+    subtitle: 'The Complete Guide to Ceylon Pink Sapphires',
+    badge: 'Rising Star',
+    colour: '#d46b9a',
+    description: 'The romantic corundum, coloured pink by chromium. Ceylon pinks range from delicate baby pink to vivid hot pink — and sit on the famous pink/ruby debate. Learn about the classification boundary, colour range, treatments, and why pink sapphire engagement rings are surging.',
+    stats: [
+      { label: 'Mineral', value: 'Corundum' },
+      { label: 'Hardness', value: '9 / 10' },
+      { label: 'Origin', value: 'Sri Lanka' },
+    ],
+  },
+  {
+    href: '/gemstones/star-sapphire',
+    title: 'Star Sapphire',
+    subtitle: 'The Complete Guide to Ceylon Star Sapphires',
+    badge: 'Asterism',
+    colour: '#3a6fa8',
+    description: 'A cabochon-cut sapphire displaying a six-rayed star of light gliding across its dome. Sri Lanka dominates the category — home of the Star of India, Star of Bombay, and Star of Adam. Learn about asterism, star quality, diffusion, and famous stones.',
+    stats: [
+      { label: 'Mineral', value: 'Corundum' },
+      { label: 'Effect', value: 'Asterism' },
+      { label: 'Top Origin', value: 'Sri Lanka' },
+    ],
+  },
 ]
 
 const upcomingGuides = [
-  { name: 'Pink Sapphire', family: 'Corundum', colour: '#d46b9a' },
-  { name: 'Star Sapphire', family: 'Corundum', colour: '#3a6fa8' },
   { name: 'Alexandrite', family: 'Chrysoberyl', colour: '#2e8b57' },
   { name: "Cat's Eye", family: 'Chrysoberyl', colour: '#b8860b' },
   { name: 'Blue Spinel', family: 'Spinel', colour: '#2e5fa3' },

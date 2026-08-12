@@ -89,7 +89,7 @@ export default function ForJewellersPage() {
               Your Reliable Gemstone<br />Supply Partner in Sri Lanka
             </h1>
             <p className="font-jost text-sm text-offwhite/55 max-w-2xl mx-auto leading-relaxed mb-10">
-              We supply certified natural Ceylon gemstones to jewellers, manufacturers, and retailers worldwide. Calibrated parcels, matched sets, or individual certified stones — sourced directly and exported with full documentation.
+              We supply certified natural <Link href="/ceylon-sapphires" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">Ceylon gemstones</Link> to jewellers, manufacturers, and retailers worldwide. Calibrated parcels, matched sets, or individual <Link href="/learn/certification" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">certified</Link> stones — sourced directly and exported with full documentation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="px-8 py-3.5 bg-teal hover:bg-teal-light text-white font-jost text-sm tracking-widest uppercase transition-colors duration-300">
@@ -130,7 +130,7 @@ export default function ForJewellersPage() {
             <p className="font-jost text-xs tracking-[0.3em] uppercase text-teal/60 mb-3">What We Supply</p>
             <h2 className="font-cormorant text-4xl sm:text-5xl text-offwhite mb-4">Available Gemstones</h2>
             <p className="font-jost text-sm text-offwhite/45 max-w-xl mx-auto leading-relaxed">
-              Sri Lanka produces over 75 varieties of gemstone. These are the species we most commonly supply to trade buyers.
+              <Link href="/learn/sri-lanka" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">Sri Lanka</Link> produces over 75 varieties of gemstone. These are the species we most commonly supply to trade buyers — read the individual guides for <Link href="/gemstones/blue-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">blue sapphire</Link>, <Link href="/gemstones/yellow-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">yellow sapphire</Link>, <Link href="/gemstones/pink-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">pink sapphire</Link>, <Link href="/gemstones/padparadscha-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">padparadscha</Link>, <Link href="/gemstones/star-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">star sapphire</Link>, and <Link href="/gemstones/ruby" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">ruby</Link>.
             </p>
           </FadeUp>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

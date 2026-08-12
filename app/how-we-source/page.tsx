@@ -78,7 +78,7 @@ export default function HowWeSourcePage() {
               How We Source<br />Our Gemstones
             </h1>
             <p className="font-jost text-sm text-offwhite/50 max-w-xl leading-relaxed">
-              Every stone in our collection follows the same path — from mine to your hands. No shortcuts, no hidden steps, no middlemen you can&apos;t see.
+              Every stone in our collection follows the same path — from mine to your hands. No shortcuts, no hidden steps, no middlemen you can&apos;t see. Read our overview of <Link href="/learn/sri-lanka" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">Sri Lanka&apos;s gem regions</Link> and the pillar guide to <Link href="/ceylon-sapphires" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">Ceylon sapphires</Link>.
             </p>
           </FadeUp>
         </div>

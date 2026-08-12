@@ -193,17 +193,23 @@ export default function SapphiresHubPage() {
             <FadeUp delay={0.15}>
               <div className="bg-dark-card border border-white/6 p-7">
                 <h3 className="font-cormorant text-lg text-offwhite font-semibold mb-2">Star Sapphire</h3>
-                <p className="font-jost text-xs text-offwhite/40 leading-relaxed">
-                  When dense, oriented rutile needles (silk) are preserved within the corundum crystal, they produce asterism — a six-rayed star that glides across the domed cabochon surface. Sri Lanka produces the world&apos;s finest star sapphires, including the legendary Star of India (563 carats) and the Star of Adam (1,404 carats).
+                <p className="font-jost text-xs text-offwhite/40 leading-relaxed mb-4">
+                  When dense, oriented rutile needles (silk) are preserved within the corundum crystal, they produce asterism — a six-rayed star that glides across the domed cabochon surface. Sri Lanka produces the world&apos;s finest <Link href="/gemstones/star-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">star sapphires</Link>, including the legendary Star of India (563 carats) and the Star of Adam (1,404 carats).
                 </p>
+                <Link href="/learn/what-is-a-star-sapphire" className="font-jost text-xs tracking-widest uppercase text-teal/60 hover:text-teal transition-colors">
+                  Read the star sapphire guide &rarr;
+                </Link>
               </div>
             </FadeUp>
             <FadeUp delay={0.2}>
               <div className="bg-dark-card border border-white/6 p-7">
                 <h3 className="font-cormorant text-lg text-offwhite font-semibold mb-2">Pink, Yellow & Fancy Colours</h3>
-                <p className="font-jost text-xs text-offwhite/40 leading-relaxed">
-                  Ceylon yields vibrant pink sapphires (coloured by chromium), golden yellows (coloured by iron), rich violets, soft greens, and the increasingly popular teal or parti-coloured sapphires that show two or more colours simultaneously. Each variety has its own collector following and market dynamics.
+                <p className="font-jost text-xs text-offwhite/40 leading-relaxed mb-4">
+                  Ceylon yields vibrant <Link href="/gemstones/pink-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">pink sapphires</Link> (coloured by chromium), <Link href="/gemstones/yellow-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">golden yellow sapphires</Link> (coloured by iron), rich violets, soft greens, and the increasingly popular teal or parti-coloured sapphires that show two or more colours simultaneously. Each variety has its own collector following and market dynamics.
                 </p>
+                <Link href="/ceylon-sapphires" className="font-jost text-xs tracking-widest uppercase text-teal/60 hover:text-teal transition-colors">
+                  Explore the Ceylon sapphires pillar &rarr;
+                </Link>
               </div>
             </FadeUp>
           </div>

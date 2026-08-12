@@ -140,7 +140,7 @@ export default function HowGINWorksPage() {
                 <span className="text-offwhite/20">-</span>
                 <span className="text-red-400/70">00142</span>
               </p>
-              <p className="font-jost text-xs text-offwhite/30 mt-4">A 4.72ct unheated blue sapphire from Ratnapura, certified by GRS</p>
+              <p className="font-jost text-xs text-offwhite/30 mt-4">A 4.72ct <Link href="/learn/what-is-an-unheated-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">unheated</Link> <Link href="/gemstones/blue-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">blue sapphire</Link> from <Link href="/learn/sri-lanka" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">Ratnapura</Link>, certified by <Link href="/learn/gia-vs-grs-certificate" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">GRS</Link></p>
             </div>
           </FadeUp>
 

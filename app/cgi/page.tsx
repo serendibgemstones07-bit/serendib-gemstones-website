@@ -116,7 +116,7 @@ export default function CGIPage() {
             </h1>
             <p className="font-jost text-lg text-teal-light/80 tracking-wide mb-4">CGI</p>
             <p className="font-jost text-sm text-offwhite/50 max-w-2xl mx-auto leading-relaxed mb-10">
-              A trusted digital identity for every gemstone — combining provenance documentation, laboratory certification, treatment disclosure, and verifiable sourcing history into one transparent, accessible record.
+              A trusted digital identity for every gemstone — combining provenance documentation, <Link href="/learn/certification" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">laboratory certification</Link>, <Link href="/learn/treatments" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">treatment disclosure</Link>, and verifiable sourcing history into one transparent, accessible record.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/cgi/why-digital-gem-identity" className="inline-block px-10 py-4 bg-teal hover:bg-teal-light text-white font-jost text-sm tracking-widest uppercase transition-colors duration-300">
@@ -279,7 +279,7 @@ export default function CGIPage() {
               Every gemstone has a story. CGI makes it verifiable.
             </p>
             <p className="font-jost text-sm text-offwhite/40 mb-10 max-w-md mx-auto leading-relaxed">
-              From the mines of Ratnapura to jewellers worldwide — CGI bridges centuries of gemstone heritage with the transparency the modern market demands.
+              From the mines of <Link href="/learn/sri-lanka" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">Ratnapura</Link> to jewellers worldwide — CGI bridges centuries of gemstone heritage with the transparency the modern market demands.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/about" className="inline-block px-10 py-4 border border-teal/40 text-teal-light hover:bg-teal/10 font-jost text-sm tracking-widest uppercase transition-all duration-300">

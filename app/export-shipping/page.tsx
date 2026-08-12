@@ -81,7 +81,7 @@ export default function ExportShippingPage() {
               From Sri Lanka<br />to Anywhere in the World
             </h1>
             <p className="font-jost text-sm text-offwhite/55 max-w-2xl mx-auto leading-relaxed mb-10">
-              Secure, insured international shipping with full export documentation. We handle everything from professional packaging to customs paperwork — your gemstones arrive safely, wherever you are.
+              Secure, insured international shipping with full export documentation. We handle everything from professional packaging to customs paperwork — your <Link href="/ceylon-sapphires" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">Ceylon gemstones</Link> arrive safely, wherever you are. See <Link href="/how-we-source" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">how we source</Link> and <Link href="/how-we-verify" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">how we verify</Link> every stone before it ships.
             </p>
             <Link href="/contact" className="px-8 py-3.5 bg-teal hover:bg-teal-light text-white font-jost text-sm tracking-widest uppercase transition-colors duration-300">
               Enquire About Shipping
