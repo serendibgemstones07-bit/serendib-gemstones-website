@@ -130,7 +130,7 @@ export default function LearnPage() {
               Knowledge Centre
             </h1>
             <p className="font-jost text-sm text-offwhite/50 max-w-2xl mx-auto leading-relaxed">
-              Expert-written guides on Ceylon sapphires, heat treatment, certification, and buying advice — by people who source these stones at the mine in Sri Lanka. Everything you need to buy, invest, and collect with confidence.
+              Expert-written guides on <Link href="/ceylon-sapphires" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">Ceylon sapphires</Link>, heat treatment, certification, and buying advice — by people who source these stones at the mine in <Link href="/learn/sri-lanka" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">Sri Lanka</Link>. Everything you need to buy, invest, and collect with confidence.
             </p>
           </FadeUp>
         </div>

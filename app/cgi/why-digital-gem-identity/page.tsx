@@ -129,12 +129,12 @@ export default function WhyDigitalGemIdentityPage() {
           <div className="space-y-7">
             <FadeUp>
               <p className="font-jost text-sm text-offwhite/55 leading-[1.85]">
-                When a jeweller in London buys a sapphire described as &ldquo;unheated Ceylon origin,&rdquo; they are relying on a chain of verbal assurances that stretches from a mine in Ratnapura, through one or more dealers in Colombo, possibly through a trading hub in Bangkok or Hong Kong, and finally to their supplier.
+When a jeweller in London buys a sapphire described as &ldquo;<Link href="/learn/what-is-an-unheated-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">unheated</Link> <Link href="/ceylon-sapphires" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">Ceylon origin</Link>,&rdquo; they are relying on a chain of verbal assurances that stretches from a mine in <Link href="/learn/sri-lanka" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">Ratnapura</Link>, through one or more dealers in Colombo, possibly through a trading hub in Bangkok or Hong Kong, and finally to their supplier.
               </p>
             </FadeUp>
             <FadeUp delay={0.06}>
               <p className="font-jost text-sm text-offwhite/55 leading-[1.85]">
-                At each step, information is passed verbally or on paper. There is no universal system for recording, verifying, or accessing the provenance and treatment history of a coloured gemstone. The laboratory certificate — if one exists — confirms what the stone <em className="text-offwhite/70">is</em>, but not where it <em className="text-offwhite/70">came from</em> or how it <em className="text-offwhite/70">got there</em>.
+                At each step, information is passed verbally or on paper. There is no universal system for recording, verifying, or accessing the provenance and treatment history of a coloured gemstone. The <Link href="/learn/certification" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">laboratory certificate</Link> — if one exists — confirms what the stone <em className="text-offwhite/70">is</em>, but not where it <em className="text-offwhite/70">came from</em> or how it <em className="text-offwhite/70">got there</em>.
               </p>
             </FadeUp>
             <FadeUp delay={0.1}>

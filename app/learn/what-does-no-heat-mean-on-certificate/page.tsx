@@ -103,7 +103,7 @@ export default function NoHeatCertificatePage() {
             <div>
               <h2 className="font-cormorant text-2xl text-dark font-semibold mb-4">Where to find it on the report</h2>
               <p>On a GIA Colored Stone Identification and Origin Report, the heat treatment assessment appears in the <em>Comments</em> section — typically the final line of the report. The exact phrase is either <em>&ldquo;No indications of heating&rdquo;</em> or <em>&ldquo;Indications of heating.&rdquo;</em> On a GRS report, the treatment designation appears prominently on the face of the certificate under a dedicated <em>Type</em> or <em>Treatment</em> field, stating either <em>&ldquo;No heat&rdquo;</em> or a heating grade from H(a) to H(c).</p>
-              <p className="mt-4">Gübelin and SSEF — two Swiss laboratories also highly regarded in the coloured stone trade — use similar language and present it in similar positions on their reports. All four are considered definitive authorities on heat treatment status.</p>
+              <p className="mt-4">Gübelin and SSEF — two Swiss laboratories also highly regarded in the coloured stone trade — use similar language and present it in similar positions on their reports (see our comparison of <Link href="/learn/gia-vs-grs-certificate" className="text-teal hover:text-teal-light underline underline-offset-2 decoration-teal/40">GIA vs GRS</Link> for the two most commonly encountered). All four are considered definitive authorities on heat treatment status.</p>
             </div>
 
             <div>
@@ -120,13 +120,13 @@ export default function NoHeatCertificatePage() {
 
             <div>
               <h2 className="font-cormorant text-2xl text-dark font-semibold mb-4">Why it matters commercially</h2>
-              <p>The no-heat designation is not merely a technical footnote — it is a value driver. In the international coloured stone market, certified no-heat stones command a significant premium over equivalent heated stones. For exceptional stones at major auction, the differential can be dramatic.</p>
+              <p>The no-heat designation is not merely a technical footnote — it is a value driver. In the international coloured stone market, <Link href="/learn/what-is-an-unheated-sapphire" className="text-teal hover:text-teal-light underline underline-offset-2 decoration-teal/40">certified no-heat stones</Link> command a <Link href="/learn/are-unheated-sapphires-worth-more" className="text-teal hover:text-teal-light underline underline-offset-2 decoration-teal/40">significant premium</Link> over equivalent heated stones. For exceptional stones at major auction, the differential can be dramatic.</p>
               <p className="mt-4">The reason is straightforward: supply is structurally limited. Heating cannot be reversed to increase the pool of no-heat certified stones. Every year, some portion of the remaining no-heat material in the world is heated by someone seeking a short-term colour improvement — permanently removing that stone from the no-heat category. The pool can only shrink.</p>
             </div>
 
             <div>
               <h2 className="font-cormorant text-2xl text-dark font-semibold mb-4">When no certificate exists</h2>
-              <p>A verbal assurance of no-heat status — from a dealer, seller, or previous owner — is not verifiable and carries no market standing. If you are buying a stone on the basis of its unheated status and paying accordingly, a current laboratory report from GIA, GRS, Gübelin, or SSEF is not optional. The cost of certification is modest relative to the premium being paid. Without it, there is no basis for the premium.</p>
+              <p>A verbal assurance of no-heat status — from a dealer, seller, or previous owner — is not verifiable and carries no market standing. If you are buying a stone on the basis of its unheated status and paying accordingly, a <Link href="/learn/certification" className="text-teal hover:text-teal-light underline underline-offset-2 decoration-teal/40">current laboratory report</Link> from GIA, GRS, Gübelin, or SSEF is not optional. The cost of certification is modest relative to the premium being paid. Without it, there is no basis for the premium.</p>
             </div>
           </div>
         </div>

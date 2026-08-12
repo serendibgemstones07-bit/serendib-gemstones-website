@@ -157,10 +157,10 @@ export default function TreatmentsHubPage() {
                     The coloured gemstone market operates on a principle that is deceptively simple: a stone&apos;s value is determined by its beauty, rarity, and the degree to which that beauty is natural. Two sapphires that look identical to the naked eye can differ in value by a factor of five or more based solely on whether one has been heated and the other has not.
                   </p>
                   <p>
-                    This is not arbitrary. An unheated sapphire that displays fine colour achieved its appearance through millions of years of geological process — the precise balance of trace elements, temperature, and pressure required to produce saturated colour without human intervention. That geological rarity is what the market values, and what a laboratory report confirms.
+                    This is not arbitrary. An <Link href="/learn/what-is-an-unheated-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">unheated sapphire</Link> that displays fine colour achieved its appearance through millions of years of geological process — the precise balance of trace elements, temperature, and pressure required to produce saturated colour without human intervention. That geological rarity is what the market values, and what a laboratory report confirms — reflected in a substantial <Link href="/learn/are-unheated-sapphires-worth-more" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">no-heat premium</Link>.
                   </p>
                   <p>
-                    For buyers, understanding treatment is the single most important factor in making a sound purchase. For investors, it determines whether a stone will hold and grow in value over decades. For jewellers, it is a matter of professional integrity and legal compliance.
+                    For buyers, understanding treatment is the single most important factor in making a sound purchase. For investors, it determines whether a stone will hold and grow in value over decades — the reason a <Link href="/learn/what-does-no-heat-mean-on-certificate" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">&ldquo;no heat&rdquo; designation on the certificate</Link> matters so much at resale. For jewellers, it is a matter of professional integrity and legal compliance.
                   </p>
                 </div>
               </div>

@@ -126,7 +126,7 @@ export default function CGIPassportPage() {
           <div className="space-y-7">
             <FadeUp>
               <p className="font-jost text-sm text-offwhite/55 leading-[1.85]">
-                A laboratory certificate tells you <em className="text-offwhite/70">what</em> a gemstone is. The CGI Passport tells you <em className="text-offwhite/70">everything else</em> — where it came from, who sourced it, how it was documented, and how to verify every claim independently.
+                A <Link href="/learn/certification" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">laboratory certificate</Link> tells you <em className="text-offwhite/70">what</em> a gemstone is. The CGI Passport tells you <em className="text-offwhite/70">everything else</em> — where it came from, who sourced it, how it was documented, and how to verify every claim independently.
               </p>
             </FadeUp>
             <FadeUp delay={0.06}>

@@ -65,7 +65,7 @@ export default function CustomSourcingPage() {
               Tell Us What You&apos;re<br />Looking For
             </h1>
             <p className="font-jost text-sm text-offwhite/55 max-w-2xl mx-auto leading-relaxed mb-10">
-              Describe the gemstone you need — species, colour, carat weight, quality, budget — and we&apos;ll source it directly from Sri Lanka. Every stone is certified, fully documented, and shipped worldwide.
+              Describe the gemstone you need — species, colour, carat weight, quality, budget — and we&apos;ll source it directly from <Link href="/learn/sri-lanka" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">Sri Lanka</Link>. Every stone is <Link href="/learn/certification" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">certified</Link>, fully documented, and shipped worldwide.
             </p>
             <Link href="/contact" className="px-8 py-3.5 bg-teal hover:bg-teal-light text-white font-jost text-sm tracking-widest uppercase transition-colors duration-300">
               Start a Gemstone Search
@@ -103,7 +103,7 @@ export default function CustomSourcingPage() {
               How Custom<br />Sourcing Works
             </h2>
             <p className="font-jost text-sm text-offwhite/55 leading-relaxed mb-8">
-              A transparent process from your initial request to secure worldwide delivery. You approve every step before we proceed.
+              A transparent process from your initial request to secure worldwide delivery. You approve every step before we proceed. Common requests include <Link href="/gemstones/blue-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">blue sapphire</Link>, <Link href="/gemstones/padparadscha-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">padparadscha</Link>, <Link href="/gemstones/star-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">star sapphire</Link>, <Link href="/gemstones/yellow-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">yellow</Link> or <Link href="/gemstones/pink-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">pink sapphire</Link>, and <Link href="/gemstones/ruby" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">ruby</Link>.
             </p>
             <div className="space-y-3">
               <Link href="/how-we-source" className="block font-jost text-sm tracking-widest uppercase text-teal/70 hover:text-teal transition-colors">

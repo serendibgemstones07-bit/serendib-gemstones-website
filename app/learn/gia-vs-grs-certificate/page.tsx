@@ -176,10 +176,10 @@ export default function GiaVsGrsPage() {
             <div>
               <h2 className="font-cormorant text-2xl text-dark font-semibold mb-4">When to choose GRS</h2>
               <p>
-                GRS is the preferred certification for fine, investment-grade coloured stones — particularly unheated Ceylon sapphires, Padparadscha sapphires, and Burmese rubies being presented to serious collectors or consigned to major auction houses. Sotheby&apos;s, Christie&apos;s, and Bonhams frequently feature GRS-certified lots, and specialist dealers in Switzerland, Hong Kong, and Bangkok often specify GRS for their most important stones.
+                GRS is the preferred certification for fine, investment-grade coloured stones — particularly <Link href="/learn/what-is-an-unheated-sapphire" className="text-teal hover:text-teal-light underline underline-offset-2 decoration-teal/40">unheated</Link> <Link href="/ceylon-sapphires" className="text-teal hover:text-teal-light underline underline-offset-2 decoration-teal/40">Ceylon sapphires</Link>, <Link href="/gemstones/padparadscha-sapphire" className="text-teal hover:text-teal-light underline underline-offset-2 decoration-teal/40">Padparadscha sapphires</Link>, and Burmese <Link href="/gemstones/ruby" className="text-teal hover:text-teal-light underline underline-offset-2 decoration-teal/40">rubies</Link> being presented to serious collectors or consigned to major auction houses. Sotheby&apos;s, Christie&apos;s, and Bonhams frequently feature GRS-certified lots, and specialist dealers in Switzerland, Hong Kong, and Bangkok often specify GRS for their most important stones.
               </p>
               <p className="mt-4">
-                If provenance and treatment history are the central value drivers of a stone — which they are for unheated material — GRS&apos;s more detailed reporting provides a stronger narrative.
+                If provenance and treatment history are the central value drivers of a stone — which they are for <Link href="/learn/what-does-no-heat-mean-on-certificate" className="text-teal hover:text-teal-light underline underline-offset-2 decoration-teal/40">no-heat material</Link> — GRS&apos;s more detailed reporting provides a stronger narrative.
               </p>
             </div>
 

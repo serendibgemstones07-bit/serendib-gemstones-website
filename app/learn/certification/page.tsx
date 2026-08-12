@@ -173,13 +173,20 @@ export default function CertificationHubPage() {
             <h2 className="font-cormorant text-3xl text-offwhite mb-5">Why certification matters</h2>
             <div className="font-jost text-sm text-offwhite/50 leading-relaxed space-y-4 max-w-3xl">
               <p>
-                Unlike diamonds, which are graded on a standardised scale of cut, colour, clarity, and carat weight, coloured gemstones resist easy standardisation. Two sapphires that appear identical under normal lighting can differ radically in treatment status, origin, and therefore value. The same Sri Lankan blue sapphire, confirmed unheated with fine natural colour, can command a very significant premium over its heated counterpart — but only a laboratory can make that determination reliably.
+                Unlike diamonds, which are graded on a standardised scale of cut, colour, clarity, and carat weight, coloured gemstones resist easy standardisation. Two sapphires that appear identical under normal lighting can differ radically in treatment status, origin, and therefore value. The same Sri Lankan <Link href="/gemstones/blue-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">blue sapphire</Link>, confirmed <Link href="/learn/what-is-an-unheated-sapphire" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">unheated</Link> with fine natural colour, can command a very significant premium over its heated counterpart — but only a laboratory can make that determination reliably.
               </p>
               <p>
                 Certification also provides the documentary foundation for resale, insurance, and estate planning. A stone purchased today with a current GIA or GRS report carries that provenance forward indefinitely. A stone without documentation is, at the point of resale, simply an unverified coloured gem — and the market discounts accordingly.
               </p>
               <p>
                 We certify every stone in our collection through either GIA or GRS, and we encourage buyers to understand what those reports contain. Our <Link href="/how-we-verify" className="text-teal/70 hover:text-teal transition-colors underline underline-offset-2">verification process</Link> explains how we use laboratory reports as part of our sourcing workflow.
+              </p>
+              <p className="text-offwhite/45 pt-2">
+                Related reading:
+                {' '}<Link href="/learn/gia-vs-grs-certificate" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">GIA vs GRS</Link>
+                {' · '}<Link href="/learn/how-is-sapphire-origin-determined" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">How origin is determined</Link>
+                {' · '}<Link href="/learn/what-does-no-heat-mean-on-certificate" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">What &ldquo;no heat&rdquo; means</Link>
+                {' · '}<Link href="/cgi" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">Ceylon Gem Identity</Link>
               </p>
             </div>
           </FadeUp>

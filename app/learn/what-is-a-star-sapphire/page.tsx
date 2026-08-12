@@ -95,7 +95,7 @@ export default function StarSapphirePage() {
           <div className="border-l-2 border-teal pl-6 mb-12">
             <p className="font-jost text-xs tracking-[0.2em] uppercase text-teal mb-2">Summary</p>
             <p className="font-cormorant text-xl text-dark leading-relaxed">
-              A star sapphire is a variety of corundum that displays asterism — a six-rayed star of light that glides across the surface of the stone when viewed under a direct light source. The star is caused by microscopic rutile needle inclusions arranged in three intersecting directions within the crystal. Sri Lanka is the world&apos;s most celebrated source, producing blue, black, and grey star sapphires of exceptional quality — including some of the largest and finest on record.
+              A <Link href="/gemstones/star-sapphire" className="text-teal hover:text-teal-light underline underline-offset-2 decoration-teal/40">star sapphire</Link> is a variety of corundum that displays asterism — a six-rayed star of light that glides across the surface of the stone when viewed under a direct light source. The star is caused by microscopic rutile needle inclusions arranged in three intersecting directions within the crystal. <Link href="/learn/sri-lanka" className="text-teal hover:text-teal-light underline underline-offset-2 decoration-teal/40">Sri Lanka</Link> is the world&apos;s most celebrated source, producing blue, black, and grey star sapphires of exceptional quality — including some of the largest and finest on record.
             </p>
           </div>
 
@@ -125,8 +125,8 @@ export default function StarSapphirePage() {
 
             <div>
               <h2 className="font-cormorant text-2xl text-dark font-semibold mb-4">Star sapphires and heat treatment</h2>
-              <p>Heat treatment and star sapphires are mutually exclusive in a meaningful sense: the very inclusions that create the star are destroyed by heating. Rutile silk dissolves at the temperatures used for heat treatment, eliminating the asterism and converting the stone into a transparent (if flawed) facetable sapphire. A star sapphire with a well-defined star is therefore almost invariably unheated — a point worth understanding when comparing prices.</p>
-              <p className="mt-4">GIA and GRS will still assess and report on heat treatment status for star sapphires, but the presence of a sharp star is itself strong evidence of no heat. Buyers can request the no-heat certification for additional market documentation.</p>
+              <p>Heat treatment and star sapphires are mutually exclusive in a meaningful sense: the very inclusions that create the star are destroyed by heating. Rutile silk dissolves at the temperatures used for heat treatment, eliminating the asterism and converting the stone into a transparent (if flawed) facetable sapphire. A star sapphire with a well-defined star is therefore almost invariably <Link href="/learn/what-is-an-unheated-sapphire" className="text-teal hover:text-teal-light underline underline-offset-2 decoration-teal/40">unheated</Link> — a point worth understanding when comparing prices.</p>
+              <p className="mt-4">GIA and GRS will still assess and report on heat treatment status for star sapphires, but the presence of a sharp star is itself strong evidence of no heat. Buyers can request the <Link href="/learn/what-does-no-heat-mean-on-certificate" className="text-teal hover:text-teal-light underline underline-offset-2 decoration-teal/40">no-heat certification</Link> for additional market documentation.</p>
             </div>
           </div>
         </div>

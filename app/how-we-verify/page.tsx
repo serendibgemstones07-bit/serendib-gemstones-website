@@ -99,7 +99,7 @@ export default function HowWeVerifyPage() {
               How We Verify<br />Every Stone
             </h1>
             <p className="font-jost text-sm text-offwhite/50 max-w-xl leading-relaxed">
-              No stone enters our collection without independent verification. Here is exactly what that process involves — and why it matters for every buyer.
+              No stone enters our collection without independent verification. Here is exactly what that process involves — and why it matters for every buyer. For deeper background see our guides on <Link href="/learn/certification" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">gemstone certification</Link>, <Link href="/learn/gia-vs-grs-certificate" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">GIA vs GRS</Link>, and <Link href="/learn/how-is-sapphire-origin-determined" className="text-teal-light hover:text-teal underline underline-offset-2 decoration-teal/30">how sapphire origin is determined</Link>.
             </p>
           </FadeUp>
         </div>

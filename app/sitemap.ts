@@ -24,6 +24,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/gemstones/padparadscha-sapphire`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/gemstones/ruby`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/gemstones/yellow-sapphire`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/gemstones/pink-sapphire`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/gemstones/star-sapphire`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
 
     // Knowledge Centre
     { url: `${BASE}/learn`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
