@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'How is a Sapphire\'s Origin Determined? — Serendib Gemstones',
@@ -14,7 +16,7 @@ const faqItems = [
   },
   {
     q: 'Does origin affect a sapphire\'s price?',
-    a: 'Yes, significantly. For blue sapphires, Ceylon (Sri Lanka) and Kashmir origins command meaningful premiums over stones of unknown, Thai, or Australian origin at equivalent colour and clarity. A Ceylon-origin designation on a GIA or GRS certificate typically adds 30 to 100% to the value of a fine stone. Kashmir origin adds multiples beyond that — but Kashmir stones are effectively unobtainable today except at auction.',
+    a: 'Yes, significantly. For blue sapphires, Ceylon (Sri Lanka) and Kashmir origins command meaningful premiums over stones of unknown, Thai, or Australian origin at equivalent colour and clarity. A Ceylon-origin designation on a GIA or GRS certificate adds a substantial premium to the value of a fine stone. Kashmir origin adds significantly more — but Kashmir stones are effectively unobtainable today except at auction.',
   },
   {
     q: 'What makes Ceylon origin distinctive to a laboratory?',
@@ -45,9 +47,10 @@ const schema = {
       '@type': 'Article',
       headline: 'How is a Sapphire\'s Geographic Origin Determined?',
       description: 'Laboratories determine sapphire origin through trace element chemistry and inclusion analysis — two independent lines of evidence that together identify the geological environment where the stone formed.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
+      dateModified: '2026-08-12',
       url: 'https://serendibgemstones.com/learn/how-is-sapphire-origin-determined',
     },
     {
@@ -82,6 +85,7 @@ export default function SapphireOriginPage() {
               How is a sapphire&apos;s origin determined?
             </h1>
             <p className="font-jost text-sm text-offwhite/40">4 min read · Serendib Gemstones</p>
+            <ArticleByline updated="2026-08-12" />
           </FadeUp>
         </div>
       </section>
@@ -143,6 +147,19 @@ export default function SapphireOriginPage() {
               </FadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-dark px-6 lg:px-10 pb-16">
+        <div className="max-w-3xl mx-auto">
+          <SourcesReferences sources={[
+            { label: 'GIA — Gemological Institute of America', detail: 'Colored Stone Identification and Origin Reports; LA-ICP-MS trace-element methodology', href: 'https://www.gia.edu' },
+            { label: 'GRS — GemResearch Swisslab', detail: 'Origin determination for sapphires and rubies', href: 'https://www.gemresearch.ch' },
+            { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy and reference-database origin analysis', href: 'https://www.ssef.ch' },
+            { label: 'Gübelin Gem Lab', detail: 'Historic authority on inclusion characteristics and origin determination', href: 'https://www.gubelin.com/en/gemlab' },
+            { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed research on trace-element chemistry of sapphires by origin', href: 'https://www.gia.edu/gems-gemology' },
+            { label: 'Journal of Gemmology (Gem-A)', detail: 'Research on inclusion features and geographic origin of corundum', href: 'https://gem-a.com/publications' },
+          ]} />
         </div>
       </section>
 

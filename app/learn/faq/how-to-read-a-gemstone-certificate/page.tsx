@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'How to Read a Gemstone Certificate — A Complete Guide',
@@ -25,8 +26,8 @@ const faqItems = [
     a: 'GIA (Gemological Institute of America) is the most internationally recognised laboratory and is considered the gold standard for certification. GRS (Gem Research Swisslab) is highly respected in the coloured stone trade and assigns commercial colour grades like "Royal Blue" and "Pigeon Blood" that GIA does not use. For maximum resale value and international recognition, GIA is preferred. For colour-grade documentation that aids selling in the Asian market, GRS is preferred. Many serious buyers obtain both.',
   },
   {
-    q: 'How much does a gemstone certificate cost?',
-    a: 'GIA coloured stone reports typically cost between USD 100 and 300, depending on the stone\'s size and the report type. GRS reports are in a similar range. The cost is trivial relative to the stone\'s value — a certificate for a $5,000 sapphire costs roughly 2-4% of the stone\'s price and can increase its resale value by 20% or more through documented provenance.',
+    q: 'Is it worth paying for a gemstone certificate?',
+    a: 'For any sapphire of meaningful value, yes. An independent laboratory report is the only way to verify identity, treatment status, and origin — the three factors that most directly determine market value. Certification adds documented provenance that carries forward every time the stone changes hands, strengthening resale positioning, insurance appraisals, and estate planning.',
   },
   {
     q: 'Can a certificate be faked?',
@@ -99,6 +100,7 @@ export default function FAQPage() {
 
       <section className="bg-dark px-6 lg:px-10 pb-16">
         <div className="max-w-3xl mx-auto">
+          <ArticleByline updated="2026-08-12" />
           <FadeUp>
             <p className="font-jost text-xs tracking-[0.3em] uppercase text-teal/60 mb-3">Certificate Fields Explained</p>
             <h2 className="font-cormorant text-3xl text-offwhite font-semibold mb-10">What Each Section Tells You</h2>

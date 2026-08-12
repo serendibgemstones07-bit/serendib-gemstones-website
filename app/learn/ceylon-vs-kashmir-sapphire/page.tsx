@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'Ceylon vs Kashmir Sapphire: What\'s the Difference? — Serendib Gemstones',
@@ -14,7 +16,7 @@ const faqItems = [
   },
   {
     q: 'Can I still buy a Kashmir sapphire today?',
-    a: 'Occasionally, yes — but they appear almost exclusively at major international auction houses (Sotheby\'s, Christie\'s, Bonhams) or through a small number of specialist dealers. Expect to pay USD 50,000 to 200,000 per carat or more for a certified fine example above 3 carats. Laboratory-confirmed Kashmir origin from Gübelin, SSEF, or GRS is essential — the premium depends entirely on it.',
+    a: 'Occasionally, yes — but they appear almost exclusively at major international auction houses (Sotheby\'s, Christie\'s, Bonhams) or through a small number of specialist dealers. Certified fine examples above 3 carats sit at the very top of the sapphire market and are among the most expensive coloured gemstones on earth. Laboratory-confirmed Kashmir origin from Gübelin, SSEF, or GRS is essential — the premium depends entirely on it.',
   },
   {
     q: 'How do I know if a sapphire is from Ceylon or Kashmir?',
@@ -44,10 +46,12 @@ const schema = {
     {
       '@type': 'Article',
       headline: 'Ceylon vs Kashmir Sapphire: What\'s the Difference?',
-      description: 'Kashmir and Ceylon are the two most prestigious sapphire origins. This guide explains their colour differences, price gap, and why Ceylon remains the finest accessible option.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      description: 'Kashmir and Ceylon are the two most prestigious sapphire origins. This guide explains their colour differences, market position, and why Ceylon remains the finest accessible option.',
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
+      dateModified: '2026-08-12',
       url: 'https://serendibgemstones.com/learn/ceylon-vs-kashmir-sapphire',
     },
     {
@@ -82,6 +86,7 @@ export default function CeylonVsKashmirPage() {
               Ceylon vs Kashmir sapphire — what is the difference?
             </h1>
             <p className="font-jost text-sm text-offwhite/40">5 min read · Serendib Gemstones</p>
+            <ArticleByline updated="2026-08-12" reviewer="Thusira Ranasinghe" />
           </FadeUp>
         </div>
       </section>
@@ -91,7 +96,7 @@ export default function CeylonVsKashmirPage() {
           <div className="border-l-2 border-teal pl-6 mb-12">
             <p className="font-jost text-xs tracking-[0.2em] uppercase text-teal mb-2">Summary</p>
             <p className="font-cormorant text-xl text-dark leading-relaxed">
-              Ceylon (Sri Lanka) and Kashmir are the two most prestigious origins for blue sapphires in the world. Kashmir stones — mined from a remote Himalayan valley between 1881 and approximately 1930 — are now virtually impossible to source and command prices exceeding USD 100,000 per carat for fine examples at auction. Ceylon sapphires, equally celebrated for their vivid cornflower blue, remain available from active mines and represent the pre-eminent accessible option for serious collectors and investors.
+              Ceylon (Sri Lanka) and Kashmir are the two most prestigious origins for blue sapphires in the world. Kashmir stones — mined from a remote Himalayan valley between 1881 and approximately 1930 — are now virtually impossible to source and sit at the very top of the sapphire market when fine examples appear at auction. Ceylon sapphires, equally celebrated for their vivid cornflower blue, remain available from active mines and represent the pre-eminent accessible option for serious collectors and investors.
             </p>
           </div>
 
@@ -111,7 +116,7 @@ export default function CeylonVsKashmirPage() {
             <div>
               <h2 className="font-cormorant text-2xl text-dark font-semibold mb-4">Ceylon today</h2>
               <p>Ceylon sapphires — the trade name for sapphires from Sri Lanka, derived from the island&apos;s former name — have been mined continuously for over two millennia. The gem fields of Ratnapura, Elahera, Eheliyagoda, and Beruwala remain active, producing blue sapphires across a wide range of colours. The finest Ceylon blues display a vivid, bright cornflower blue with excellent transparency — a colour character that is distinct from Kashmir&apos;s velvety quality but equally celebrated in its own right.</p>
-              <p className="mt-4">Ceylon origin commands a significant premium over other sapphire sources for fine material — typically 30 to 100% above comparable stones of unknown or commercial origin. Combined with no-heat certification, a fine unheated Ceylon sapphire is among the most sought-after coloured stone investments available.</p>
+              <p className="mt-4">Ceylon origin commands a significant premium over other sapphire sources for fine material. Combined with no-heat certification, a fine unheated Ceylon sapphire is among the most sought-after coloured stone investments available.</p>
             </div>
 
             <div>
@@ -128,7 +133,6 @@ export default function CeylonVsKashmirPage() {
                   <tbody className="divide-y divide-dark/8">
                     {[
                       ['Supply', 'Exhausted c.1930', 'Active mines, ongoing production'],
-                      ['Fine colour (3–5ct)', 'USD 50,000–200,000/ct', 'USD 5,000–30,000/ct'],
                       ['Availability', 'Auction only', 'Mine-direct & dealer market'],
                       ['Certificate required', 'Gübelin / SSEF / GRS', 'GIA / GRS'],
                       ['Investment case', 'Ultra-rare, illiquid', 'Rare, liquid collector market'],
@@ -162,6 +166,19 @@ export default function CeylonVsKashmirPage() {
               </FadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-dark px-6 lg:px-10 pb-16">
+        <div className="max-w-3xl mx-auto">
+          <SourcesReferences sources={[
+            { label: 'GIA — Gemological Institute of America', detail: 'Sapphire identification, treatment disclosure, and origin reports', href: 'https://www.gia.edu' },
+            { label: 'GRS — GemResearch Swisslab', detail: 'Colour grading and origin determination for blue sapphires', href: 'https://www.gemresearch.ch' },
+            { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy and Kashmir/Ceylon origin determination', href: 'https://www.ssef.ch' },
+            { label: 'Gübelin Gem Lab', detail: 'Historic authority on Kashmir sapphire inclusion characteristics and origin', href: 'https://www.gubelin.com/en/gemlab' },
+            { label: 'National Gem & Jewellery Authority of Sri Lanka (NGJA)', detail: 'Sri Lankan gem industry regulation and export certification', href: 'https://www.ngja.gov.lk' },
+            { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed research on Kashmir and Ceylon sapphire chemistry and inclusions', href: 'https://www.gia.edu/gems-gemology' },
+          ]} />
         </div>
       </section>
 

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'What is a Padparadscha Sapphire? — Serendib Gemstones',
@@ -22,7 +24,7 @@ const faqItems = [
   },
   {
     q: 'How much does a Padparadscha sapphire cost?',
-    a: 'Fine Padparadscha sapphires are among the most expensive coloured gemstones per carat. Prices for GIA or GRS certified, unheated specimens of good colour above 2 carats typically begin at USD 5,000 to 10,000 per carat and rise steeply with size, colour intensity, and provenance. Exceptional stones above 5 carats with ideal colour have achieved USD 30,000 to 50,000 per carat at international auction.',
+    a: 'Fine Padparadscha sapphires are among the most valuable coloured gemstones on the market. Value rises steeply with size, colour intensity, and provenance, and unheated Ceylon stones above 5 carats regularly set records at international auction. Because every stone is unique and the market moves, we quote on the actual gemstone rather than publishing figures — please make an enquiry for current pricing on a specific stone.',
   },
   {
     q: 'What is the difference between a pink sapphire and a Padparadscha?',
@@ -45,9 +47,10 @@ const schema = {
       '@type': 'Article',
       headline: 'What is a Padparadscha Sapphire?',
       description: 'A Padparadscha sapphire is the rarest variety of corundum, displaying a pinkish-orange to orangy-pink colour named for the lotus blossom. Sri Lanka is its most celebrated source.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
+      dateModified: '2026-08-12',
       url: 'https://serendibgemstones.com/learn/what-is-padparadscha-sapphire',
     },
     {
@@ -91,6 +94,7 @@ export default function PadparadscharPage() {
               What is a Padparadscha sapphire?
             </h1>
             <p className="font-jost text-sm text-offwhite/40">4 min read · Serendib Gemstones</p>
+            <ArticleByline updated="2026-08-12" />
           </FadeUp>
         </div>
       </section>
@@ -148,7 +152,7 @@ export default function PadparadscharPage() {
                 A Padparadscha above 2 carats with GIA or GRS confirmation, fine natural colour, and no heat treatment is genuinely one of the rarest objects in the gemstone trade. Supply is effectively fixed — no new Padparadscha deposit has been found that competes with Sri Lanka in quality, and the output from Sri Lankan fields declines each year as the most accessible deposits are depleted.
               </p>
               <p className="mt-4">
-                Prices at major auction houses for certified fine Padparadschas have increased significantly over the past decade. Stones between 3 and 5 carats of ideal colour have achieved USD 15,000 to 40,000 per carat. Exceptional specimens above 5 carats have sold for multiples beyond that range. The combination of rarity, beauty, and name recognition among collectors globally makes the Padparadscha one of the most compelling coloured-stone investments available.
+                Auction realisations for certified fine Padparadschas have risen significantly over the past decade, with exceptional stones above 5 carats setting benchmark prices at Sotheby&apos;s and Christie&apos;s. The combination of rarity, beauty, and name recognition among collectors globally makes the Padparadscha one of the most compelling coloured-stone investments available.
               </p>
             </div>
 
@@ -189,6 +193,20 @@ export default function PadparadscharPage() {
               </FadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Sources */}
+      <section className="bg-dark px-6 lg:px-10 pb-16">
+        <div className="max-w-3xl mx-auto">
+          <SourcesReferences sources={[
+            { label: 'GIA — Gemological Institute of America', detail: 'Padparadscha variety definition and colour standards', href: 'https://www.gia.edu' },
+            { label: 'GRS — GemResearch Swisslab', detail: 'Padparadscha designation and "Lotus" colour grading', href: 'https://www.gemresearch.ch' },
+            { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy for fancy sapphire identification', href: 'https://www.ssef.ch' },
+            { label: 'Gübelin Gem Lab', detail: 'Detection of beryllium diffusion in padparadscha-coloured corundum', href: 'https://www.gubelin.com/en/gemlab' },
+            { label: 'National Gem & Jewellery Authority of Sri Lanka (NGJA)', detail: 'Sri Lankan gem industry regulation and export certification', href: 'https://www.ngja.gov.lk' },
+            { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed research on padparadscha colour and origin', href: 'https://www.gia.edu/gems-gemology' },
+          ]} />
         </div>
       </section>
 

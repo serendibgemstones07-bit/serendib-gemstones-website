@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'How Can You Tell If a Sapphire Is Real?',
@@ -16,11 +17,11 @@ const faqItems = [
   },
   {
     q: 'What is the difference between a synthetic sapphire and a fake sapphire?',
-    a: 'A synthetic sapphire is real sapphire — it has the same chemical composition (aluminium oxide, Al2O3) and crystal structure as a natural stone. It was simply grown in a laboratory rather than formed in the earth. A "fake" sapphire, by contrast, is a different material entirely: typically glass, cubic zirconia, or a blue spinel or topaz being misrepresented as sapphire. Synthetic sapphires are inexpensive (a few dollars per carat) but are genuine corundum. Glass imitations can often be detected with basic observation, but distinguishing natural from synthetic requires laboratory equipment.',
+    a: 'A synthetic sapphire is real sapphire — it has the same chemical composition (aluminium oxide, Al2O3) and crystal structure as a natural stone. It was simply grown in a laboratory rather than formed in the earth. A "fake" sapphire, by contrast, is a different material entirely: typically glass, cubic zirconia, or a blue spinel or topaz being misrepresented as sapphire. Synthetic sapphires are inexpensive but are genuine corundum. Glass imitations can often be detected with basic observation, but distinguishing natural from synthetic requires laboratory equipment.',
   },
   {
-    q: 'How much does it cost to get a sapphire tested?',
-    a: 'A full identification report from GIA costs approximately USD 100 to 200 for standard service, depending on stone size and turnaround time. GRS reports typically cost USD 150 to 300. For stones valued above USD 1,000, the cost of certification is a small fraction of the stone\'s value and is always worthwhile. Many reputable dealers include certification in the stone\'s price. For lower-value stones, local gemological laboratories affiliated with national gem associations can provide identification at lower cost, typically USD 30 to 80.',
+    q: 'Where can I get a sapphire tested?',
+    a: 'Full identification reports are available from GIA (Gemological Institute of America) and GRS (Gem Research Swisslab), both internationally recognised. Local gemological laboratories affiliated with national gem associations can also provide identification. For stones of meaningful value, the cost of certification is a small fraction of the stone\'s value and is always worthwhile. Many reputable dealers include certification with the stone.',
   },
   {
     q: 'Does a real sapphire glow under UV light?',
@@ -97,6 +98,7 @@ export default function TellIfSapphireRealPage() {
       {/* Full Answer */}
       <section className="bg-dark px-6 lg:px-10 pb-20">
         <div className="max-w-3xl mx-auto prose-gem">
+          <ArticleByline updated="2026-08-12" />
           <FadeUp>
             <h2>Why DIY tests fail</h2>
             <p>
@@ -142,7 +144,7 @@ export default function TellIfSapphireRealPage() {
           <FadeUp>
             <h2>Practical advice for buyers</h2>
             <p>
-              For any sapphire purchase above a few hundred dollars, insist on a current report from GIA or GRS. The report should state the stone&apos;s identification (natural corundum, variety sapphire), its treatment status (heated or unheated), and ideally its geographic origin. A reputable dealer will either include certification with the stone or happily submit it for testing. Reluctance to certify is itself a red flag. The cost of a GIA or GRS report is typically USD 100 to 300 — a minor expense relative to the stone&apos;s value, and the only reliable way to know what you are buying.
+              For any sapphire purchase of meaningful value, insist on a current report from GIA or GRS. The report should state the stone&apos;s identification (natural corundum, variety sapphire), its treatment status (heated or unheated), and ideally its geographic origin. A reputable dealer will either include certification with the stone or happily submit it for testing. Reluctance to certify is itself a red flag. Independent laboratory certification is a minor expense relative to the stone&apos;s value and the only reliable way to know what you are buying.
             </p>
           </FadeUp>
         </div>

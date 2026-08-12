@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'What Carat Size Sapphire Should I Buy?',
-  description: 'The ideal sapphire carat weight depends on use: 1–3ct for engagement rings, 3–10ct for investment. Quality matters more than size — learn how price-per-carat jumps at milestone weights.',
+  description: 'The ideal sapphire carat weight depends on use: 1–3ct for engagement rings, 3–10ct for investment. Quality matters more than size — learn how value jumps at milestone weights.',
   alternates: { canonical: 'https://serendibgemstones.com/learn/faq/what-carat-size-sapphire-should-i-buy' },
 }
 
@@ -14,8 +15,8 @@ const faqItems = [
     a: 'Most sapphire engagement rings feature stones between 1 and 3 carats. A 1.5 to 2 carat sapphire offers an excellent balance of presence and value — large enough to make a statement, small enough to find exceptional quality within most budgets. Unlike diamonds, sapphires are denser, so a 1.5ct sapphire will appear slightly smaller face-up than a 1.5ct diamond. Consider the setting style too — a halo setting can make a 1ct sapphire look significantly larger.',
   },
   {
-    q: 'Does price per carat increase with size?',
-    a: 'Yes, dramatically. Sapphire pricing follows a non-linear curve with significant jumps at milestone weights. A fine 3ct unheated Ceylon sapphire might cost USD 5,000–8,000 per carat, while a 5ct stone of identical quality could cost USD 8,000–15,000 per carat. Above 10ct, the premium accelerates further because large, fine-quality sapphires are genuinely rare. This is why two 2ct stones will always cost less than one 4ct stone of the same quality.',
+    q: 'Does value per carat increase with size?',
+    a: 'Yes, dramatically. Sapphire value follows a non-linear curve with significant step-changes at milestone weights. A fine 5ct unheated Ceylon sapphire commands a substantially higher per-carat value than a 3ct stone of identical quality, and above 10ct the premium accelerates further because large, fine-quality sapphires are genuinely rare. This is why two 2ct stones will always be worth less than one 4ct stone of the same quality.',
   },
   {
     q: 'Is it better to buy a larger heated sapphire or a smaller unheated one?',
@@ -88,6 +89,7 @@ export default function FAQPage() {
 
       <section className="bg-dark px-6 lg:px-10 pb-16">
         <div className="max-w-3xl mx-auto prose-gem">
+          <ArticleByline updated="2026-08-12" />
           <FadeUp>
             <h2>The Full Answer</h2>
             <p>
@@ -101,9 +103,9 @@ export default function FAQPage() {
             <p>
               Investment-grade sapphires typically start at 3 carats, where the per-carat premium for fine unheated stones becomes significant. The 3&ndash;10ct range offers the best combination of appreciation potential and market liquidity &mdash; stones in this range are rare enough to command premiums but common enough to have active buyers when you want to sell. Above 10ct, quality stones become extremely rare and the buyer pool narrows considerably.
             </p>
-            <h3>Price-per-carat jumps</h3>
+            <h3>Value jumps at milestone weights</h3>
             <p>
-              Sapphire pricing is not linear. A 2ct stone does not cost twice what a 1ct stone costs &mdash; it costs significantly more per carat. Major price jumps occur at 1ct, 2ct, 3ct, 5ct, and 10ct milestones. This means a 0.95ct stone can offer better value than a 1.05ct stone of identical quality, because it sits just below the milestone threshold. Savvy buyers look for stones that fall just under these milestones.
+              Sapphire value is not linear. A 2ct stone is worth more than twice what a 1ct stone of the same quality is worth. Major value jumps occur at 1ct, 2ct, 3ct, 5ct, and 10ct milestones. This means a 0.95ct stone can offer better value than a 1.05ct stone of identical quality, because it sits just below the milestone threshold. Savvy buyers look for stones that fall just under these milestones.
             </p>
             <h3>Quality over size, always</h3>
             <p>

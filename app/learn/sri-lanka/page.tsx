@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'Sri Lanka — The Island of Gems and Its Legendary Gemstone Heritage',
@@ -51,7 +53,9 @@ const schema = {
       name: 'Sri Lanka — The Island of Gems and Its Legendary Gemstone Heritage',
       description: 'Sri Lanka has produced the world\'s finest sapphires for over 2,500 years. Mining regions, geology, and the heritage of Ceylon gemstones.',
       url: 'https://serendibgemstones.com/learn/sri-lanka',
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      dateModified: '2026-08-12',
     },
   ],
 }
@@ -80,6 +84,13 @@ export default function SriLankaPage() {
               The ancient Arabs called it Serendib. Marco Polo wrote that it possessed &quot;the finest rubies in the world, and sapphires, topazes, amethysts, and many other stones.&quot; For over 2,500 years, Sri Lanka has been the world&apos;s most celebrated source of fine coloured gemstones — and today, it remains the single most important origin for collector-grade, unheated sapphires.
             </p>
           </FadeUp>
+        </div>
+      </section>
+
+      {/* Byline */}
+      <section className="bg-dark px-6 lg:px-10 pb-4">
+        <div className="max-w-3xl mx-auto">
+          <ArticleByline updated="2026-08-12" />
         </div>
       </section>
 
@@ -236,6 +247,19 @@ export default function SriLankaPage() {
               </FadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Sources */}
+      <section className="bg-dark px-6 lg:px-10 pb-16 pt-16 border-t border-teal/10">
+        <div className="max-w-5xl mx-auto">
+          <SourcesReferences sources={[
+            { label: 'National Gem & Jewellery Authority of Sri Lanka (NGJA)', detail: 'Sri Lankan gem industry regulation, mining oversight, and export certification', href: 'https://www.ngja.gov.lk' },
+            { label: 'GIA — Gemological Institute of America', detail: 'Ceylon sapphire origin determination and gemological research', href: 'https://www.gia.edu' },
+            { label: 'GRS — GemResearch Swisslab', detail: 'Origin determination and colour grading for Ceylon sapphires', href: 'https://www.gemresearch.ch' },
+            { label: 'Gübelin Gem Lab', detail: 'Origin research and inclusion characteristics of Sri Lankan corundum', href: 'https://www.gubelin.com/en/gemlab' },
+            { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed research on Sri Lankan gemstone geology and chemistry', href: 'https://www.gia.edu/gems-gemology' },
+          ]} />
         </div>
       </section>
 

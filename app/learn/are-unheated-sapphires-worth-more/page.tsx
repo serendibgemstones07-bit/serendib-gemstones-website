@@ -1,16 +1,18 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
+import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'Are Unheated Sapphires Worth More? — Serendib Gemstones',
-  description: 'Yes — unheated sapphires command a premium of 2 to 5 times a comparable heated stone. This guide explains the price data, why the premium exists, and whether it is likely to hold long term.',
+  description: 'Yes — unheated sapphires command a significant premium over comparable heated stones. This guide explains why the premium exists, how it varies by category, and whether it is likely to hold long term.',
 }
 
 const faqItems = [
   {
     q: 'How much more valuable is an unheated sapphire compared to a heated one?',
-    a: 'The premium varies with quality, size, and origin, but as a broad benchmark: a fine unheated sapphire typically commands 2 to 5 times the price of a comparable heated stone of the same colour grade and carat weight. For exceptional stones — vivid cornflower blue above 5 carats with strong Ceylon origin — the differential at major auction can reach 8 to 10 times. The premium is higher for larger stones and for origins like Ceylon where the no-heat status is particularly prized.',
+    a: 'The premium varies with quality, size, and origin, but as a broad principle: a fine unheated sapphire commands a significant premium over a comparable heated stone of the same colour grade and carat weight. For exceptional stones — vivid cornflower blue above 5 carats with strong Ceylon origin — the differential at major auction can be dramatic. The premium is higher for larger stones and for origins like Ceylon where the no-heat status is particularly prized.',
   },
   {
     q: 'Has the premium for unheated sapphires always existed?',
@@ -44,10 +46,11 @@ const schema = {
     {
       '@type': 'Article',
       headline: 'Are Unheated Sapphires Worth More Than Heated Ones?',
-      description: 'Unheated sapphires command a premium of 2 to 5 times a comparable heated stone — sometimes more at auction. This guide explains the price data and the structural reasons the premium is likely to hold.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      description: 'Unheated sapphires command a significant premium over comparable heated stones — often dramatically so at auction. This guide explains the structural reasons the premium exists and why it is likely to hold.',
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
+      dateModified: '2026-08-12',
       url: 'https://serendibgemstones.com/learn/are-unheated-sapphires-worth-more',
     },
     {
@@ -82,6 +85,7 @@ export default function UnheatedWorthMorePage() {
               Are unheated sapphires worth more?
             </h1>
             <p className="font-jost text-sm text-offwhite/40">4 min read · Serendib Gemstones</p>
+            <ArticleByline updated="2026-08-12" />
           </FadeUp>
         </div>
       </section>
@@ -91,14 +95,14 @@ export default function UnheatedWorthMorePage() {
           <div className="border-l-2 border-teal pl-6 mb-12">
             <p className="font-jost text-xs tracking-[0.2em] uppercase text-teal mb-2">Summary</p>
             <p className="font-cormorant text-xl text-dark leading-relaxed">
-              Yes — significantly. A fine unheated sapphire with a credible laboratory certificate typically commands 2 to 5 times the price of a comparable heated stone of equivalent colour, clarity, and carat weight. At major international auction, this differential can reach 8 to 10 times for exceptional stones. The premium is structural: supply of no-heat material can only decrease, while demand from serious collectors and investors continues to grow.
+              Yes — significantly. A fine unheated sapphire with a credible laboratory certificate commands a substantial premium over a comparable heated stone of equivalent colour, clarity, and carat weight. At major international auction, the differential can be dramatic for exceptional stones. The premium is structural: supply of no-heat material can only decrease, while demand from serious collectors and investors continues to grow.
             </p>
           </div>
 
           <div className="font-jost text-sm text-dark/70 leading-relaxed space-y-8">
             <div>
               <h2 className="font-cormorant text-2xl text-dark font-semibold mb-4">The market evidence</h2>
-              <p>The price differential between heated and unheated sapphires is not theoretical — it is consistently documented across the major auction records. At Sotheby&apos;s Geneva and Hong Kong sales, unheated Ceylon blue sapphires above 5 carats of fine colour regularly achieve USD 15,000 to 50,000 per carat. Comparable heated stones of the same colour grade typically achieve USD 3,000 to 10,000 per carat in the same rooms. The gap is not hidden — the auction estimates and hammer prices explicitly reflect treatment status as stated on the accompanying laboratory report.</p>
+              <p>The premium for unheated sapphires over comparable heated stones is not theoretical — it is consistently documented across the major auction records. At Sotheby&apos;s Geneva and Hong Kong sales, unheated Ceylon blue sapphires above 5 carats of fine colour regularly achieve multiples of the hammer prices realised by comparable heated stones of the same colour grade in the same rooms. The gap is not hidden — auction estimates and hammer prices explicitly reflect treatment status as stated on the accompanying laboratory report.</p>
               <p className="mt-4">At the dealer level, the premium is equally present but less uniformly documented, since private transactions are not publicly recorded. Dealers who specialise in unheated material — and who can demonstrate it with current GIA or GRS certificates — price accordingly, and buyers accept the premium because they have independent verification.</p>
             </div>
 
@@ -130,12 +134,12 @@ export default function UnheatedWorthMorePage() {
                   </thead>
                   <tbody className="divide-y divide-dark/8">
                     {[
-                      ['Fine blue sapphire, 1–3ct', '2–3×'],
-                      ['Fine blue sapphire, 3–5ct', '3–5×'],
-                      ['Fine blue sapphire, 5ct+', '5–10× (auction)'],
+                      ['Fine blue sapphire, 1–3ct', 'Meaningful premium'],
+                      ['Fine blue sapphire, 3–5ct', 'Substantial premium'],
+                      ['Fine blue sapphire, 5ct+', 'Dramatic premium at auction'],
                       ['Padparadscha sapphire', 'Intrinsic — no-heat required for designation'],
                       ['Star sapphire', 'Intrinsic — heating destroys the star'],
-                      ['Pink / yellow sapphire', '1.5–3× (less liquid market)'],
+                      ['Pink / yellow sapphire', 'Moderate premium (less liquid market)'],
                     ].map(([cat, premium]) => (
                       <tr key={cat}>
                         <td className="py-3 pr-6 text-dark/70">{cat}</td>
@@ -171,6 +175,19 @@ export default function UnheatedWorthMorePage() {
               </FadeUp>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-dark px-6 lg:px-10 pb-16">
+        <div className="max-w-3xl mx-auto">
+          <SourcesReferences sources={[
+            { label: 'GIA — Gemological Institute of America', detail: 'Heat-treatment disclosure and no-heat determinations for sapphires', href: 'https://www.gia.edu' },
+            { label: 'GRS — GemResearch Swisslab', detail: '"No heat" designation and colour grading recognised at auction', href: 'https://www.gemresearch.ch' },
+            { label: 'SSEF — Swiss Gemmological Institute', detail: 'Advanced spectroscopy and treatment detection', href: 'https://www.ssef.ch' },
+            { label: 'Gübelin Gem Lab', detail: 'Inclusion analysis and provenance research', href: 'https://www.gubelin.com/en/gemlab' },
+            { label: 'CIBJO — The World Jewellery Confederation', detail: 'International disclosure standards affecting the no-heat market', href: 'https://www.cibjo.org' },
+            { label: 'Gems & Gemology (GIA quarterly journal)', detail: 'Peer-reviewed research on auction pricing and treatment premiums', href: 'https://www.gia.edu/gems-gemology' },
+          ]} />
         </div>
       </section>
 

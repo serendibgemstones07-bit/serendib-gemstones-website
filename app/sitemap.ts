@@ -5,6 +5,7 @@ const BASE = 'https://serendibgemstones.com'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: BASE, lastModified: new Date(), changeFrequency: 'monthly', priority: 1 },
+    { url: `${BASE}/ceylon-sapphires`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.95 },
     { url: `${BASE}/about`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/gemstones`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE}/services`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -22,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/gemstones/blue-sapphire`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/gemstones/padparadscha-sapphire`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/gemstones/ruby`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/gemstones/yellow-sapphire`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
 
     // Knowledge Centre
     { url: `${BASE}/learn`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },

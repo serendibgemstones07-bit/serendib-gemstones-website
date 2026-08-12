@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeUp from '@/components/FadeUp'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'What Is the Best Colour for a Blue Sapphire?',
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 const faqItems = [
   {
     q: 'What is the difference between royal blue and cornflower blue sapphires?',
-    a: 'Royal blue describes a deep, intense, saturated blue with a slight violet secondary hue — think of the sapphires associated with the British Crown Jewels. Cornflower blue describes a medium-toned, luminous blue reminiscent of the petals of a cornflower, typically with slightly less depth but exceptional brilliance and "life." GRS uses both terms as formal colour grades on their reports. Royal blue stones tend to command higher prices per carat, but fine cornflower blue sapphires — particularly from Sri Lanka — are equally prized by collectors who prefer a more open, radiant appearance.',
+    a: 'Royal blue describes a deep, intense, saturated blue with a slight violet secondary hue — think of the sapphires associated with the British Crown Jewels. Cornflower blue describes a medium-toned, luminous blue reminiscent of the petals of a cornflower, typically with slightly less depth but exceptional brilliance and "life." GRS uses both terms as formal colour grades on their reports. Royal blue stones tend to command a premium, but fine cornflower blue sapphires — particularly from Sri Lanka — are equally prized by collectors who prefer a more open, radiant appearance.',
   },
   {
     q: 'Does a sapphire\'s colour change in different lighting?',
@@ -97,6 +98,7 @@ export default function BestColourBlueSapphirePage() {
       {/* Full Answer */}
       <section className="bg-dark px-6 lg:px-10 pb-20">
         <div className="max-w-3xl mx-auto prose-gem">
+          <ArticleByline updated="2026-08-12" />
           <FadeUp>
             <h2>Understanding sapphire colour: hue, tone, and saturation</h2>
             <p>
@@ -133,7 +135,7 @@ export default function BestColourBlueSapphirePage() {
           <FadeUp>
             <h2>Colour grades on laboratory reports</h2>
             <p>
-              GRS provides formal colour grades on their reports, and these grades have become a significant factor in pricing. The hierarchy for blue sapphires, from highest to lower, is: &ldquo;Vivid Blue (Royal Blue),&rdquo; &ldquo;Vivid Blue,&rdquo; &ldquo;Intense Blue,&rdquo; and &ldquo;Blue.&rdquo; Each step down represents a meaningful reduction in market value — typically 20 to 40 percent. GIA does not issue colour grades for sapphires on their standard reports, preferring to describe colour descriptively. Many serious buyers seek a GRS report specifically for the colour grade, sometimes in addition to a GIA report for identification and treatment determination.
+              GRS provides formal colour grades on their reports, and these grades have become a significant factor in pricing. The hierarchy for blue sapphires, from highest to lower, is: &ldquo;Vivid Blue (Royal Blue),&rdquo; &ldquo;Vivid Blue,&rdquo; &ldquo;Intense Blue,&rdquo; and &ldquo;Blue.&rdquo; Each step down represents a meaningful reduction in market value. GIA does not issue colour grades for sapphires on their standard reports, preferring to describe colour descriptively. Many serious buyers seek a GRS report specifically for the colour grade, sometimes in addition to a GIA report for identification and treatment determination.
             </p>
           </FadeUp>
         </div>
