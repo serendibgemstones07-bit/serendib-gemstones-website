@@ -52,6 +52,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: BASE,
   },
+  verification: {
+    other: {
+      'msvalidate.01': '8007F79D9D0F89E8137D0D777B9BD4C3',
+    },
+  },
 }
 
 const orgSchema = {
