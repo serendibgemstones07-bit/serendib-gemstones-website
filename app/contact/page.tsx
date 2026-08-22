@@ -15,7 +15,7 @@ const localBusinessSchema = {
   name: 'Serendib Gemstones (Pvt) Ltd',
   image: 'https://serendibgemstones.com/logo.jpg',
   url: 'https://serendibgemstones.com',
-  email: 'info@serendibgemstones.com',
+  email: 'gems@serendibgemstones.com',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '309/2, Kristhuraja Mawatha, Daluwakotuwa',
@@ -75,8 +75,8 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="font-jost text-xs uppercase tracking-widest text-dark/35 mb-1">Email</p>
-                <a href="mailto:info@serendibgemstones.com" className="font-jost text-sm text-teal hover:text-teal-dark transition-colors">
-                  info@serendibgemstones.com
+                <a href="mailto:gems@serendibgemstones.com" className="font-jost text-sm text-teal hover:text-teal-dark transition-colors">
+                  gems@serendibgemstones.com
                 </a>
               </div>
               <div>

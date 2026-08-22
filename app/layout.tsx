@@ -73,7 +73,7 @@ const orgSchema = {
     addressLocality: 'Kochchikade',
     addressCountry: 'LK',
   },
-  email: 'info@serendibgemstones.com',
+  email: 'gems@serendibgemstones.com',
   sameAs: ['https://instagram.com/serendibgemstones'],
   knowsAbout: [
     'Unheated sapphires', 'Ceylon sapphires', 'Sri Lankan gemstones',
