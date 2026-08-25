@@ -73,8 +73,13 @@ const orgSchema = {
     addressLocality: 'Kochchikade',
     addressCountry: 'LK',
   },
-  email: 'info@serendibgemstones.com',
-  sameAs: ['https://instagram.com/serendibgemstones'],
+  email: 'gems@serendibgemstones.com',
+  telephone: '+94702494944',
+  sameAs: [
+    'https://instagram.com/serendibgemstones',
+    'https://www.facebook.com/profile.php?id=61576728277318',
+    'https://www.linkedin.com/company/108974289/',
+  ],
   knowsAbout: [
     'Unheated sapphires', 'Ceylon sapphires', 'Sri Lankan gemstones',
     'GIA certification', 'GRS certification', 'Padparadscha sapphires',

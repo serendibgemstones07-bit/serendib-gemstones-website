@@ -124,8 +124,8 @@ export default function Footer() {
         <div className="border-t border-teal/10 pt-8 pb-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div>
             <p className="font-jost text-xs uppercase tracking-widest text-offwhite/25 mb-1">Email</p>
-            <a href="mailto:info@serendibgemstones.com" className="font-jost text-sm text-teal/80 hover:text-teal-light transition-colors">
-              info@serendibgemstones.com
+            <a href="mailto:gems@serendibgemstones.com" className="font-jost text-sm text-teal/80 hover:text-teal-light transition-colors">
+              gems@serendibgemstones.com
             </a>
           </div>
           <div>
@@ -134,14 +134,32 @@ export default function Footer() {
           </div>
           <div>
             <p className="font-jost text-xs uppercase tracking-widest text-offwhite/25 mb-1">Social</p>
-            <a
-              href="https://instagram.com/serendibgemstones"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-jost text-sm text-offwhite/50 hover:text-purple-mid transition-colors"
-            >
-              @serendibgemstones
-            </a>
+            <div className="flex flex-col gap-1">
+              <a
+                href="https://instagram.com/serendibgemstones"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-jost text-sm text-offwhite/50 hover:text-purple-mid transition-colors"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61576728277318"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-jost text-sm text-offwhite/50 hover:text-purple-mid transition-colors"
+              >
+                Facebook
+              </a>
+              <a
+                href="https://www.linkedin.com/company/108974289/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-jost text-sm text-offwhite/50 hover:text-purple-mid transition-colors"
+              >
+                LinkedIn
+              </a>
+            </div>
           </div>
         </div>
 

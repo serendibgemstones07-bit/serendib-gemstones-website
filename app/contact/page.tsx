@@ -15,7 +15,8 @@ const localBusinessSchema = {
   name: 'Serendib Gemstones (Pvt) Ltd',
   image: 'https://serendibgemstones.com/logo.jpg',
   url: 'https://serendibgemstones.com',
-  email: 'info@serendibgemstones.com',
+  email: 'gems@serendibgemstones.com',
+  telephone: '+94702494944',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '309/2, Kristhuraja Mawatha, Daluwakotuwa',
@@ -75,14 +76,14 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="font-jost text-xs uppercase tracking-widest text-dark/35 mb-1">Email</p>
-                <a href="mailto:info@serendibgemstones.com" className="font-jost text-sm text-teal hover:text-teal-dark transition-colors">
-                  info@serendibgemstones.com
+                <a href="mailto:gems@serendibgemstones.com" className="font-jost text-sm text-teal hover:text-teal-dark transition-colors">
+                  gems@serendibgemstones.com
                 </a>
               </div>
               <div>
                 <p className="font-jost text-xs uppercase tracking-widest text-dark/35 mb-1">WhatsApp</p>
-                <a href="https://wa.me/94000000000" className="font-jost text-sm text-dark/70 hover:text-teal transition-colors">
-                  +94 (0) 000 000 000
+                <a href="https://wa.me/94702494944" className="font-jost text-sm text-dark/70 hover:text-teal transition-colors">
+                  +94 70 249 4944
                 </a>
               </div>
               <div>
@@ -94,6 +95,28 @@ export default function ContactPage() {
                   className="font-jost text-sm text-dark/70 hover:text-purple transition-colors"
                 >
                   @serendibgemstones
+                </a>
+              </div>
+              <div>
+                <p className="font-jost text-xs uppercase tracking-widest text-dark/35 mb-1">Facebook</p>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61576728277318"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-jost text-sm text-dark/70 hover:text-purple transition-colors"
+                >
+                  Serendib Gemstones
+                </a>
+              </div>
+              <div>
+                <p className="font-jost text-xs uppercase tracking-widest text-dark/35 mb-1">LinkedIn</p>
+                <a
+                  href="https://www.linkedin.com/company/108974289/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-jost text-sm text-dark/70 hover:text-purple transition-colors"
+                >
+                  Serendib Gemstones
                 </a>
               </div>
             </div>
