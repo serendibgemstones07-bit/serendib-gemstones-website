@@ -38,20 +38,20 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'Are Unheated Sapphires Worth More?', item: 'https://serendibgemstones.com/learn/are-unheated-sapphires-worth-more' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'Are Unheated Sapphires Worth More?', item: 'https://www.serendibgemstones.com/learn/are-unheated-sapphires-worth-more' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'Are Unheated Sapphires Worth More Than Heated Ones?',
       description: 'Unheated sapphires command a significant premium over comparable heated stones — often dramatically so at auction. This guide explains the structural reasons the premium exists and why it is likely to hold.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
       dateModified: '2026-08-12',
-      url: 'https://serendibgemstones.com/learn/are-unheated-sapphires-worth-more',
+      url: 'https://www.serendibgemstones.com/learn/are-unheated-sapphires-worth-more',
     },
     {
       '@type': 'FAQPage',

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Blue Sapphire — The Complete Guide to Ceylon Blue Sapphires',
   description:
     'A blue sapphire is a precious gemstone of the mineral corundum, coloured by trace amounts of iron and titanium. Sri Lanka (Ceylon) produces the world\'s most prized blue sapphires — known for their vivid cornflower-blue hue and exceptional clarity. Learn about origins, quality factors, treatments, and investment value.',
-  alternates: { canonical: 'https://serendibgemstones.com/gemstones/blue-sapphire' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/gemstones/blue-sapphire' },
 }
 
 const faqItems = [
@@ -69,21 +69,21 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Gemstones', item: 'https://serendibgemstones.com/gemstones' },
-        { '@type': 'ListItem', position: 3, name: 'Blue Sapphire', item: 'https://serendibgemstones.com/gemstones/blue-sapphire' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Gemstones', item: 'https://www.serendibgemstones.com/gemstones' },
+        { '@type': 'ListItem', position: 3, name: 'Blue Sapphire', item: 'https://www.serendibgemstones.com/gemstones/blue-sapphire' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'Blue Sapphire — The Complete Guide to Ceylon Blue Sapphires',
       description: metadata.description,
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://serendibgemstones.com/logo.jpg' } },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-07-31',
       dateModified: '2026-08-12',
-      mainEntityOfPage: 'https://serendibgemstones.com/gemstones/blue-sapphire',
+      mainEntityOfPage: 'https://www.serendibgemstones.com/gemstones/blue-sapphire',
     },
     {
       '@type': 'FAQPage',

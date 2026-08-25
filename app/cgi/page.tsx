@@ -6,7 +6,7 @@ import GemSVG from '@/components/GemSVG'
 export const metadata: Metadata = {
   title: 'Ceylon Gem Identity (CGI) — Digital Provenance for Sri Lankan Gemstones',
   description: 'CGI (Ceylon Gem Identity) creates a trusted digital identity for every gemstone — combining provenance documentation, laboratory certification, and verifiable sourcing history into one transparent record.',
-  alternates: { canonical: 'https://serendibgemstones.com/cgi' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/cgi' },
 }
 
 const pillars = [
@@ -81,11 +81,11 @@ export default function CGIPage() {
             '@type': 'WebPage',
             name: 'Ceylon Gem Identity (CGI) — Digital Provenance for Sri Lankan Gemstones',
             description: 'CGI creates a trusted digital identity for every gemstone — combining provenance, certification, and sourcing history into one transparent record.',
-            url: 'https://serendibgemstones.com/cgi',
+            url: 'https://www.serendibgemstones.com/cgi',
             isPartOf: {
               '@type': 'WebSite',
               name: 'Serendib Gemstones',
-              url: 'https://serendibgemstones.com',
+              url: 'https://www.serendibgemstones.com',
             },
           }),
         }}
@@ -98,8 +98,8 @@ export default function CGIPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-              { '@type': 'ListItem', position: 2, name: 'Ceylon Gem Identity', item: 'https://serendibgemstones.com/cgi' },
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+              { '@type': 'ListItem', position: 2, name: 'Ceylon Gem Identity', item: 'https://www.serendibgemstones.com/cgi' },
             ],
           }),
         }}

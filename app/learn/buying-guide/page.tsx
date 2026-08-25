@@ -7,7 +7,7 @@ import SourcesReferences from '@/components/SourcesReferences'
 export const metadata: Metadata = {
   title: 'Buying Guide — How to Buy Ceylon Gemstones with Confidence',
   description: 'Expert guidance on buying unheated Ceylon sapphires direct from Sri Lanka. Understand certification, treatments, origin, and pricing before you commit — written by people who source at the mine.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/buying-guide' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/buying-guide' },
 }
 
 const guides = [
@@ -50,17 +50,17 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'Buying Guide', item: 'https://serendibgemstones.com/learn/buying-guide' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'Buying Guide', item: 'https://www.serendibgemstones.com/learn/buying-guide' },
       ],
     },
     {
       '@type': 'CollectionPage',
       name: 'Buying Guide — How to Buy Ceylon Gemstones with Confidence',
       description: 'Expert guidance on buying unheated Ceylon sapphires direct from Sri Lanka. Certification, treatments, origin, pricing, and investment considerations.',
-      url: 'https://serendibgemstones.com/learn/buying-guide',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      url: 'https://www.serendibgemstones.com/learn/buying-guide',
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       dateModified: '2026-08-12',

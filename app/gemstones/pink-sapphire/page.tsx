@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Pink Sapphire — The Complete Guide to Ceylon Pink Sapphires',
   description:
     'A pink sapphire is a precious gemstone of the mineral corundum, coloured pink by trace amounts of chromium. Sri Lanka (Ceylon) is the historic and premier source for fine pink sapphires — bright, saturated, high-clarity stones. Learn about the pink/ruby debate, colour range, treatments, certification, and how to buy.',
-  alternates: { canonical: 'https://serendibgemstones.com/gemstones/pink-sapphire' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/gemstones/pink-sapphire' },
 }
 
 const faqItems = [
@@ -61,21 +61,21 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Gemstones', item: 'https://serendibgemstones.com/gemstones' },
-        { '@type': 'ListItem', position: 3, name: 'Pink Sapphire', item: 'https://serendibgemstones.com/gemstones/pink-sapphire' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Gemstones', item: 'https://www.serendibgemstones.com/gemstones' },
+        { '@type': 'ListItem', position: 3, name: 'Pink Sapphire', item: 'https://www.serendibgemstones.com/gemstones/pink-sapphire' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'Pink Sapphire — The Complete Guide to Ceylon Pink Sapphires',
       description: metadata.description,
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://serendibgemstones.com/logo.jpg' } },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-08-13',
       dateModified: '2026-08-13',
-      mainEntityOfPage: 'https://serendibgemstones.com/gemstones/pink-sapphire',
+      mainEntityOfPage: 'https://www.serendibgemstones.com/gemstones/pink-sapphire',
     },
     {
       '@type': 'FAQPage',
