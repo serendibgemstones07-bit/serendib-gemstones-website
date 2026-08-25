@@ -49,6 +49,13 @@
   }
 }
 
+/* Native <select> option readability — dropdown popups render with the OS palette,
+   so light option text on a light system background is invisible. Force dark text. */
+select option {
+  color: #0f1c2e;
+  background-color: #f8f6f2;
+}
+
 /* Marquee */
 .marquee-track {
   display: flex;
