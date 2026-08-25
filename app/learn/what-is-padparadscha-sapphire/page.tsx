@@ -38,20 +38,20 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Gemstone Guides', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'What is a Padparadscha Sapphire?', item: 'https://serendibgemstones.com/learn/what-is-padparadscha-sapphire' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Gemstone Guides', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'What is a Padparadscha Sapphire?', item: 'https://www.serendibgemstones.com/learn/what-is-padparadscha-sapphire' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'What is a Padparadscha Sapphire?',
       description: 'A Padparadscha sapphire is the rarest variety of corundum, displaying a pinkish-orange to orangy-pink colour named for the lotus blossom. Sri Lanka is its most celebrated source.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
       dateModified: '2026-08-12',
-      url: 'https://serendibgemstones.com/learn/what-is-padparadscha-sapphire',
+      url: 'https://www.serendibgemstones.com/learn/what-is-padparadscha-sapphire',
     },
     {
       '@type': 'FAQPage',

@@ -6,7 +6,7 @@ import GemSVG from '@/components/GemSVG'
 export const metadata: Metadata = {
   title: 'How the Gem Identity Number (GIN) Works — CGI System',
   description: 'Every CGI-registered gemstone receives a unique Gem Identity Number (GIN) — a structured identifier that links physical stones to their complete digital provenance record, certification data, and treatment history.',
-  alternates: { canonical: 'https://serendibgemstones.com/cgi/how-gin-works' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/cgi/how-gin-works' },
 }
 
 const ginComponents = [
@@ -70,8 +70,8 @@ export default function HowGINWorksPage() {
             '@type': 'Article',
             headline: 'How the Gem Identity Number (GIN) Works',
             description: 'Every CGI-registered gemstone receives a unique Gem Identity Number — a structured identifier linking physical stones to their complete digital record.',
-            url: 'https://serendibgemstones.com/cgi/how-gin-works',
-            author: { '@type': 'Organization', name: 'Serendib Gemstones', url: 'https://serendibgemstones.com' },
+            url: 'https://www.serendibgemstones.com/cgi/how-gin-works',
+            author: { '@type': 'Organization', name: 'Serendib Gemstones', url: 'https://www.serendibgemstones.com' },
           }),
         }}
       />
@@ -83,9 +83,9 @@ export default function HowGINWorksPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-              { '@type': 'ListItem', position: 2, name: 'Ceylon Gem Identity', item: 'https://serendibgemstones.com/cgi' },
-              { '@type': 'ListItem', position: 3, name: 'How GIN Works', item: 'https://serendibgemstones.com/cgi/how-gin-works' },
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+              { '@type': 'ListItem', position: 2, name: 'Ceylon Gem Identity', item: 'https://www.serendibgemstones.com/cgi' },
+              { '@type': 'ListItem', position: 3, name: 'How GIN Works', item: 'https://www.serendibgemstones.com/cgi/how-gin-works' },
             ],
           }),
         }}

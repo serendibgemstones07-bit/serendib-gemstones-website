@@ -6,7 +6,7 @@ import GemSVG from '@/components/GemSVG'
 export const metadata: Metadata = {
   title: 'The CGI Passport — A Digital Identity Document for Every Gemstone',
   description: 'The CGI Passport combines laboratory certification, provenance documentation, treatment disclosure, and high-resolution imagery into one comprehensive, verifiable digital identity for each gemstone.',
-  alternates: { canonical: 'https://serendibgemstones.com/cgi/cgi-passport' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/cgi/cgi-passport' },
 }
 
 const passportSections = [
@@ -72,8 +72,8 @@ export default function CGIPassportPage() {
             '@type': 'Article',
             headline: 'The CGI Passport — A Digital Identity Document for Every Gemstone',
             description: 'The CGI Passport combines laboratory certification, provenance, treatment disclosure, and imagery into one verifiable digital identity.',
-            url: 'https://serendibgemstones.com/cgi/cgi-passport',
-            author: { '@type': 'Organization', name: 'Serendib Gemstones', url: 'https://serendibgemstones.com' },
+            url: 'https://www.serendibgemstones.com/cgi/cgi-passport',
+            author: { '@type': 'Organization', name: 'Serendib Gemstones', url: 'https://www.serendibgemstones.com' },
           }),
         }}
       />
@@ -85,9 +85,9 @@ export default function CGIPassportPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-              { '@type': 'ListItem', position: 2, name: 'Ceylon Gem Identity', item: 'https://serendibgemstones.com/cgi' },
-              { '@type': 'ListItem', position: 3, name: 'CGI Passport', item: 'https://serendibgemstones.com/cgi/cgi-passport' },
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+              { '@type': 'ListItem', position: 2, name: 'Ceylon Gem Identity', item: 'https://www.serendibgemstones.com/cgi' },
+              { '@type': 'ListItem', position: 3, name: 'CGI Passport', item: 'https://www.serendibgemstones.com/cgi/cgi-passport' },
             ],
           }),
         }}

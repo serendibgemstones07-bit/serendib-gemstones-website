@@ -5,7 +5,7 @@ import FadeUp from '@/components/FadeUp'
 export const metadata: Metadata = {
   title: 'Export & Worldwide Shipping',
   description: 'Secure, insured gemstone shipping from Sri Lanka to anywhere in the world. Full export documentation, customs guidance, tracked delivery, and professional packaging.',
-  alternates: { canonical: 'https://serendibgemstones.com/export-shipping' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/export-shipping' },
 }
 
 const shippingFeatures = [
@@ -47,7 +47,7 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
         { '@type': 'ListItem', position: 2, name: 'Export & Shipping' },
       ],
     },
@@ -58,10 +58,10 @@ const schema = {
       provider: {
         '@type': 'Organization',
         name: 'Serendib Gemstones (Pvt) Ltd',
-        url: 'https://serendibgemstones.com',
+        url: 'https://www.serendibgemstones.com',
       },
       areaServed: 'Worldwide',
-      url: 'https://serendibgemstones.com/export-shipping',
+      url: 'https://www.serendibgemstones.com/export-shipping',
     },
   ],
 }
