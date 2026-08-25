@@ -90,15 +90,18 @@ const featuredGuides = [
   },
 ]
 
+const additionalGuides = [
+  { name: 'Green Sapphire', href: '/gemstones/green-sapphire', family: 'Corundum', colour: '#3a8c50', tag: 'Trending' },
+  { name: 'Alexandrite', href: '/gemstones/alexandrite', family: 'Chrysoberyl', colour: '#6b8a4a', tag: 'Rare' },
+  { name: 'Spinel', href: '/gemstones/spinel', family: 'Spinel', colour: '#3c64c8', tag: 'Untreated' },
+  { name: 'Star Ruby', href: '/gemstones/star-ruby', family: 'Corundum', colour: '#a02b2b', tag: 'Asterism' },
+  { name: 'Hessonite', href: '/gemstones/hessonite', family: 'Garnet', colour: '#c8783c', tag: 'Navaratna' },
+  { name: 'Zircon', href: '/gemstones/zircon', family: 'Zircon', colour: '#3a8cbe', tag: 'Natural' },
+]
+
 const upcomingGuides = [
-  { name: 'Alexandrite', family: 'Chrysoberyl', colour: '#2e8b57' },
   { name: "Cat's Eye", family: 'Chrysoberyl', colour: '#b8860b' },
-  { name: 'Blue Spinel', family: 'Spinel', colour: '#2e5fa3' },
-  { name: 'Hessonite Garnet', family: 'Garnet', colour: '#c0712b' },
-  { name: 'Blue Zircon', family: 'Zircon', colour: '#5eb8d4' },
-  { name: 'Star Ruby', family: 'Corundum', colour: '#a93226' },
   { name: 'White Sapphire', family: 'Corundum', colour: '#c8c8c8' },
-  { name: 'Green Sapphire', family: 'Corundum', colour: '#2d6a4f' },
   { name: 'Colour-Change Sapphire', family: 'Corundum', colour: '#6b5b95' },
 ]
 
@@ -206,8 +209,36 @@ export default function GemstonesPage() {
         </div>
       </section>
 
-      {/* All Species */}
+      {/* Additional Guides */}
       <section className="bg-dark-card px-6 lg:px-10 py-20 border-t border-teal/10">
+        <div className="max-w-6xl mx-auto">
+          <FadeUp>
+            <p className="font-jost text-xs tracking-[0.3em] uppercase text-teal/60 mb-3 text-center">Also in the Library</p>
+            <h2 className="font-cormorant text-3xl sm:text-4xl text-offwhite font-semibold text-center mb-14">
+              More Ceylon Gemstone Guides
+            </h2>
+          </FadeUp>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {additionalGuides.map((gem, i) => (
+              <FadeUp key={gem.name} delay={i * 0.05}>
+                <Link href={gem.href} className="group block border border-white/6 hover:border-teal/30 bg-dark p-6 transition-colors h-full">
+                  <div className="flex justify-between items-start mb-4">
+                    <GemSVG colour={gem.colour} size={48} />
+                    <span className="font-jost text-[10px] tracking-wider uppercase text-teal/60 border border-teal/20 px-2 py-0.5">{gem.tag}</span>
+                  </div>
+                  <h3 className="font-cormorant text-xl text-offwhite font-semibold group-hover:text-teal-light transition-colors mb-1">{gem.name}</h3>
+                  <p className="font-jost text-[10px] uppercase tracking-wider text-offwhite/30 mb-3">{gem.family}</p>
+                  <span className="font-jost text-xs tracking-widest uppercase text-teal/60 group-hover:text-teal transition-colors">Read guide →</span>
+                </Link>
+              </FadeUp>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Coming Soon */}
+      <section className="bg-dark px-6 lg:px-10 py-20 border-t border-teal/10">
         <div className="max-w-6xl mx-auto">
           <FadeUp>
             <p className="font-jost text-xs tracking-[0.3em] uppercase text-teal/60 mb-3 text-center">Coming Soon</p>
