@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const BASE = 'https://serendibgemstones.com'
+const BASE = 'https://www.serendibgemstones.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/gemstones/yellow-sapphire`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/gemstones/pink-sapphire`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/gemstones/star-sapphire`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/gemstones/spinel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
 
     // Knowledge Centre
     { url: `${BASE}/learn`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },

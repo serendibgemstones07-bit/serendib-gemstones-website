@@ -4,8 +4,9 @@ import FadeUp from '@/components/FadeUp'
 
 export const metadata: Metadata = {
   title: 'How We Source Our Gemstones — Serendib Gemstones',
-  description: 'From mine to client — follow the journey of a Serendib gemstone. We work directly with trusted field operators in Ratnapura, Elahera, and Sri Lanka\'s major gem regions.',
-  alternates: { canonical: 'https://serendibgemstones.com/how-we-source' },
+  description: 'From mine to client — the journey of a Serendib gemstone. We work directly with trusted field operators in Ratnapura, Elahera and Sri Lanka\'s gem regions.',
+  openGraph: { url: 'https://www.serendibgemstones.com/how-we-source' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/how-we-source' },
 }
 
 const steps = [

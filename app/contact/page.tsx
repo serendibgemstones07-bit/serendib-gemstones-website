@@ -5,16 +5,17 @@ import LogoImage from '@/components/LogoImage'
 
 export const metadata: Metadata = {
   title: 'Contact & Enquiry — Serendib Gemstones',
-  description: 'Enquire about certified, unheated Sri Lankan sapphires, rubies, and alexandrite. Whether you\'re a collector, jeweller, or investor — we respond personally to every enquiry.',
-  alternates: { canonical: 'https://serendibgemstones.com/contact' },
+  description: 'Enquire about certified, unheated Sri Lankan sapphires, rubies and alexandrite. Collector, jeweller or investor — we respond personally to every enquiry.',
+  openGraph: { url: 'https://www.serendibgemstones.com/contact' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/contact' },
 }
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'Serendib Gemstones (Pvt) Ltd',
-  image: 'https://serendibgemstones.com/logo.jpg',
-  url: 'https://serendibgemstones.com',
+  image: 'https://www.serendibgemstones.com/logo.jpg',
+  url: 'https://www.serendibgemstones.com',
   email: 'info@serendibgemstones.com',
   address: {
     '@type': 'PostalAddress',

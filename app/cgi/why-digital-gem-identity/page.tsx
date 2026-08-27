@@ -4,9 +4,10 @@ import FadeUp from '@/components/FadeUp'
 import GemSVG from '@/components/GemSVG'
 
 export const metadata: Metadata = {
-  title: 'Why Digital Gem Identity Matters — The Trust Gap in Gemstone Trading',
-  description: 'The international gemstone trade relies on trust, but lacks a universal system for verifying provenance, treatment history, and chain of custody. CGI addresses this gap with a digital identity framework for Sri Lankan gemstones.',
-  alternates: { canonical: 'https://serendibgemstones.com/cgi/why-digital-gem-identity' },
+  title: 'Why Digital Gem Identity',
+  description: 'The gemstone trade has no universal system for verifying provenance, treatment history, or chain of custody. CGI closes that trust gap for Sri Lankan stones.',
+  openGraph: { url: 'https://www.serendibgemstones.com/cgi/why-digital-gem-identity' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/cgi/why-digital-gem-identity' },
 }
 
 const challenges = [
@@ -70,12 +71,13 @@ export default function WhyDigitalGemIdentityPage() {
             '@context': 'https://schema.org',
             '@type': 'Article',
             headline: 'Why Digital Gem Identity Matters',
+      image: 'https://www.serendibgemstones.com/logo.jpg',
             description: 'The international gemstone trade relies on trust, but lacks a universal system for verifying provenance and treatment history. CGI addresses this gap.',
-            url: 'https://serendibgemstones.com/cgi/why-digital-gem-identity',
+            url: 'https://www.serendibgemstones.com/cgi/why-digital-gem-identity',
             author: {
               '@type': 'Organization',
               name: 'Serendib Gemstones',
-              url: 'https://serendibgemstones.com',
+              url: 'https://www.serendibgemstones.com',
             },
           }),
         }}
@@ -88,9 +90,9 @@ export default function WhyDigitalGemIdentityPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-              { '@type': 'ListItem', position: 2, name: 'Ceylon Gem Identity', item: 'https://serendibgemstones.com/cgi' },
-              { '@type': 'ListItem', position: 3, name: 'Why Digital Gem Identity Matters', item: 'https://serendibgemstones.com/cgi/why-digital-gem-identity' },
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+              { '@type': 'ListItem', position: 2, name: 'Ceylon Gem Identity', item: 'https://www.serendibgemstones.com/cgi' },
+              { '@type': 'ListItem', position: 3, name: 'Why Digital Gem Identity Matters', item: 'https://www.serendibgemstones.com/cgi/why-digital-gem-identity' },
             ],
           }),
         }}

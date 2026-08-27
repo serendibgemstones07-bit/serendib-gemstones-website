@@ -4,9 +4,10 @@ import FadeUp from '@/components/FadeUp'
 import GemSVG from '@/components/GemSVG'
 
 export const metadata: Metadata = {
-  title: 'Gemstone Library — Complete Guides to Ceylon Gemstones',
-  description: 'Comprehensive guides to every gemstone Sri Lanka produces — blue sapphires, padparadscha, rubies, alexandrite, spinel, and more. Learn what to look for, what to avoid, and what makes each stone valuable.',
-  alternates: { canonical: 'https://serendibgemstones.com/gemstones' },
+  title: 'Gemstone Library — Ceylon Gem Guides',
+  description: 'Guides to every gemstone Sri Lanka produces — blue sapphire, padparadscha, ruby, alexandrite, spinel and more. What to look for and what makes each valuable.',
+  openGraph: { url: 'https://www.serendibgemstones.com/gemstones' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/gemstones' },
 }
 
 const featuredGuides = [
@@ -88,12 +89,24 @@ const featuredGuides = [
       { label: 'Top Origin', value: 'Sri Lanka' },
     ],
   },
+  {
+    href: '/gemstones/spinel',
+    title: 'Spinel',
+    subtitle: 'The Complete Guide to Ceylon & World Spinels',
+    badge: 'Rediscovered',
+    colour: '#c0392b',
+    description: 'Historically mistaken for ruby — the Black Prince\'s Ruby and Timur Ruby are both spinels. A distinct mineral, almost always untreated. Sri Lanka produces red, pink, purple, and rare cobalt-blue spinel across the full colour range.',
+    stats: [
+      { label: 'Mineral', value: 'Spinel' },
+      { label: 'Hardness', value: '8 / 10' },
+      { label: 'Treatment', value: 'None (typical)' },
+    ],
+  },
 ]
 
 const upcomingGuides = [
   { name: 'Alexandrite', family: 'Chrysoberyl', colour: '#2e8b57' },
   { name: "Cat's Eye", family: 'Chrysoberyl', colour: '#b8860b' },
-  { name: 'Blue Spinel', family: 'Spinel', colour: '#2e5fa3' },
   { name: 'Hessonite Garnet', family: 'Garnet', colour: '#c0712b' },
   { name: 'Blue Zircon', family: 'Zircon', colour: '#5eb8d4' },
   { name: 'Star Ruby', family: 'Corundum', colour: '#a93226' },
@@ -113,13 +126,13 @@ export default function GemstonesPage() {
             '@type': 'CollectionPage',
             name: 'Gemstone Library — Complete Guides to Ceylon Gemstones',
             description: 'Comprehensive guides to every gemstone Sri Lanka produces.',
-            url: 'https://serendibgemstones.com/gemstones',
+            url: 'https://www.serendibgemstones.com/gemstones',
             mainEntity: {
               '@type': 'ItemList',
               itemListElement: featuredGuides.map((g, i) => ({
                 '@type': 'ListItem',
                 position: i + 1,
-                url: `https://serendibgemstones.com${g.href}`,
+                url: `https://www.serendibgemstones.com${g.href}`,
                 name: g.title,
               })),
             },

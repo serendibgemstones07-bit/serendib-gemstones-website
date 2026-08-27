@@ -5,8 +5,10 @@ import ArticleByline from '@/components/ArticleByline'
 import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
-  title: 'Ceylon vs Kashmir Sapphire: What\'s the Difference? — Serendib Gemstones',
-  description: 'Kashmir and Ceylon (Sri Lanka) are the two most prestigious sapphire origins. Kashmir stones — mined briefly in the 1880s — are now virtually unobtainable and command record auction prices. Ceylon sapphires represent the finest accessible alternative.',
+  title: 'Ceylon vs Kashmir Sapphire — Compared',
+  description: 'Kashmir and Ceylon are the two most prestigious sapphire origins. Kashmir stones are near-unobtainable; Ceylon is the finest accessible alternative.',
+  openGraph: { url: 'https://www.serendibgemstones.com/learn/ceylon-vs-kashmir-sapphire' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/ceylon-vs-kashmir-sapphire' },
 }
 
 const faqItems = [
@@ -38,21 +40,22 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'Ceylon vs Kashmir Sapphire', item: 'https://serendibgemstones.com/learn/ceylon-vs-kashmir-sapphire' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'Ceylon vs Kashmir Sapphire', item: 'https://www.serendibgemstones.com/learn/ceylon-vs-kashmir-sapphire' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'Ceylon vs Kashmir Sapphire: What\'s the Difference?',
+      image: 'https://www.serendibgemstones.com/logo.jpg',
       description: 'Kashmir and Ceylon are the two most prestigious sapphire origins. This guide explains their colour differences, market position, and why Ceylon remains the finest accessible option.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-07-30',
       dateModified: '2026-08-12',
-      url: 'https://serendibgemstones.com/learn/ceylon-vs-kashmir-sapphire',
+      url: 'https://www.serendibgemstones.com/learn/ceylon-vs-kashmir-sapphire',
     },
     {
       '@type': 'FAQPage',

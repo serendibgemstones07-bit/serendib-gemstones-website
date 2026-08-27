@@ -6,10 +6,11 @@ import ArticleByline from '@/components/ArticleByline'
 import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
-  title: 'Ceylon Sapphires — The World\'s Most Prized Blue Sapphires from Sri Lanka',
+  title: 'Ceylon Sapphires — Sri Lankan Blue',
   description:
-    'A Ceylon sapphire is a natural sapphire mined in Sri Lanka — historically and today the world\'s premier source of fine sapphires. Famed for cornflower-blue colour, exceptional clarity, and a high proportion of unheated stones. The complete guide to origin, mining, colours, treatments, certification, and buying Ceylon sapphires.',
-  alternates: { canonical: 'https://serendibgemstones.com/ceylon-sapphires' },
+    'A Ceylon sapphire is a natural sapphire from Sri Lanka — famed for cornflower-blue colour, exceptional clarity, and a high proportion of unheated stones.',
+  openGraph: { url: 'https://www.serendibgemstones.com/ceylon-sapphires' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/ceylon-sapphires' },
 }
 
 const faqItems = [
@@ -69,20 +70,21 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Ceylon Sapphires', item: 'https://serendibgemstones.com/ceylon-sapphires' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Ceylon Sapphires', item: 'https://www.serendibgemstones.com/ceylon-sapphires' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'Ceylon Sapphires — The World\'s Most Prized Blue Sapphires from Sri Lanka',
+      image: 'https://www.serendibgemstones.com/logo.jpg',
       description: metadata.description,
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://serendibgemstones.com/logo.jpg' } },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-08-12',
       dateModified: '2026-08-12',
-      mainEntityOfPage: 'https://serendibgemstones.com/ceylon-sapphires',
+      mainEntityOfPage: 'https://www.serendibgemstones.com/ceylon-sapphires',
     },
     {
       '@type': 'FAQPage',

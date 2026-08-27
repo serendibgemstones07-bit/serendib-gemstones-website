@@ -4,8 +4,9 @@ import FadeUp from '@/components/FadeUp'
 
 export const metadata: Metadata = {
   title: 'Custom Gemstone Sourcing',
-  description: 'Tell us exactly what you need — species, colour, carat weight, budget — and we source it directly from Sri Lanka. GIA/GRS certified, fully documented, shipped worldwide.',
-  alternates: { canonical: 'https://serendibgemstones.com/custom-sourcing' },
+  description: 'Tell us exactly what you need — species, colour, carat, budget — and we source it from Sri Lanka. GIA/GRS certified, fully documented, shipped worldwide.',
+  openGraph: { url: 'https://www.serendibgemstones.com/custom-sourcing' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/custom-sourcing' },
 }
 
 const whatWeSource = [
@@ -31,7 +32,7 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
         { '@type': 'ListItem', position: 2, name: 'Custom Sourcing' },
       ],
     },
@@ -42,10 +43,10 @@ const schema = {
       provider: {
         '@type': 'Organization',
         name: 'Serendib Gemstones (Pvt) Ltd',
-        url: 'https://serendibgemstones.com',
+        url: 'https://www.serendibgemstones.com',
       },
       areaServed: 'Worldwide',
-      url: 'https://serendibgemstones.com/custom-sourcing',
+      url: 'https://www.serendibgemstones.com/custom-sourcing',
     },
   ],
 }

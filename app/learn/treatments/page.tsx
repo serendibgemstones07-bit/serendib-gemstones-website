@@ -5,9 +5,10 @@ import ArticleByline from '@/components/ArticleByline'
 import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
-  title: 'Gemstone Treatments — Heat Treatment, Enhancement & What \'No Heat\' Means',
-  description: 'Expert guide to gemstone treatments: heat treatment, beryllium diffusion, lead-glass filling, flux healing, and oiling. Learn what "no heat" means, how labs detect treatments, and why it matters for value.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/treatments' },
+  title: 'Gemstone Treatments Explained',
+  description: 'Heat treatment, beryllium diffusion, lead-glass filling, flux healing and oiling — how labs detect each treatment and why it matters for value.',
+  openGraph: { url: 'https://www.serendibgemstones.com/learn/treatments' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/treatments' },
 }
 
 const schema = {
@@ -16,19 +17,19 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'Treatments & Enhancements', item: 'https://serendibgemstones.com/learn/treatments' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'Treatments & Enhancements', item: 'https://www.serendibgemstones.com/learn/treatments' },
       ],
     },
     {
       '@type': 'CollectionPage',
       name: 'Gemstone Treatments — Heat Treatment, Enhancement & What \'No Heat\' Means',
       description: 'Expert guide to gemstone treatments: heat treatment, beryllium diffusion, lead-glass filling, flux healing, and oiling. Understand what each treatment does, how it is detected, and how it affects value.',
-      url: 'https://serendibgemstones.com/learn/treatments',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      url: 'https://www.serendibgemstones.com/learn/treatments',
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       dateModified: '2026-08-12',
     },
   ],

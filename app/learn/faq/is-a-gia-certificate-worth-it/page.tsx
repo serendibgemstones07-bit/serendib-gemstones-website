@@ -4,9 +4,10 @@ import FadeUp from '@/components/FadeUp'
 import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
-  title: 'Is a GIA Certificate Worth It for a Sapphire?',
-  description: 'Yes — a GIA certificate verifies identity, treatment status, and origin, giving buyers independent confidence and stronger resale positioning. Essential for any sapphire over 1 carat.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/faq/is-a-gia-certificate-worth-it' },
+  title: 'Is a GIA Certificate Worth It?',
+  description: 'Yes — a GIA certificate verifies identity, treatment status and origin, giving buyers independent confidence and stronger resale positioning.',
+  openGraph: { url: 'https://www.serendibgemstones.com/learn/faq/is-a-gia-certificate-worth-it' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/faq/is-a-gia-certificate-worth-it' },
 }
 
 const faqItems = [
@@ -34,8 +35,8 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
         { '@type': 'ListItem', position: 3, name: 'Is a GIA Certificate Worth It?' },
       ],
     },

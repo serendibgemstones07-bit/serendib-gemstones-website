@@ -4,10 +4,11 @@ import FadeUp from '@/components/FadeUp'
 import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
-  title: 'What Is the Best Colour for a Blue Sapphire?',
+  title: 'Best Colour for a Blue Sapphire',
   description:
-    'The most valued blue sapphire colour is a vivid, medium-toned blue — royal blue or cornflower blue — with strong saturation. Ceylon sapphires are prized for this quality.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/faq/what-is-the-best-colour-for-a-blue-sapphire' },
+    'The most valued blue sapphire colour is a vivid, medium-toned royal or cornflower blue with strong saturation. Ceylon sapphires are prized for this quality.',
+  openGraph: { url: 'https://www.serendibgemstones.com/learn/faq/what-is-the-best-colour-for-a-blue-sapphire' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/faq/what-is-the-best-colour-for-a-blue-sapphire' },
 }
 
 const faqItems = [
@@ -39,9 +40,9 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'Best Colour for a Blue Sapphire', item: 'https://serendibgemstones.com/learn/faq/what-is-the-best-colour-for-a-blue-sapphire' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'Best Colour for a Blue Sapphire', item: 'https://www.serendibgemstones.com/learn/faq/what-is-the-best-colour-for-a-blue-sapphire' },
       ],
     },
     {

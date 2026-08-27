@@ -4,9 +4,10 @@ import FadeUp from '@/components/FadeUp'
 import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
-  title: 'What Is the Difference Between a Natural and Heated Sapphire?',
-  description: 'Both are natural sapphires — "heated" refers to enhancement, not origin. Heat treatment improves colour and clarity, but unheated stones command a significant market premium.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/faq/what-is-the-difference-between-natural-and-heated-sapphire' },
+  title: 'Natural vs Heated Sapphire — FAQ',
+  description: 'Both are natural sapphires — "heated" refers to enhancement, not origin. Heat improves colour and clarity, but unheated stones carry a significant premium.',
+  openGraph: { url: 'https://www.serendibgemstones.com/learn/faq/what-is-the-difference-between-natural-and-heated-sapphire' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/faq/what-is-the-difference-between-natural-and-heated-sapphire' },
 }
 
 const faqItems = [
@@ -34,8 +35,8 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
         { '@type': 'ListItem', position: 3, name: 'Natural vs Heated Sapphire' },
       ],
     },

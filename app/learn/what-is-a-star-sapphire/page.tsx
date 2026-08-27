@@ -6,7 +6,9 @@ import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'What is a Star Sapphire? — Serendib Gemstones',
-  description: 'A star sapphire displays asterism — a six-rayed star of light caused by microscopic rutile needles inside the crystal. Sri Lanka is the world\'s most important source, producing both blue and black star sapphires of exceptional quality.',
+  description: 'A star sapphire displays asterism — a six-rayed star caused by microscopic rutile needles. Sri Lanka is the world\'s most important source.',
+  openGraph: { url: 'https://www.serendibgemstones.com/learn/what-is-a-star-sapphire' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/what-is-a-star-sapphire' },
 }
 
 const faqItems = [
@@ -38,20 +40,21 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'What is a Star Sapphire?', item: 'https://serendibgemstones.com/learn/what-is-a-star-sapphire' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'What is a Star Sapphire?', item: 'https://www.serendibgemstones.com/learn/what-is-a-star-sapphire' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'What is a Star Sapphire?',
+      image: 'https://www.serendibgemstones.com/logo.jpg',
       description: 'A star sapphire displays asterism — a six-rayed star caused by rutile needle inclusions inside the crystal. Sri Lanka is the world\'s most important source.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-07-30',
       dateModified: '2026-08-12',
-      url: 'https://serendibgemstones.com/learn/what-is-a-star-sapphire',
+      url: 'https://www.serendibgemstones.com/learn/what-is-a-star-sapphire',
     },
     {
       '@type': 'FAQPage',

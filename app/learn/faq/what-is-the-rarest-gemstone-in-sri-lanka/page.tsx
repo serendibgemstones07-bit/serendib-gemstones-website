@@ -4,10 +4,11 @@ import FadeUp from '@/components/FadeUp'
 import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
-  title: 'What Is the Rarest Gemstone in Sri Lanka?',
+  title: 'Rarest Gemstone in Sri Lanka',
   description:
-    'The Padparadscha sapphire is Sri Lanka\'s rarest gemstone, followed by alexandrite and fine unheated rubies. Taaffeite, first discovered in Sri Lanka, is among the rarest minerals on Earth.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/faq/what-is-the-rarest-gemstone-in-sri-lanka' },
+    'The Padparadscha sapphire is Sri Lanka\'s rarest gemstone, followed by alexandrite and fine unheated rubies. Taaffeite is among Earth\'s rarest minerals.',
+  openGraph: { url: 'https://www.serendibgemstones.com/learn/faq/what-is-the-rarest-gemstone-in-sri-lanka' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/faq/what-is-the-rarest-gemstone-in-sri-lanka' },
 }
 
 const faqItems = [
@@ -39,9 +40,9 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'Rarest Gemstone in Sri Lanka', item: 'https://serendibgemstones.com/learn/faq/what-is-the-rarest-gemstone-in-sri-lanka' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'Rarest Gemstone in Sri Lanka', item: 'https://www.serendibgemstones.com/learn/faq/what-is-the-rarest-gemstone-in-sri-lanka' },
       ],
     },
     {

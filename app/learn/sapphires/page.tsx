@@ -5,9 +5,10 @@ import ArticleByline from '@/components/ArticleByline'
 import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
-  title: 'Natural Sapphires — Everything You Need to Know About Ceylon Sapphires',
-  description: 'The definitive guide to natural sapphires from Sri Lanka. Learn about colour varieties, origins, heat treatment, certification, and what makes Ceylon sapphires the world\'s most sought-after.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/sapphires' },
+  title: 'Natural Ceylon Sapphires',
+  description: 'Colour varieties, origins, heat treatment, certification, and what makes Ceylon sapphires the world\'s most sought-after coloured gemstones.',
+  openGraph: { url: 'https://www.serendibgemstones.com/learn/sapphires' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/sapphires' },
 }
 
 const schema = {
@@ -16,18 +17,18 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'Natural Sapphires', item: 'https://serendibgemstones.com/learn/sapphires' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'Natural Sapphires', item: 'https://www.serendibgemstones.com/learn/sapphires' },
       ],
     },
     {
       '@type': 'CollectionPage',
       name: 'Natural Sapphires — Everything You Need to Know About Ceylon Sapphires',
       description: 'The definitive guide to natural sapphires from Sri Lanka. Learn about colour varieties, origins, heat treatment, certification, and what makes Ceylon sapphires the world\'s most sought-after.',
-      url: 'https://serendibgemstones.com/learn/sapphires',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      url: 'https://www.serendibgemstones.com/learn/sapphires',
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       dateModified: '2026-08-12',
     },
   ],

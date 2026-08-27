@@ -6,8 +6,9 @@ import ArticleByline from '@/components/ArticleByline'
 export const metadata: Metadata = {
   title: 'How Much Is a Blue Sapphire Worth?',
   description:
-    'What determines the price of a blue sapphire: colour, origin, heat treatment, carat weight, clarity, and certification. Unheated Ceylon stones command the strongest premiums.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/faq/how-much-is-a-blue-sapphire-worth' },
+    'What drives blue sapphire price: colour, origin, heat treatment, carat weight, clarity and certification. Unheated Ceylon stones command the strongest premiums.',
+  openGraph: { url: 'https://www.serendibgemstones.com/learn/faq/how-much-is-a-blue-sapphire-worth' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/faq/how-much-is-a-blue-sapphire-worth' },
 }
 
 const faqItems = [
@@ -39,9 +40,9 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'How Much Is a Blue Sapphire Worth?', item: 'https://serendibgemstones.com/learn/faq/how-much-is-a-blue-sapphire-worth' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'How Much Is a Blue Sapphire Worth?', item: 'https://www.serendibgemstones.com/learn/faq/how-much-is-a-blue-sapphire-worth' },
       ],
     },
     {

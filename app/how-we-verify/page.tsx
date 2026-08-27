@@ -4,8 +4,9 @@ import FadeUp from '@/components/FadeUp'
 
 export const metadata: Metadata = {
   title: 'How We Verify Authenticity — Serendib Gemstones',
-  description: 'Every significant Serendib gemstone is independently certified by GIA or GRS. Learn how we verify treatment status, geographic origin, and gemstone identity before a stone enters our collection.',
-  alternates: { canonical: 'https://serendibgemstones.com/how-we-verify' },
+  description: 'Every significant Serendib gemstone is independently certified by GIA or GRS — how we verify treatment status, geographic origin and gemstone identity.',
+  openGraph: { url: 'https://www.serendibgemstones.com/how-we-verify' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/how-we-verify' },
 }
 
 const verificationSteps = [

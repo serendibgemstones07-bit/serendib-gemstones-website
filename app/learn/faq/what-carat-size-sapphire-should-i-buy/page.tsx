@@ -5,8 +5,9 @@ import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'What Carat Size Sapphire Should I Buy?',
-  description: 'The ideal sapphire carat weight depends on use: 1–3ct for engagement rings, 3–10ct for investment. Quality matters more than size — learn how value jumps at milestone weights.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/faq/what-carat-size-sapphire-should-i-buy' },
+  description: 'The ideal sapphire carat depends on use: 1–3ct for engagement rings, 3–10ct for investment. Quality matters more than size — value jumps at milestones.',
+  openGraph: { url: 'https://www.serendibgemstones.com/learn/faq/what-carat-size-sapphire-should-i-buy' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/faq/what-carat-size-sapphire-should-i-buy' },
 }
 
 const faqItems = [
@@ -34,8 +35,8 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
         { '@type': 'ListItem', position: 3, name: 'What Carat Size Sapphire to Buy' },
       ],
     },

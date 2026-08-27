@@ -6,7 +6,9 @@ import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'What is an Unheated Sapphire? — Serendib Gemstones',
-  description: 'An unheated sapphire is a natural sapphire whose colour has never been altered by heat treatment. Fewer than 5% of sapphires qualify. Learn what no-heat means, how it is certified, and why it commands a significant market premium.',
+  description: 'An unheated sapphire has never had its colour altered by heat. Fewer than 5% qualify — what no-heat means and why it commands a market premium.',
+  openGraph: { url: 'https://www.serendibgemstones.com/learn/what-is-an-unheated-sapphire' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/what-is-an-unheated-sapphire' },
 }
 
 const faqItems = [
@@ -38,20 +40,21 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Gemstone Guides', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'What is an unheated sapphire?', item: 'https://serendibgemstones.com/learn/what-is-an-unheated-sapphire' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Gemstone Guides', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'What is an unheated sapphire?', item: 'https://www.serendibgemstones.com/learn/what-is-an-unheated-sapphire' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'What is an Unheated Sapphire?',
+      image: 'https://www.serendibgemstones.com/logo.jpg',
       description: 'An unheated sapphire is a natural sapphire whose colour has never been altered by heat treatment. Fewer than 5% of sapphires on the market qualify, making them exceptionally rare and valuable.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-07-30',
       dateModified: '2026-08-12',
-      url: 'https://serendibgemstones.com/learn/what-is-an-unheated-sapphire',
+      url: 'https://www.serendibgemstones.com/learn/what-is-an-unheated-sapphire',
     },
     {
       '@type': 'FAQPage',

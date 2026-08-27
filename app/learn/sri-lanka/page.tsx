@@ -5,9 +5,10 @@ import ArticleByline from '@/components/ArticleByline'
 import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
-  title: 'Sri Lanka — The Island of Gems and Its Legendary Gemstone Heritage',
-  description: 'Sri Lanka has produced the world\'s finest sapphires for over 2,500 years. Explore the mining regions, geology, and heritage that make Ceylon the most celebrated gemstone origin on earth.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/sri-lanka' },
+  title: 'Sri Lanka — The Island of Gems',
+  description: 'Sri Lanka has produced the world\'s finest sapphires for 2,500 years. Mining regions, geology, and the heritage that make Ceylon the premier gemstone origin.',
+  openGraph: { url: 'https://www.serendibgemstones.com/learn/sri-lanka' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/sri-lanka' },
 }
 
 const regionGuides = [
@@ -43,18 +44,18 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'Sri Lanka', item: 'https://serendibgemstones.com/learn/sri-lanka' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'Sri Lanka', item: 'https://www.serendibgemstones.com/learn/sri-lanka' },
       ],
     },
     {
       '@type': 'CollectionPage',
       name: 'Sri Lanka — The Island of Gems and Its Legendary Gemstone Heritage',
       description: 'Sri Lanka has produced the world\'s finest sapphires for over 2,500 years. Mining regions, geology, and the heritage of Ceylon gemstones.',
-      url: 'https://serendibgemstones.com/learn/sri-lanka',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      url: 'https://www.serendibgemstones.com/learn/sri-lanka',
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       dateModified: '2026-08-12',
     },
   ],

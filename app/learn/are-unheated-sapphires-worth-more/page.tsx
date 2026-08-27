@@ -6,7 +6,9 @@ import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
   title: 'Are Unheated Sapphires Worth More? — Serendib Gemstones',
-  description: 'Yes — unheated sapphires command a significant premium over comparable heated stones. This guide explains why the premium exists, how it varies by category, and whether it is likely to hold long term.',
+  description: 'Yes — unheated sapphires command a significant premium over comparable heated stones. Why the premium exists, how it varies, and whether it will hold long term.',
+  openGraph: { url: 'https://www.serendibgemstones.com/learn/are-unheated-sapphires-worth-more' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/are-unheated-sapphires-worth-more' },
 }
 
 const faqItems = [
@@ -38,20 +40,21 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'Are Unheated Sapphires Worth More?', item: 'https://serendibgemstones.com/learn/are-unheated-sapphires-worth-more' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'Are Unheated Sapphires Worth More?', item: 'https://www.serendibgemstones.com/learn/are-unheated-sapphires-worth-more' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'Are Unheated Sapphires Worth More Than Heated Ones?',
+      image: 'https://www.serendibgemstones.com/logo.jpg',
       description: 'Unheated sapphires command a significant premium over comparable heated stones — often dramatically so at auction. This guide explains the structural reasons the premium exists and why it is likely to hold.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-07-30',
       dateModified: '2026-08-12',
-      url: 'https://serendibgemstones.com/learn/are-unheated-sapphires-worth-more',
+      url: 'https://www.serendibgemstones.com/learn/are-unheated-sapphires-worth-more',
     },
     {
       '@type': 'FAQPage',

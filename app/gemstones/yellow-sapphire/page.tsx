@@ -6,10 +6,11 @@ import ArticleByline from '@/components/ArticleByline'
 import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
-  title: 'Yellow Sapphire — The Complete Guide to Ceylon Yellow Sapphires (Pukhraj)',
+  title: 'Yellow Sapphire (Pukhraj) Guide',
   description:
-    'A yellow sapphire is a precious gemstone of the mineral corundum, coloured yellow by trace amounts of iron. Sri Lanka (Ceylon) is the world\'s premier source for top-quality yellow sapphires — the "Pukhraj" of Vedic astrology. Learn about colour, quality, treatments, Pukhraj significance, and how to buy.',
-  alternates: { canonical: 'https://serendibgemstones.com/gemstones/yellow-sapphire' },
+    'The Ceylon yellow sapphire — the sacred Pukhraj of Vedic astrology. Colour, clarity, heat treatment, Pukhraj criteria, and how to buy with confidence.',
+  openGraph: { url: 'https://www.serendibgemstones.com/gemstones/yellow-sapphire' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/gemstones/yellow-sapphire' },
 }
 
 const faqItems = [
@@ -61,21 +62,22 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Gemstones', item: 'https://serendibgemstones.com/gemstones' },
-        { '@type': 'ListItem', position: 3, name: 'Yellow Sapphire', item: 'https://serendibgemstones.com/gemstones/yellow-sapphire' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Gemstones', item: 'https://www.serendibgemstones.com/gemstones' },
+        { '@type': 'ListItem', position: 3, name: 'Yellow Sapphire', item: 'https://www.serendibgemstones.com/gemstones/yellow-sapphire' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'Yellow Sapphire — The Complete Guide to Ceylon Yellow Sapphires (Pukhraj)',
+      image: 'https://www.serendibgemstones.com/logo.jpg',
       description: metadata.description,
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://serendibgemstones.com/logo.jpg' } },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-08-12',
       dateModified: '2026-08-12',
-      mainEntityOfPage: 'https://serendibgemstones.com/gemstones/yellow-sapphire',
+      mainEntityOfPage: 'https://www.serendibgemstones.com/gemstones/yellow-sapphire',
     },
     {
       '@type': 'FAQPage',

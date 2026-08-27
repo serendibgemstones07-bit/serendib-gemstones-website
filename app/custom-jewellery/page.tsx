@@ -5,7 +5,7 @@ import GemSVG from '@/components/GemSVG'
 
 export const metadata: Metadata = {
   title: 'Custom Jewellery — Serendib Gemstones',
-  description: 'Commission a bespoke piece built around a certified, unheated Sri Lankan gemstone. We guide you from stone selection through design to delivery — a single jewel, made entirely for you.',
+  description: 'Commission a bespoke piece around a certified, unheated Sri Lankan gemstone. From stone selection through design to delivery — one jewel, made for you.',
 }
 
 const steps = [

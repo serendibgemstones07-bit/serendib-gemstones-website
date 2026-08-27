@@ -6,7 +6,8 @@ import GemSVG from '@/components/GemSVG'
 export const metadata: Metadata = {
   title: 'Our Services — Serendib Gemstones',
   description: 'Custom gemstone sourcing, investment consultation, jeweller supply, custom jewellery, certificate review, and gemstone matching — direct from Sri Lanka.',
-  alternates: { canonical: 'https://serendibgemstones.com/services' },
+  openGraph: { url: 'https://www.serendibgemstones.com/services' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/services' },
 }
 
 const services = [

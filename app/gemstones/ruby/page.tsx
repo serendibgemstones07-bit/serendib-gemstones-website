@@ -6,10 +6,11 @@ import ArticleByline from '@/components/ArticleByline'
 import SourcesReferences from '@/components/SourcesReferences'
 
 export const metadata: Metadata = {
-  title: 'Ruby — The Complete Guide to Natural & Ceylon Rubies',
+  title: 'Ruby — Ceylon & Natural Ruby Guide',
   description:
-    'A ruby is the red variety of the mineral corundum, coloured by trace amounts of chromium. Revered as the "King of Gemstones," rubies are among the rarest and most valuable coloured stones on earth. Learn about pigeon blood colour, origins, treatments, investment value, and how Sri Lanka produces prized unheated rubies with exceptional clarity.',
-  alternates: { canonical: 'https://serendibgemstones.com/gemstones/ruby' },
+    'The red variety of corundum — the "King of Gemstones." Pigeon blood colour, origins, treatments, investment value and prized unheated Ceylon rubies.',
+  openGraph: { url: 'https://www.serendibgemstones.com/gemstones/ruby' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/gemstones/ruby' },
 }
 
 const faqItems = [
@@ -69,21 +70,22 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Gemstones', item: 'https://serendibgemstones.com/gemstones' },
-        { '@type': 'ListItem', position: 3, name: 'Ruby', item: 'https://serendibgemstones.com/gemstones/ruby' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Gemstones', item: 'https://www.serendibgemstones.com/gemstones' },
+        { '@type': 'ListItem', position: 3, name: 'Ruby', item: 'https://www.serendibgemstones.com/gemstones/ruby' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'Ruby — The Complete Guide to Natural & Ceylon Rubies',
+      image: 'https://www.serendibgemstones.com/logo.jpg',
       description: metadata.description,
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://serendibgemstones.com/logo.jpg' } },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-07-31',
       dateModified: '2026-08-12',
-      mainEntityOfPage: 'https://serendibgemstones.com/gemstones/ruby',
+      mainEntityOfPage: 'https://www.serendibgemstones.com/gemstones/ruby',
     },
     {
       '@type': 'FAQPage',
