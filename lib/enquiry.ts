@@ -1,4 +1,4 @@
-export const CONTACT_EMAIL = 'info@serendibgemstones.com'
+export const CONTACT_EMAIL = 'gems@serendibgemstones.com'
 export const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '94702494944'
 
 const FIELD_LABELS: Record<string, string> = {
