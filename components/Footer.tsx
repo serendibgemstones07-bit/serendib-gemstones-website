@@ -5,6 +5,9 @@ export default function Footer() {
   const gemstoneLinks = [
     { href: '/gemstones/blue-sapphire', label: 'Blue Sapphire' },
     { href: '/gemstones/padparadscha-sapphire', label: 'Padparadscha' },
+    { href: '/gemstones/yellow-sapphire', label: 'Yellow Sapphire' },
+    { href: '/gemstones/pink-sapphire', label: 'Pink Sapphire' },
+    { href: '/gemstones/star-sapphire', label: 'Star Sapphire' },
     { href: '/gemstones/ruby', label: 'Ruby' },
     { href: '/gemstones', label: 'View All' },
   ]
