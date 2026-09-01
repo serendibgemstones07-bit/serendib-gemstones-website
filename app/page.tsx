@@ -51,6 +51,9 @@ const libraryGems = [
   { name: 'Blue Sapphire', colour: '#1a5f9e', href: '/gemstones/blue-sapphire', tag: 'Most Popular' },
   { name: 'Padparadscha', colour: '#e8855e', href: '/gemstones/padparadscha-sapphire', tag: 'Rarest' },
   { name: 'Ruby', colour: '#c0392b', href: '/gemstones/ruby', tag: 'The King' },
+  { name: 'Yellow Sapphire', colour: '#d4af37', href: '/gemstones/yellow-sapphire', tag: 'Pukhraj' },
+  { name: 'Pink Sapphire', colour: '#d46b9a', href: '/gemstones/pink-sapphire', tag: 'Rising Star' },
+  { name: 'Star Sapphire', colour: '#3a6fa8', href: '/gemstones/star-sapphire', tag: 'Asterism' },
 ]
 
 const knowledgeArticles = [
@@ -247,9 +250,14 @@ export default function HomePage() {
             <p className="font-jost text-sm text-offwhite/55 leading-relaxed mb-8">
               Every stone follows the same transparent path. No hidden steps, no invisible middlemen.
             </p>
-            <Link href="/how-we-source" className="font-jost text-sm tracking-widest uppercase text-teal/70 hover:text-teal transition-colors">
-              See our full process →
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-6">
+              <Link href="/how-we-source" className="font-jost text-sm tracking-widest uppercase text-teal/70 hover:text-teal transition-colors">
+                See our full process →
+              </Link>
+              <Link href="/how-we-verify" className="font-jost text-sm tracking-widest uppercase text-teal/70 hover:text-teal transition-colors">
+                How we verify every stone →
+              </Link>
+            </div>
           </FadeUp>
         </div>
         <div className="bg-dark px-10 lg:px-16 py-20">
