@@ -38,20 +38,20 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'How is a Sapphire\'s Origin Determined?', item: 'https://serendibgemstones.com/learn/how-is-sapphire-origin-determined' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'How is a Sapphire\'s Origin Determined?', item: 'https://www.serendibgemstones.com/learn/how-is-sapphire-origin-determined' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'How is a Sapphire\'s Geographic Origin Determined?',
       description: 'Laboratories determine sapphire origin through trace element chemistry and inclusion analysis — two independent lines of evidence that together identify the geological environment where the stone formed.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
       dateModified: '2026-08-12',
-      url: 'https://serendibgemstones.com/learn/how-is-sapphire-origin-determined',
+      url: 'https://www.serendibgemstones.com/learn/how-is-sapphire-origin-determined',
     },
     {
       '@type': 'FAQPage',

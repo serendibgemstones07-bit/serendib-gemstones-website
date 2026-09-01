@@ -19,7 +19,7 @@ const jost = Jost({
   display: 'swap',
 })
 
-const BASE = 'https://serendibgemstones.com'
+const BASE = 'https://www.serendibgemstones.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE),
@@ -64,8 +64,8 @@ const orgSchema = {
   '@type': 'Organization',
   name: 'Serendib Gemstones (Pvt) Ltd',
   alternateName: 'Serendib Gemstones',
-  url: 'https://serendibgemstones.com',
-  logo: 'https://serendibgemstones.com/logo.jpg',
+  url: 'https://www.serendibgemstones.com',
+  logo: 'https://www.serendibgemstones.com/logo.jpg',
   description: 'Mine-direct supplier of unheated, GIA and GRS certified Sri Lankan sapphires, rubies, and alexandrite. Sourced from Ratnapura, Elahera, and Kanthale.',
   address: {
     '@type': 'PostalAddress',
@@ -73,7 +73,7 @@ const orgSchema = {
     addressLocality: 'Kochchikade',
     addressCountry: 'LK',
   },
-  email: 'info@serendibgemstones.com',
+  email: 'gems@serendibgemstones.com',
   sameAs: ['https://instagram.com/serendibgemstones'],
   knowsAbout: [
     'Unheated sapphires', 'Ceylon sapphires', 'Sri Lankan gemstones',

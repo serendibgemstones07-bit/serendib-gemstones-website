@@ -38,20 +38,20 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Gemstone Guides', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'GIA vs GRS Certificate', item: 'https://serendibgemstones.com/learn/gia-vs-grs-certificate' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Gemstone Guides', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'GIA vs GRS Certificate', item: 'https://www.serendibgemstones.com/learn/gia-vs-grs-certificate' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'GIA vs GRS Certificate: Which is Better for Sapphires?',
       description: 'GIA and GRS are the two most respected gemological laboratories for coloured gemstones. This guide explains their key differences and how to choose the right certificate for your stone.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
       dateModified: '2026-08-12',
-      url: 'https://serendibgemstones.com/learn/gia-vs-grs-certificate',
+      url: 'https://www.serendibgemstones.com/learn/gia-vs-grs-certificate',
     },
     {
       '@type': 'FAQPage',

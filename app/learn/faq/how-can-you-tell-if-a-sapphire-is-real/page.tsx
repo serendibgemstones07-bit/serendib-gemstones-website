@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'How Can You Tell If a Sapphire Is Real?',
   description:
     'The only reliable way to confirm a sapphire is real is through laboratory certification by GIA or GRS. DIY tests like scratch and fog tests are unreliable.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/faq/how-can-you-tell-if-a-sapphire-is-real' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/faq/how-can-you-tell-if-a-sapphire-is-real' },
 }
 
 const faqItems = [
@@ -39,9 +39,9 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'How to Tell If a Sapphire Is Real', item: 'https://serendibgemstones.com/learn/faq/how-can-you-tell-if-a-sapphire-is-real' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'How to Tell If a Sapphire Is Real', item: 'https://www.serendibgemstones.com/learn/faq/how-can-you-tell-if-a-sapphire-is-real' },
       ],
     },
     {

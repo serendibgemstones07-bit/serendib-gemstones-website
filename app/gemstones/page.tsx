@@ -6,7 +6,7 @@ import GemSVG from '@/components/GemSVG'
 export const metadata: Metadata = {
   title: 'Gemstone Library — Complete Guides to Ceylon Gemstones',
   description: 'Comprehensive guides to every gemstone Sri Lanka produces — blue sapphires, padparadscha, rubies, alexandrite, spinel, and more. Learn what to look for, what to avoid, and what makes each stone valuable.',
-  alternates: { canonical: 'https://serendibgemstones.com/gemstones' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/gemstones' },
 }
 
 const featuredGuides = [
@@ -113,13 +113,13 @@ export default function GemstonesPage() {
             '@type': 'CollectionPage',
             name: 'Gemstone Library — Complete Guides to Ceylon Gemstones',
             description: 'Comprehensive guides to every gemstone Sri Lanka produces.',
-            url: 'https://serendibgemstones.com/gemstones',
+            url: 'https://www.serendibgemstones.com/gemstones',
             mainEntity: {
               '@type': 'ItemList',
               itemListElement: featuredGuides.map((g, i) => ({
                 '@type': 'ListItem',
                 position: i + 1,
-                url: `https://serendibgemstones.com${g.href}`,
+                url: `https://www.serendibgemstones.com${g.href}`,
                 name: g.title,
               })),
             },

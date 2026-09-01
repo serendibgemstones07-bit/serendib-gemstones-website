@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Star Sapphire — The Complete Guide to Ceylon Star Sapphires',
   description:
     'A star sapphire is a cabochon-cut sapphire displaying asterism — a six-rayed star of light gliding across the domed surface. Sri Lanka (Ceylon) is the world\'s premier source, producing the finest blue, black, grey, and pink star sapphires — including the Star of India, Star of Bombay, and Star of Adam. Learn about asterism, quality factors, treatments, and famous stones.',
-  alternates: { canonical: 'https://serendibgemstones.com/gemstones/star-sapphire' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/gemstones/star-sapphire' },
 }
 
 const faqItems = [
@@ -61,21 +61,21 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Gemstones', item: 'https://serendibgemstones.com/gemstones' },
-        { '@type': 'ListItem', position: 3, name: 'Star Sapphire', item: 'https://serendibgemstones.com/gemstones/star-sapphire' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Gemstones', item: 'https://www.serendibgemstones.com/gemstones' },
+        { '@type': 'ListItem', position: 3, name: 'Star Sapphire', item: 'https://www.serendibgemstones.com/gemstones/star-sapphire' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'Star Sapphire — The Complete Guide to Ceylon Star Sapphires',
       description: metadata.description,
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://serendibgemstones.com/logo.jpg' } },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-08-13',
       dateModified: '2026-08-13',
-      mainEntityOfPage: 'https://serendibgemstones.com/gemstones/star-sapphire',
+      mainEntityOfPage: 'https://www.serendibgemstones.com/gemstones/star-sapphire',
     },
     {
       '@type': 'FAQPage',

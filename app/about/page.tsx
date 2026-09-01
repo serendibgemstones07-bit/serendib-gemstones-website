@@ -7,7 +7,7 @@ import GemSVG from '@/components/GemSVG'
 export const metadata: Metadata = {
   title: 'About Us — Sri Lankan Gemstone Exporter',
   description: 'Serendib Gemstones is a Sri Lankan gemstone sourcing and export company helping jewellers, collectors, luxury brands, and investors worldwide source certified natural Ceylon gemstones with transparency and trust.',
-  alternates: { canonical: 'https://serendibgemstones.com/about' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/about' },
 }
 
 const founders = [
@@ -104,14 +104,14 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
         { '@type': 'ListItem', position: 2, name: 'About' },
       ],
     },
     {
       '@type': 'Organization',
       name: 'Serendib Gemstones (Pvt) Ltd',
-      url: 'https://serendibgemstones.com',
+      url: 'https://www.serendibgemstones.com',
       description: 'Sri Lankan gemstone sourcing and export company helping jewellers, collectors, luxury brands, and investors worldwide source certified natural Ceylon gemstones.',
       address: {
         '@type': 'PostalAddress',

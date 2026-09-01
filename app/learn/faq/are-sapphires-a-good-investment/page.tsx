@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Are Sapphires a Good Investment?',
   description:
     'Yes, for the right stones. Unheated, certified Ceylon sapphires with fine colour have historically held and grown in value. Learn what makes a sapphire investment-grade.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/faq/are-sapphires-a-good-investment' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/faq/are-sapphires-a-good-investment' },
 }
 
 const faqItems = [
@@ -39,9 +39,9 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'Are Sapphires a Good Investment?', item: 'https://serendibgemstones.com/learn/faq/are-sapphires-a-good-investment' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'Are Sapphires a Good Investment?', item: 'https://www.serendibgemstones.com/learn/faq/are-sapphires-a-good-investment' },
       ],
     },
     {

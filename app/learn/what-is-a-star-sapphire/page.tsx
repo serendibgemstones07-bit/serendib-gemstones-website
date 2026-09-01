@@ -38,20 +38,20 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'What is a Star Sapphire?', item: 'https://serendibgemstones.com/learn/what-is-a-star-sapphire' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'What is a Star Sapphire?', item: 'https://www.serendibgemstones.com/learn/what-is-a-star-sapphire' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'What is a Star Sapphire?',
       description: 'A star sapphire displays asterism — a six-rayed star caused by rutile needle inclusions inside the crystal. Sri Lanka is the world\'s most important source.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
       dateModified: '2026-08-12',
-      url: 'https://serendibgemstones.com/learn/what-is-a-star-sapphire',
+      url: 'https://www.serendibgemstones.com/learn/what-is-a-star-sapphire',
     },
     {
       '@type': 'FAQPage',

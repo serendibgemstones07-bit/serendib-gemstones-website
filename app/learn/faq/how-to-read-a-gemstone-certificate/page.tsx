@@ -6,7 +6,7 @@ import ArticleByline from '@/components/ArticleByline'
 export const metadata: Metadata = {
   title: 'How to Read a Gemstone Certificate — A Complete Guide',
   description: 'Learn how to read a GIA or GRS gemstone certificate: identification, carat weight, measurements, treatment disclosure, origin determination, and colour grade explained.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/faq/how-to-read-a-gemstone-certificate' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/faq/how-to-read-a-gemstone-certificate' },
 }
 
 const fields = [
@@ -45,8 +45,8 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
         { '@type': 'ListItem', position: 3, name: 'How to Read a Certificate' },
       ],
     },

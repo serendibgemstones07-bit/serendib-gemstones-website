@@ -6,7 +6,7 @@ import ArticleByline from '@/components/ArticleByline'
 export const metadata: Metadata = {
   title: 'Why Are Ceylon Sapphires So Expensive?',
   description: 'Ceylon sapphires command premium prices due to exceptional natural colour, high unheated availability, 2,500 years of reputation, and diminishing supply from Sri Lankan mines.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn/faq/why-are-ceylon-sapphires-so-expensive' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn/faq/why-are-ceylon-sapphires-so-expensive' },
 }
 
 const faqItems = [
@@ -34,8 +34,8 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
         { '@type': 'ListItem', position: 3, name: 'Why Ceylon Sapphires Are Expensive' },
       ],
     },
