@@ -1,12 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-
-declare global {
-  interface Window {
-    gtag?: (command: string, eventName: string, params?: Record<string, unknown>) => void
-  }
-}
+import EnquiryActions from './EnquiryActions'
 
 type Pathway =
   | 'select'
@@ -24,38 +19,6 @@ const pathways: { id: Pathway; title: string; subtitle: string; icon: string }[]
   { id: 'custom-jewellery', title: 'Custom Jewellery', subtitle: 'Commission a bespoke piece around a certified stone', icon: '✦' },
 ]
 
-const WHATSAPP_NUMBER = '94702494944'
-
-const fieldLabels: Record<string, string> = {
-  name: 'Name', email: 'Email', phone: 'Phone/WhatsApp', country: 'Country',
-  business: 'Business', gemType: 'Gem Type', caratRange: 'Carat Range',
-  treatment: 'Treatment', budget: 'Budget (USD)', use: 'Intended Use',
-  details: 'Details', experience: 'Experience', preferences: 'Preferences',
-  supplyType: 'Supply Type', stoneTypes: 'Stone Types', requirements: 'Requirements',
-  lab: 'Certificate Lab', stoneType: 'Stone Type', questions: 'Questions',
-  jewelryType: 'Jewellery Type', metal: 'Metal', centreStone: 'Centre Stone', brief: 'Design Brief',
-}
-
-function submitEnquiry(pathway: Exclude<Pathway, 'select'>, form: Record<string, string>) {
-  const pathwayLabel = pathways.find(p => p.id === pathway)?.title ?? pathway
-  const lines = [`*New enquiry — ${pathwayLabel}*`, '']
-  for (const [key, value] of Object.entries(form)) {
-    if (value && value.trim()) lines.push(`*${fieldLabels[key] ?? key}:* ${value}`)
-  }
-  lines.push('', 'Sent from serendibgemstones.com')
-
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', 'generate_lead', {
-      pathway,
-      form_name: pathway,
-      value: 1,
-    })
-  }
-
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`
-  if (typeof window !== 'undefined') window.open(url, '_blank', 'noopener,noreferrer')
-}
-
 const inputClass =
   'w-full bg-transparent border border-white/15 focus:border-teal/60 outline-none px-4 py-3.5 font-jost text-sm text-offwhite placeholder:text-offwhite/30 transition-colors'
 
@@ -63,20 +26,6 @@ const selectClass =
   'w-full bg-transparent border border-white/15 focus:border-teal/60 outline-none px-4 py-3.5 font-jost text-sm text-offwhite transition-colors appearance-none'
 
 const labelClass = 'block font-jost text-xs tracking-widest uppercase text-offwhite/40 mb-2'
-
-function SuccessState() {
-  return (
-    <div className="text-center py-16">
-      <div className="inline-flex w-14 h-14 border-2 border-teal rounded-full items-center justify-center mb-6">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M5 12l5 5 9-9" stroke="#c9a84c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </div>
-      <h3 className="font-cormorant text-2xl text-offwhite mb-2">Continue on WhatsApp</h3>
-      <p className="font-jost text-sm text-offwhite/55">We&apos;ve opened WhatsApp with your details pre-filled — please tap Send to complete your enquiry. A founder will respond personally within 24 hours.</p>
-    </div>
-  )
-}
 
 function BaseFields({ form, onChange }: { form: Record<string, string>; onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => void }) {
   return (
@@ -101,15 +50,17 @@ function BaseFields({ form, onChange }: { form: Record<string, string>; onChange
   )
 }
 
-function FindGemstoneForm() {
+function useFormState() {
   const [form, setForm] = useState<Record<string, string>>({})
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
-  const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); submitEnquiry('find-gemstone', form); setTimeout(() => setStatus('sent'), 400) }
-  if (status === 'sent') return <SuccessState />
+  const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
+    setForm(f => ({ ...f, [e.target.name]: e.target.value }))
+  return { form, onChange }
+}
 
+function FindGemstoneForm() {
+  const { form, onChange } = useFormState()
   return (
-    <form onSubmit={onSubmit} className="flex flex-col gap-5">
+    <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
       <BaseFields form={form} onChange={onChange} />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
@@ -178,22 +129,15 @@ function FindGemstoneForm() {
         <label className={labelClass}>Additional Details</label>
         <textarea name="details" value={form.details || ''} onChange={onChange} rows={4} placeholder="Preferred colour, shape, certification, or any other requirements..." className={inputClass + ' resize-none'} />
       </div>
-      <button type="submit" disabled={status === 'sending'} className="w-full py-4 bg-teal hover:bg-teal-light text-white font-jost text-sm tracking-widest uppercase transition-colors disabled:opacity-60">
-        {status === 'sending' ? 'Sending...' : 'Submit Gemstone Request'}
-      </button>
+      <EnquiryActions pathway="Find Me a Gemstone" form={form} primaryLabel="Submit Request" />
     </form>
   )
 }
 
 function InvestmentForm() {
-  const [form, setForm] = useState<Record<string, string>>({})
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
-  const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); submitEnquiry('investment', form); setTimeout(() => setStatus('sent'), 400) }
-  if (status === 'sent') return <SuccessState />
-
+  const { form, onChange } = useFormState()
   return (
-    <form onSubmit={onSubmit} className="flex flex-col gap-5">
+    <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
       <BaseFields form={form} onChange={onChange} />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
@@ -222,22 +166,15 @@ function InvestmentForm() {
         <label className={labelClass}>Stone Preferences</label>
         <textarea name="preferences" value={form.preferences || ''} onChange={onChange} rows={4} placeholder="Types of stones you're interested in, preferred origins, minimum carat weight, certification requirements..." className={inputClass + ' resize-none'} />
       </div>
-      <button type="submit" disabled={status === 'sending'} className="w-full py-4 bg-teal hover:bg-teal-light text-white font-jost text-sm tracking-widest uppercase transition-colors disabled:opacity-60">
-        {status === 'sending' ? 'Sending...' : 'Request Investment Consultation'}
-      </button>
+      <EnquiryActions pathway="Investment Consultation" form={form} primaryLabel="Request Consultation" />
     </form>
   )
 }
 
 function JewellerForm() {
-  const [form, setForm] = useState<Record<string, string>>({})
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
-  const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); submitEnquiry('jeweller', form); setTimeout(() => setStatus('sent'), 400) }
-  if (status === 'sent') return <SuccessState />
-
+  const { form, onChange } = useFormState()
   return (
-    <form onSubmit={onSubmit} className="flex flex-col gap-5">
+    <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
       <BaseFields form={form} onChange={onChange} />
       <div>
         <label className={labelClass}>Business Name</label>
@@ -264,22 +201,15 @@ function JewellerForm() {
         <label className={labelClass}>Requirements</label>
         <textarea name="requirements" value={form.requirements || ''} onChange={onChange} rows={4} placeholder="Quantities, sizes, quality grade, frequency of orders, any specific requirements..." className={inputClass + ' resize-none'} />
       </div>
-      <button type="submit" disabled={status === 'sending'} className="w-full py-4 bg-teal hover:bg-teal-light text-white font-jost text-sm tracking-widest uppercase transition-colors disabled:opacity-60">
-        {status === 'sending' ? 'Sending...' : 'Submit Trade Enquiry'}
-      </button>
+      <EnquiryActions pathway="Jeweller / Trade Supply" form={form} primaryLabel="Submit Trade Enquiry" />
     </form>
   )
 }
 
 function CertificateForm() {
-  const [form, setForm] = useState<Record<string, string>>({})
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
-  const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); submitEnquiry('certificate', form); setTimeout(() => setStatus('sent'), 400) }
-  if (status === 'sent') return <SuccessState />
-
+  const { form, onChange } = useFormState()
   return (
-    <form onSubmit={onSubmit} className="flex flex-col gap-5">
+    <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
       <BaseFields form={form} onChange={onChange} />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
@@ -306,22 +236,15 @@ function CertificateForm() {
       <p className="font-jost text-xs text-offwhite/30 leading-relaxed">
         This is a free educational service. We help you understand what a laboratory report says — we do not independently verify or authenticate certificates.
       </p>
-      <button type="submit" disabled={status === 'sending'} className="w-full py-4 bg-teal hover:bg-teal-light text-white font-jost text-sm tracking-widest uppercase transition-colors disabled:opacity-60">
-        {status === 'sending' ? 'Sending...' : 'Submit for Review'}
-      </button>
+      <EnquiryActions pathway="Certificate Review" form={form} primaryLabel="Submit for Review" />
     </form>
   )
 }
 
 function CustomJewelleryForm() {
-  const [form, setForm] = useState<Record<string, string>>({})
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
-  const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); submitEnquiry('custom-jewellery', form); setTimeout(() => setStatus('sent'), 400) }
-  if (status === 'sent') return <SuccessState />
-
+  const { form, onChange } = useFormState()
   return (
-    <form onSubmit={onSubmit} className="flex flex-col gap-5">
+    <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
       <BaseFields form={form} onChange={onChange} />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
@@ -366,9 +289,7 @@ function CustomJewelleryForm() {
         <label className={labelClass}>Design Brief</label>
         <textarea name="brief" value={form.brief || ''} onChange={onChange} rows={4} placeholder="Describe your vision — style, occasion, any reference images or inspiration you have in mind..." className={inputClass + ' resize-none'} />
       </div>
-      <button type="submit" disabled={status === 'sending'} className="w-full py-4 bg-teal hover:bg-teal-light text-white font-jost text-sm tracking-widest uppercase transition-colors disabled:opacity-60">
-        {status === 'sending' ? 'Sending...' : 'Start Consultation'}
-      </button>
+      <EnquiryActions pathway="Custom Jewellery" form={form} primaryLabel="Start Consultation" />
     </form>
   )
 }

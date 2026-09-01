@@ -1,40 +1,20 @@
 'use client'
 
 import { useState } from 'react'
+import EnquiryActions from './EnquiryActions'
 
 export default function ContactForm() {
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
   const [form, setForm] = useState({ name: '', email: '', phone: '', interest: '' })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setStatus('sending')
-    setTimeout(() => setStatus('sent'), 1200)
-  }
-
-  if (status === 'sent') {
-    return (
-      <div className="text-center py-16">
-        <div className="inline-block w-14 h-14 border-2 border-teal rounded-full flex items-center justify-center mb-6 mx-auto">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M5 12l5 5 9-9" stroke="#c9a84c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </div>
-        <h3 className="font-cormorant text-2xl text-offwhite mb-2">Thank you for your enquiry</h3>
-        <p className="font-jost text-sm text-offwhite/55">We will be in touch with you shortly.</p>
-      </div>
-    )
-  }
-
   const inputClass =
     'w-full bg-transparent border border-white/15 focus:border-teal/60 outline-none px-4 py-3.5 font-jost text-sm text-offwhite placeholder:text-offwhite/30 transition-colors'
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+    <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="block font-jost text-xs tracking-widest uppercase text-offwhite/40 mb-2">
@@ -94,13 +74,7 @@ export default function ContactForm() {
         />
       </div>
 
-      <button
-        type="submit"
-        disabled={status === 'sending'}
-        className="w-full py-4 bg-teal hover:bg-teal-light active:bg-teal-dark text-white font-jost text-sm tracking-widest uppercase transition-colors duration-300 disabled:opacity-60"
-      >
-        {status === 'sending' ? 'Sending…' : 'Send Enquiry'}
-      </button>
+      <EnquiryActions pathway="General Enquiry" form={form} />
     </form>
   )
 }

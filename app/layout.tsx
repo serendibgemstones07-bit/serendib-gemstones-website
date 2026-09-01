@@ -1,8 +1,11 @@
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, Jost } from 'next/font/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-KYNVXFJ05T'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -99,6 +102,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
       </body>
+      <GoogleAnalytics gaId={GA_ID} />
     </html>
   )
 }
