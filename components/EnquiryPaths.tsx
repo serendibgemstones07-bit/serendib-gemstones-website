@@ -2,6 +2,12 @@
 
 import { useState } from 'react'
 
+declare global {
+  interface Window {
+    gtag?: (command: string, eventName: string, params?: Record<string, unknown>) => void
+  }
+}
+
 type Pathway =
   | 'select'
   | 'find-gemstone'
@@ -17,6 +23,38 @@ const pathways: { id: Pathway; title: string; subtitle: string; icon: string }[]
   { id: 'certificate', title: 'Certificate Review', subtitle: 'Help understanding a laboratory report you already have', icon: '☰' },
   { id: 'custom-jewellery', title: 'Custom Jewellery', subtitle: 'Commission a bespoke piece around a certified stone', icon: '✦' },
 ]
+
+const WHATSAPP_NUMBER = '94702494944'
+
+const fieldLabels: Record<string, string> = {
+  name: 'Name', email: 'Email', phone: 'Phone/WhatsApp', country: 'Country',
+  business: 'Business', gemType: 'Gem Type', caratRange: 'Carat Range',
+  treatment: 'Treatment', budget: 'Budget (USD)', use: 'Intended Use',
+  details: 'Details', experience: 'Experience', preferences: 'Preferences',
+  supplyType: 'Supply Type', stoneTypes: 'Stone Types', requirements: 'Requirements',
+  lab: 'Certificate Lab', stoneType: 'Stone Type', questions: 'Questions',
+  jewelryType: 'Jewellery Type', metal: 'Metal', centreStone: 'Centre Stone', brief: 'Design Brief',
+}
+
+function submitEnquiry(pathway: Exclude<Pathway, 'select'>, form: Record<string, string>) {
+  const pathwayLabel = pathways.find(p => p.id === pathway)?.title ?? pathway
+  const lines = [`*New enquiry — ${pathwayLabel}*`, '']
+  for (const [key, value] of Object.entries(form)) {
+    if (value && value.trim()) lines.push(`*${fieldLabels[key] ?? key}:* ${value}`)
+  }
+  lines.push('', 'Sent from serendibgemstones.com')
+
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'generate_lead', {
+      pathway,
+      form_name: pathway,
+      value: 1,
+    })
+  }
+
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`
+  if (typeof window !== 'undefined') window.open(url, '_blank', 'noopener,noreferrer')
+}
 
 const inputClass =
   'w-full bg-transparent border border-white/15 focus:border-teal/60 outline-none px-4 py-3.5 font-jost text-sm text-offwhite placeholder:text-offwhite/30 transition-colors'
@@ -34,8 +72,8 @@ function SuccessState() {
           <path d="M5 12l5 5 9-9" stroke="#c9a84c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </div>
-      <h3 className="font-cormorant text-2xl text-offwhite mb-2">Thank you for your enquiry</h3>
-      <p className="font-jost text-sm text-offwhite/55">One of our founders will respond personally within 24 hours.</p>
+      <h3 className="font-cormorant text-2xl text-offwhite mb-2">Continue on WhatsApp</h3>
+      <p className="font-jost text-sm text-offwhite/55">We&apos;ve opened WhatsApp with your details pre-filled — please tap Send to complete your enquiry. A founder will respond personally within 24 hours.</p>
     </div>
   )
 }
@@ -67,7 +105,7 @@ function FindGemstoneForm() {
   const [form, setForm] = useState<Record<string, string>>({})
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
   const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); setTimeout(() => setStatus('sent'), 1200) }
+  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); submitEnquiry('find-gemstone', form); setTimeout(() => setStatus('sent'), 400) }
   if (status === 'sent') return <SuccessState />
 
   return (
@@ -151,7 +189,7 @@ function InvestmentForm() {
   const [form, setForm] = useState<Record<string, string>>({})
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
   const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); setTimeout(() => setStatus('sent'), 1200) }
+  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); submitEnquiry('investment', form); setTimeout(() => setStatus('sent'), 400) }
   if (status === 'sent') return <SuccessState />
 
   return (
@@ -195,7 +233,7 @@ function JewellerForm() {
   const [form, setForm] = useState<Record<string, string>>({})
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
   const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); setTimeout(() => setStatus('sent'), 1200) }
+  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); submitEnquiry('jeweller', form); setTimeout(() => setStatus('sent'), 400) }
   if (status === 'sent') return <SuccessState />
 
   return (
@@ -237,7 +275,7 @@ function CertificateForm() {
   const [form, setForm] = useState<Record<string, string>>({})
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
   const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); setTimeout(() => setStatus('sent'), 1200) }
+  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); submitEnquiry('certificate', form); setTimeout(() => setStatus('sent'), 400) }
   if (status === 'sent') return <SuccessState />
 
   return (
@@ -279,7 +317,7 @@ function CustomJewelleryForm() {
   const [form, setForm] = useState<Record<string, string>>({})
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
   const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); setTimeout(() => setStatus('sent'), 1200) }
+  const onSubmit = (e: React.FormEvent) => { e.preventDefault(); setStatus('sending'); submitEnquiry('custom-jewellery', form); setTimeout(() => setStatus('sent'), 400) }
   if (status === 'sent') return <SuccessState />
 
   return (
