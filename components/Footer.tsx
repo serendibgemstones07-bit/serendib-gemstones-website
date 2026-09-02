@@ -5,6 +5,9 @@ export default function Footer() {
   const gemstoneLinks = [
     { href: '/gemstones/blue-sapphire', label: 'Blue Sapphire' },
     { href: '/gemstones/padparadscha-sapphire', label: 'Padparadscha' },
+    { href: '/gemstones/yellow-sapphire', label: 'Yellow Sapphire' },
+    { href: '/gemstones/pink-sapphire', label: 'Pink Sapphire' },
+    { href: '/gemstones/star-sapphire', label: 'Star Sapphire' },
     { href: '/gemstones/ruby', label: 'Ruby' },
     { href: '/gemstones', label: 'View All' },
   ]
@@ -124,8 +127,8 @@ export default function Footer() {
         <div className="border-t border-teal/10 pt-8 pb-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div>
             <p className="font-jost text-xs uppercase tracking-widest text-offwhite/25 mb-1">Email</p>
-            <a href="mailto:info@serendibgemstones.com" className="font-jost text-sm text-teal/80 hover:text-teal-light transition-colors">
-              info@serendibgemstones.com
+            <a href="mailto:gems@serendibgemstones.com" className="font-jost text-sm text-teal/80 hover:text-teal-light transition-colors">
+              gems@serendibgemstones.com
             </a>
           </div>
           <div>

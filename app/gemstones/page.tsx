@@ -236,6 +236,46 @@ export default function GemstonesPage() {
         </div>
       </section>
 
+      {/* Trust — who writes these guides and how we verify */}
+      <section className="bg-dark px-6 lg:px-10 py-20 border-t border-teal/10">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+          <FadeUp>
+            <Link
+              href="/about"
+              className="group block h-full border border-white/6 bg-dark-card hover:border-teal/30 p-8 transition-colors"
+            >
+              <p className="font-jost text-[10px] tracking-[0.3em] uppercase text-teal/60 mb-3">Who Writes These Guides</p>
+              <h3 className="font-cormorant text-2xl text-offwhite font-semibold mb-3 group-hover:text-teal-light transition-colors">
+                About Serendib Gemstones
+              </h3>
+              <p className="font-jost text-sm text-offwhite/55 leading-relaxed mb-5">
+                Meet the three founders behind Serendib — Sri Lankan gemstone specialists who source and verify every stone described in these guides.
+              </p>
+              <span className="font-jost text-xs tracking-widest uppercase text-teal group-hover:text-teal-light transition-colors">
+                Read our story →
+              </span>
+            </Link>
+          </FadeUp>
+          <FadeUp delay={0.1}>
+            <Link
+              href="/how-we-verify"
+              className="group block h-full border border-white/6 bg-dark-card hover:border-teal/30 p-8 transition-colors"
+            >
+              <p className="font-jost text-[10px] tracking-[0.3em] uppercase text-teal/60 mb-3">Trust & Verification</p>
+              <h3 className="font-cormorant text-2xl text-offwhite font-semibold mb-3 group-hover:text-teal-light transition-colors">
+                How We Verify Every Stone
+              </h3>
+              <p className="font-jost text-sm text-offwhite/55 leading-relaxed mb-5">
+                Our verification chain — from mine-to-market provenance through independent GIA and GRS laboratory reports — applied to every gemstone in this library.
+              </p>
+              <span className="font-jost text-xs tracking-widest uppercase text-teal group-hover:text-teal-light transition-colors">
+                See our verification process →
+              </span>
+            </Link>
+          </FadeUp>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-dark py-20 px-6 text-center border-t border-teal/10">
         <FadeUp>
