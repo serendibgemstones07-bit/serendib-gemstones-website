@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Padparadscha Sapphire — The Complete Guide to the Rarest Sapphire',
   description:
     'A padparadscha sapphire is an extremely rare pink-orange variety of corundum, named after the Sri Lankan lotus blossom. Discover why Ceylon padparadschas are the most sought-after coloured sapphires in the world — covering colour standards, origins, treatments, investment value, and buying advice.',
-  alternates: { canonical: 'https://serendibgemstones.com/gemstones/padparadscha-sapphire' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/gemstones/padparadscha-sapphire' },
 }
 
 const faqItems = [
@@ -69,21 +69,21 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Gemstones', item: 'https://serendibgemstones.com/gemstones' },
-        { '@type': 'ListItem', position: 3, name: 'Padparadscha Sapphire', item: 'https://serendibgemstones.com/gemstones/padparadscha-sapphire' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Gemstones', item: 'https://www.serendibgemstones.com/gemstones' },
+        { '@type': 'ListItem', position: 3, name: 'Padparadscha Sapphire', item: 'https://www.serendibgemstones.com/gemstones/padparadscha-sapphire' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'Padparadscha Sapphire — The Complete Guide to the Rarest Sapphire',
       description: metadata.description,
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       reviewedBy: { '@type': 'Person', name: 'Thusira Ranasinghe', jobTitle: 'Co-Founder & Director', worksFor: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd' } },
-      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://serendibgemstones.com/logo.jpg' } },
+      publisher: { '@type': 'Organization', name: 'Serendib Gemstones (Pvt) Ltd', logo: { '@type': 'ImageObject', url: 'https://www.serendibgemstones.com/logo.jpg' } },
       datePublished: '2026-07-31',
       dateModified: '2026-08-12',
-      mainEntityOfPage: 'https://serendibgemstones.com/gemstones/padparadscha-sapphire',
+      mainEntityOfPage: 'https://www.serendibgemstones.com/gemstones/padparadscha-sapphire',
     },
     {
       '@type': 'FAQPage',

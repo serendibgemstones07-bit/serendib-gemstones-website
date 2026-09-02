@@ -38,20 +38,20 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://serendibgemstones.com/learn' },
-        { '@type': 'ListItem', position: 3, name: 'What does "no heat" mean on a gem certificate?', item: 'https://serendibgemstones.com/learn/what-does-no-heat-mean-on-certificate' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+        { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: 'https://www.serendibgemstones.com/learn' },
+        { '@type': 'ListItem', position: 3, name: 'What does "no heat" mean on a gem certificate?', item: 'https://www.serendibgemstones.com/learn/what-does-no-heat-mean-on-certificate' },
       ],
     },
     {
       '@type': 'Article',
       headline: 'What Does "No Heat" Mean on a Gem Certificate?',
       description: '"No heat" on a gemological certificate is the single most commercially significant statement on a coloured stone report — confirming no evidence of thermal enhancement was found.',
-      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://serendibgemstones.com' },
+      author: { '@type': 'Organization', name: 'Serendib Gemstones Editorial', url: 'https://www.serendibgemstones.com' },
       publisher: { '@type': 'Organization', name: 'Serendib Gemstones' },
       datePublished: '2026-07-30',
       dateModified: '2026-08-12',
-      url: 'https://serendibgemstones.com/learn/what-does-no-heat-mean-on-certificate',
+      url: 'https://www.serendibgemstones.com/learn/what-does-no-heat-mean-on-certificate',
     },
     {
       '@type': 'FAQPage',

@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const BASE = 'https://serendibgemstones.com'
+const BASE = 'https://www.serendibgemstones.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

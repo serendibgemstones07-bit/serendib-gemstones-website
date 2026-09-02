@@ -6,7 +6,7 @@ import GemSVG from '@/components/GemSVG'
 export const metadata: Metadata = {
   title: 'Knowledge Centre — Expert Guides to Ceylon Gemstones',
   description: 'Authoritative guides on Ceylon sapphires, gemstone certification, heat treatment, buying advice, and Sri Lankan origins — written by people who source these stones at the mine.',
-  alternates: { canonical: 'https://serendibgemstones.com/learn' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/learn' },
 }
 
 const clusters = [
@@ -115,7 +115,7 @@ export default function LearnPage() {
             '@type': 'CollectionPage',
             name: 'Knowledge Centre — Expert Guides to Ceylon Gemstones',
             description: 'Authoritative guides on Ceylon sapphires, certification, heat treatment, buying advice, and Sri Lankan origins.',
-            url: 'https://serendibgemstones.com/learn',
+            url: 'https://www.serendibgemstones.com/learn',
           }),
         }}
       />

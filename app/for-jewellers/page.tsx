@@ -6,7 +6,7 @@ import GemSVG from '@/components/GemSVG'
 export const metadata: Metadata = {
   title: 'For Jewellers & Trade Buyers',
   description: 'Reliable Ceylon gemstone supply for jewellers, manufacturers, and retailers worldwide. Calibrated parcels, matched sets, certified loose stones, and long-term trade relationships from Sri Lanka.',
-  alternates: { canonical: 'https://serendibgemstones.com/for-jewellers' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/for-jewellers' },
 }
 
 const tradeServices = [
@@ -61,7 +61,7 @@ const schema = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
         { '@type': 'ListItem', position: 2, name: 'For Jewellers & Trade' },
       ],
     },
@@ -69,7 +69,7 @@ const schema = {
       '@type': 'WebPage',
       name: 'For Jewellers & Trade Buyers — Serendib Gemstones',
       description: 'Reliable Ceylon gemstone supply for jewellers, manufacturers, and retailers worldwide.',
-      url: 'https://serendibgemstones.com/for-jewellers',
+      url: 'https://www.serendibgemstones.com/for-jewellers',
     },
   ],
 }

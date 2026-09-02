@@ -6,7 +6,7 @@ import GemSVG from '@/components/GemSVG'
 export const metadata: Metadata = {
   title: 'CGI Verification Portal — Verify a Gemstone Identity',
   description: 'The CGI Verification Portal allows buyers, jewellers, and trade professionals to verify a gemstone using its Gem Identity Number (GIN) — providing instant access to provenance, certification, and treatment data.',
-  alternates: { canonical: 'https://serendibgemstones.com/cgi/verification' },
+  alternates: { canonical: 'https://www.serendibgemstones.com/cgi/verification' },
 }
 
 const verificationSteps = [
@@ -88,8 +88,8 @@ export default function VerificationPage() {
             '@type': 'Article',
             headline: 'CGI Verification Portal — Verify a Gemstone Identity',
             description: 'The CGI Verification Portal allows buyers and trade professionals to verify a gemstone using its Gem Identity Number.',
-            url: 'https://serendibgemstones.com/cgi/verification',
-            author: { '@type': 'Organization', name: 'Serendib Gemstones', url: 'https://serendibgemstones.com' },
+            url: 'https://www.serendibgemstones.com/cgi/verification',
+            author: { '@type': 'Organization', name: 'Serendib Gemstones', url: 'https://www.serendibgemstones.com' },
           }),
         }}
       />
@@ -101,9 +101,9 @@ export default function VerificationPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serendibgemstones.com' },
-              { '@type': 'ListItem', position: 2, name: 'Ceylon Gem Identity', item: 'https://serendibgemstones.com/cgi' },
-              { '@type': 'ListItem', position: 3, name: 'Verification Portal', item: 'https://serendibgemstones.com/cgi/verification' },
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.serendibgemstones.com' },
+              { '@type': 'ListItem', position: 2, name: 'Ceylon Gem Identity', item: 'https://www.serendibgemstones.com/cgi' },
+              { '@type': 'ListItem', position: 3, name: 'Verification Portal', item: 'https://www.serendibgemstones.com/cgi/verification' },
             ],
           }),
         }}
